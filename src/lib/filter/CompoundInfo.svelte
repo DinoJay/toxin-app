@@ -1,4 +1,6 @@
 <script>
+	import ChemicalAlert from './ChemicalAlert.svelte';
+
 	export let label;
 	export let imgSrc;
 	export let ec_number;
@@ -32,12 +34,5 @@
 		<h2>Function:</h2>
 		<p class="my-1 p-2 max-h-40 overflow-y-auto">{function_and_uses}</p>
 	</div>
-	<div>
-		<h2>Chemical alert category</h2>
-		<p class="my-1 p-2 max-h-40 overflow-y-auto">
-			if link to OECDTOOL box for instance PHYSICO_CHEMICAL PROPERTY [Can be selected to display the
-			complete physico-chemical property inputted or be linked to Cosmosdb to calculate new
-			parameter]
-		</p>
-	</div>
+	<ChemicalAlert cas={cas_number.replace(/-/g, '')} />
 </div>
