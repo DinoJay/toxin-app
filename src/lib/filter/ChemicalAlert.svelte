@@ -1,13 +1,18 @@
 <script>
+	import uniqBy from 'lodash.uniqBy';
+
 	export let cas;
 
 	$: {
 		console.log('cas', cas);
 	}
-	const host = 'http://b80b-134-184-232-67.ngrok.io';
+	const host = 'http://0527-62-235-197-156.ngrok.io';
+
 	const q = `/api/v6/Search/cas/${cas}/true`;
 
-	let promise = fetch(`${host}${q}`)
+	console.log('query', `${host}${q}`);
+
+	let profilingPromise = fetch(`${host}${q}`)
 		.then((res) => res.json())
 		.then((res) => {
 			console.log('res', res);
@@ -36,13 +41,47 @@
 			}));
 		});
 
-	promise.then((d) => console.log('result', d));
+	// profilingPromise.then((d) => console.log('result', d));
 </script>
 
-<div>
-	<h2>Chemical alert category</h2>
-	<p class="my-1 p-2 max-h-40 overflow-y-auto">
-		if link to OECDTOOL box for instance PHYSICO_CHEMICAL PROPERTY [Can be selected to display the
-		complete physico-chemical property inputted or be linked to Cosmosdb to calculate new parameter]
-	</p>
+<div class="mt-3">
+	<h1 class="text-xl">Chemical alert category</h1>
+	<div class="max-h-96 overflow-y-auto">
+		<div>
+			{#await profilingPromise}
+				<div>Loading...</div>
+			{:then result}
+				<div>
+					<h2 class="text-lg">Profiling</h2>
+					<ul>
+						{#each uniqBy(result.profiling, (d) => d.ProfilerGuid) as d, i}
+							<li class="mb-3">
+								<div>{d.ProfilerName}</div>
+								<div>
+									{#each d.Categories as c}
+										{#if c}
+											<div>{c}</div>
+										{/if}
+									{/each}
+								</div>
+							</li>
+						{/each}
+					</ul>
+				</div>
+				<div>
+					<h2 class="text-lg">Data</h2>
+					<ul>
+						{#each uniqBy(result.data, (d) => d.Endpoint) as d, i}
+							<li class="mb-3">
+								<div>{d.Family}</div>
+								<div>{d.Value}{' '}{d.Unit || ''}</div>
+							</li>
+						{/each}
+					</ul>
+				</div>
+			{:catch error}
+				error: {error}
+			{/await}
+		</div>
+	</div>
 </div>

@@ -25,14 +25,23 @@
 		/>
 	</div>
 	<h2>Substance identity</h2>
-	<div class="p-2">
+	<div class="p-1">
 		<p>EC / List no.: {ec_number}</p>
 		<p>CAS no.: {cas_number}</p>
 		<p>Mol. formula: {empirical_formula}</p>
 	</div>
 	<div class="">
 		<h2>Function:</h2>
-		<p class="my-1 p-2 max-h-40 overflow-y-auto">{function_and_uses}</p>
+		<p class=" p-1 max-h-40 overflow-y-auto">{function_and_uses}</p>
 	</div>
 	<ChemicalAlert cas={cas_number.replace(/-/g, '')} />
 </div>
+
+<style>
+	h1 {
+		@apply text-xl;
+	}
+	h2 {
+		@apply text-lg;
+	}
+</style>
