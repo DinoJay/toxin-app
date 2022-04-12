@@ -44,16 +44,16 @@
 	// profilingPromise.then((d) => console.log('result', d));
 </script>
 
-<div class="mt-3">
+<div class="mt-3 mb-4">
 	<h1 class="text-xl">Chemical alert category</h1>
-	<div class="max-h-96 overflow-y-auto">
-		<div>
+	<div class=" ">
+		<div class="flex">
 			{#await profilingPromise}
 				<div>Loading...</div>
 			{:then result}
 				<div>
 					<h2 class="text-lg">Profiling</h2>
-					<ul>
+					<ul class="max-h-96 overflow-y-auto" style="min-width:50%">
 						{#each uniqBy(result.profiling, (d) => d.ProfilerGuid) as d, i}
 							<li class="mb-3">
 								<div>{d.ProfilerName}</div>
@@ -68,9 +68,9 @@
 						{/each}
 					</ul>
 				</div>
-				<div>
+				<div style="min-width:50%">
 					<h2 class="text-lg">Data</h2>
-					<ul>
+					<ul class="max-h-96 overflow-y-auto">
 						{#each uniqBy(result.data, (d) => d.Endpoint) as d, i}
 							<li class="mb-3">
 								<div>{d.Family}</div>
