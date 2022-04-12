@@ -7,6 +7,8 @@
 	import { constructQuery } from '$lib/sparql';
 	import Expandable from '$lib/Expandable.svelte';
 	import { casRegex, smilesRegex } from '$lib/chemRegexes';
+	import ArrowRightSFill from 'svelte-remixicon/lib/icons/ArrowRightSFill.svelte';
+	import AttrElement from '$lib/element-list/attrElement.svelte';
 
 	let inputVal = 'C1=CC(=C(C=C1O)O)O';
 	// let imgPromise = null;
@@ -34,8 +36,11 @@
 			{
 				?compound rdfs:label ?label .
 				${smilesStr}
+				?compound ont:SMILES ?smiles .
 				${casStr}
+				?compound ont:CAS_number ?cas_number .
 				${inciStr}
+				?compound ont:INCI ?inci .
 				OPTIONAL { ?compound ont:additional_info ?additional_info .  }
 				OPTIONAL { ?compound ont:empirical_formula ?empirical_formula .  }
 				OPTIONAL { ?compound ont:function_and_uses ?function_and_uses .  }
@@ -71,16 +76,19 @@
 
 				return fetch(constructQuery('chemical-identity', makeSparqlQuery(sparqlQueryArg)))
 					.then((res) => res.json())
-					.then((res) => ({
-						...res,
-						imgSrc: e,
-						type: 'compound'
-					}));
+					.then((res) => {
+						console.log('res', res);
+						return {
+							...res,
+							imgSrc: e,
+							type: 'compound'
+						};
+					});
 			});
 		}}
 	>
 		<div class="text-lg ">
-			<label for="compound">‘CAS No’ or ‘INCI / chemical name’ or ‘EC number‘ or ‘ SMILES’</label>
+			<label for="compound">‘CAS No’ or ‘INCI ’ or ‘ SMILES’</label>
 			<input bind:value={inputVal} class="border m-1" type="text" id="compound" name="compound" />
 			<button class="border m-1 px-1" type="submit">Go!</button>
 		</div>
