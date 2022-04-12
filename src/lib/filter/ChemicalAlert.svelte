@@ -45,25 +45,25 @@
 </script>
 
 <div class="mt-3 mb-4">
-	<h1 class="text-xl">Chemical alert category</h1>
+	<h1 class="text-xl mb-3">Chemical alert category</h1>
 	<div class=" ">
 		<div class="flex">
 			{#await profilingPromise}
 				<div>Loading...</div>
 			{:then result}
 				<div>
-					<h2 class="text-lg">Profiling</h2>
-					<ul class="max-h-96 overflow-y-auto" style="min-width:50%">
+					<h2 class="text-lg mb-2">Profiling</h2>
+					<ul class="max-h-96 overflow-y-auto list-disc" style="min-width:50%">
 						{#each uniqBy(result.profiling, (d) => d.ProfilerGuid) as d, i}
 							<li class="mb-3">
-								<div>{d.ProfilerName}</div>
-								<div>
+								<div class="font-bold">{d.ProfilerName}</div>
+								<ul class="list-disc ml-3">
 									{#each d.Categories as c}
 										{#if c}
-											<div>{c}</div>
+											<li>{c}</li>
 										{/if}
 									{/each}
-								</div>
+								</ul>
 							</li>
 						{/each}
 					</ul>
@@ -72,9 +72,9 @@
 					<h2 class="text-lg">Data</h2>
 					<ul class="max-h-96 overflow-y-auto">
 						{#each uniqBy(result.data, (d) => d.Endpoint) as d, i}
-							<li class="mb-3">
-								<div>{d.Family}</div>
-								<div>{d.Value}{' '}{d.Unit || ''}</div>
+							<li class="mb-3 ">
+								<div class="font-bold">{d.Family}</div>
+								<div class="ml-3">{d.Value}{' '}{d.Unit || ''}</div>
 							</li>
 						{/each}
 					</ul>
