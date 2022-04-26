@@ -41,6 +41,7 @@
 				?compound ont:CAS_number ?cas_number .
 				${inciStr}
 				?compound ont:INCI ?inci .
+				OPTIONAL { ?compound ont:EC_number ?ec_number .  }
 				OPTIONAL { ?compound ont:additional_info ?additional_info .  }
 				OPTIONAL { ?compound ont:empirical_formula ?empirical_formula .  }
 				OPTIONAL { ?compound ont:function_and_uses ?function_and_uses .  }

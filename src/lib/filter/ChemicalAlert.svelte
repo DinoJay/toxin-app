@@ -1,12 +1,19 @@
 <script>
 	import uniqBy from 'lodash.uniqBy';
+	import DropDown from '$lib/DropDown.svelte';
+	import ArrowRightSFill from 'svelte-remixicon/lib/icons/ArrowRightSFill.svelte';
+	import AttrElement from '$lib/element-list/attrElement.svelte';
+	import ChemicalCompound from './ChemicalCompound.svelte';
+	import SelectProfilers from './SelectProfilers.svelte';
+	import { Result } from 'postcss';
+	import SelectData from './SelectData.svelte';
 
 	export let cas;
 
 	$: {
 		console.log('cas', cas);
 	}
-	const host = 'http://0527-62-235-197-156.ngrok.io';
+	const host = 'http://bb79-134-184-232-78.ngrok.io';
 
 	const q = `/api/v6/Search/cas/${cas}/true`;
 
@@ -51,33 +58,11 @@
 			{#await profilingPromise}
 				<div>Loading...</div>
 			{:then result}
-				<div>
-					<h2 class="text-lg mb-2">Profiling</h2>
-					<ul class="max-h-96 overflow-y-auto list-disc" style="min-width:50%">
-						{#each uniqBy(result.profiling, (d) => d.ProfilerGuid) as d, i}
-							<li class="mb-3">
-								<div class="font-bold">{d.ProfilerName}</div>
-								<ul class="list-disc ml-3">
-									{#each d.Categories as c}
-										{#if c}
-											<li>{c}</li>
-										{/if}
-									{/each}
-								</ul>
-							</li>
-						{/each}
-					</ul>
+				<div class="flex-grow mr-12">
+					<SelectProfilers data={result.profiling} />
 				</div>
-				<div style="min-width:50%">
-					<h2 class="text-lg">Data</h2>
-					<ul class="max-h-96 overflow-y-auto">
-						{#each uniqBy(result.data, (d) => d.Endpoint) as d, i}
-							<li class="mb-3 ">
-								<div class="font-bold">{d.Family}</div>
-								<div class="ml-3">{d.Value}{' '}{d.Unit || ''}</div>
-							</li>
-						{/each}
-					</ul>
+				<div class="flex-grow">
+					<SelectData data={result.data} />
 				</div>
 			{:catch error}
 				error: {error}
