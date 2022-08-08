@@ -13,7 +13,7 @@
 		{ label: 'Skin sensitisation' },
 		{ label: 'Organ-specific toxicity' },
 		{ label: 'Repeated dose toxicity', endpoint: 'repeated-toxicity' },
-		{ label: 'Reproductive toxicitya' },
+		{ label: 'Reproductive toxicity' },
 		{ label: 'Mutagenicity / genotoxicity' },
 		{ label: 'Carcinogenicity' },
 		{ label: 'Photo-induced toxicity' },

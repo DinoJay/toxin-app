@@ -13,7 +13,7 @@
 	$: {
 		console.log('cas', cas);
 	}
-	const host = 'http://bb79-134-184-232-78.ngrok.io';
+	const host = 'https://e483-134-184-212-153.eu.ngrok.io';
 
 	const q = `/api/v6/Search/cas/${cas}/true`;
 
@@ -52,16 +52,16 @@
 </script>
 
 <div class="mt-3 mb-4">
-	<h1 class="text-xl mb-3">Chemical alert category</h1>
+	<h1 class="text-xl mb-3">OECD Toolbox</h1>
 	<div class=" ">
 		<div class="flex">
 			{#await profilingPromise}
 				<div>Loading...</div>
 			{:then result}
-				<div class="flex-grow mr-12">
+				<div style="min-width:50%; max-width:50%" class="pr-6">
 					<SelectProfilers data={result.profiling} />
 				</div>
-				<div class="flex-grow">
+				<div style="min-width:50%; max-width:50%" class="pl-6">
 					<SelectData data={result.data} />
 				</div>
 			{:catch error}
