@@ -9,7 +9,7 @@
 	export let nonOecd;
 	import ElementList from '$lib/element-list/index.svelte';
 	import transformObject from '$lib/transformObject';
-	import uniqBy from 'lodash.uniqby';
+	import uniqBy from '$lib/uniqBy';
 	import getParentCategories from '$lib/getTestParentCategories';
 
 	const { bindings } = results;

@@ -20,7 +20,6 @@
     "eslint-plugin-svelte3": "^3.2.1",
     "lodash.sortby": "^4.7.0",
     "lodash.startcase": "^4.4.0",
-    "lodash.uniqby": "^4.7.0",
     "postcss": "^8.4.12",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",

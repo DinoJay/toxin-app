@@ -10,7 +10,7 @@
 	export let repeatedToxicityCsv = [];
 	export let compound;
 	export let label;
-	import uniqBy from 'lodash.uniqby';
+	import uniqBy from '$lib/uniqBy';
 	// import Table from '$lib/table.svelte';
 	console.log('$$props', $$props);
 	const sparqlQuery = ` 
