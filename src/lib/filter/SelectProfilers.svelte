@@ -1,5 +1,5 @@
 <script>
-	import uniqBy from 'lodash.uniqBy';
+	import uniqBy from '$lib/uniqBy';
 
 	import DropDown from '$lib/DropDown.svelte';
 	export let data;

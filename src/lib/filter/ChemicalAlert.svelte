@@ -1,5 +1,4 @@
 <script>
-	import uniqBy from 'lodash.uniqBy';
 	import DropDown from '$lib/DropDown.svelte';
 	import ArrowRightSFill from 'svelte-remixicon/lib/icons/ArrowRightSFill.svelte';
 	import AttrElement from '$lib/element-list/attrElement.svelte';
