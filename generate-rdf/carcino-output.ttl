@@ -1,0 +1,578 @@
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix ont:   <http://ontologies.vub.be/oecd#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://toxin.vub.be/resource/compound/2%2C6-dihydroxyethylaminotoluene>
+        a               ont:Compound ;
+        rdfs:label      "2,6-dihydroxyethylaminotoluene" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/2%2C6-dihydroxyethylaminotoluene> .
+
+<http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%202>
+        a             ont:Report ;
+        rdfs:label    "hc yellow n° 2" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_038.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/40> , <http://toxin.vub.be/resource/test/acutetoxicity/39> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/32>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/2%2C6-dihydroxyethylaminotoluene>
+        a             ont:Report ;
+        rdfs:label    "2,6-dihydroxyethylaminotoluene" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_188.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/46> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/45>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/2%2C6-diaminopyridine> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vitro" .
+
+<http://toxin.vub.be/resource/dossier/2%2C6-diaminopyridine>
+        a             ont:Report ;
+        rdfs:label    "2,6-diaminopyridine" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_084.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/45> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/17>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/58>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/acid%20red%2092> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/acid%20orange%207>
+        a             ont:Report ;
+        rdfs:label    "acid orange 7" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_158.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/57> , <http://toxin.vub.be/resource/test/acutetoxicity/56> .
+
+<http://toxin.vub.be/resource/dossier/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt>
+        a             ont:Report ;
+        rdfs:label    "hydroxypropyl p-phenylenediamine and its dihydrochloride salt" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_230.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/22> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/11>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/52>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20red%20n°%203> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/24>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vitro" .
+
+<http://toxin.vub.be/resource/compound/2%2C6-diaminopyridine>
+        a               ont:Compound ;
+        rdfs:label      "2,6-diaminopyridine" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/2%2C6-diaminopyridine> .
+
+<http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate>
+        a               ont:Compound ;
+        rdfs:label      "toluene-2,5-diamine and its sulfate" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/toluene-2%2C5-diamine%20and%20its%20sulfate> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/4>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/37>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/o-aminophenol> ;
+        ont:observation_period  "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_025.pdf" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/trisodium%20nitrilotriacetate>
+        a             ont:Report ;
+        rdfs:label    "trisodium nitrilotriacetate" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_046.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/9> , <http://toxin.vub.be/resource/test/acutetoxicity/15> , <http://toxin.vub.be/resource/test/acutetoxicity/12> , <http://toxin.vub.be/resource/test/acutetoxicity/6> , <http://toxin.vub.be/resource/test/acutetoxicity/13> , <http://toxin.vub.be/resource/test/acutetoxicity/4> , <http://toxin.vub.be/resource/test/acutetoxicity/10> , <http://toxin.vub.be/resource/test/acutetoxicity/7> , <http://toxin.vub.be/resource/test/acutetoxicity/14> , <http://toxin.vub.be/resource/test/acutetoxicity/8> , <http://toxin.vub.be/resource/test/acutetoxicity/5> , <http://toxin.vub.be/resource/test/acutetoxicity/11> .
+
+<http://toxin.vub.be/resource/dossier/resorcinol>
+        a             ont:Report ;
+        rdfs:label    "resorcinol" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_015.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/23> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/31>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/44>
+        a                 ont:Test ;
+        ont:compound      <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> ;
+        ont:observations  "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/sodium%20perborate%20and%20perboric%20acid>
+        a             ont:Report ;
+        rdfs:label    "sodium perborate and perboric acid" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_031.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/21> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/16>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/phenoxyethanol>
+        a             ont:Report ;
+        rdfs:label    "phenoxyethanol" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_195.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/3> , <http://toxin.vub.be/resource/test/acutetoxicity/2> .
+
+<http://toxin.vub.be/resource/compound/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt>
+        a               ont:Compound ;
+        rdfs:label      "hydroxypropyl p-phenylenediamine and its dihydrochloride salt" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/57>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/acid%20orange%207> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vitro" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/29>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hydroxyethyl-2-nitro-p-toluidine> ;
+        ont:observation_period  "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_061.pdf" ;
+        ont:observations        "in vitro" .
+
+<http://toxin.vub.be/resource/compound/hydroxyethyl-2-nitro-p-toluidine>
+        a               ont:Compound ;
+        rdfs:label      "hydroxyethyl-2-nitro-p-toluidine" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/hydroxyethyl-2-nitro-p-toluidine> .
+
+<http://toxin.vub.be/resource/dossier/o-aminophenol>
+        a             ont:Report ;
+        rdfs:label    "o-aminophenol" ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/38> , <http://toxin.vub.be/resource/test/acutetoxicity/37> , <http://toxin.vub.be/resource/test/acutetoxicity/36> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/9>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate>
+        a               ont:Compound ;
+        rdfs:label      "trisodium nitrilotriacetate" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/trisodium%20nitrilotriacetate> .
+
+<http://toxin.vub.be/resource/compound/resorcinol>
+        a               ont:Compound ;
+        rdfs:label      "resorcinol" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/resorcinol> .
+
+<http://toxin.vub.be/resource/compound/β-arbutin>
+        a               ont:Compound ;
+        rdfs:label      "β-arbutin" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/β-arbutin> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/10>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/51>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20red%20n°%203> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vitro" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/23>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/resorcinol> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/triclosan>
+        a               ont:Compound ;
+        rdfs:label      "triclosan" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/triclosan> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/3>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/phenoxyethanol> ;
+        ont:observation_period  "OECD 451" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/36>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/o-aminophenol> ;
+        ont:observation_period  "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_025.pdf" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/p-aminophenol>
+        a             ont:Report ;
+        rdfs:label    "p-aminophenol" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_078.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/28> , <http://toxin.vub.be/resource/test/acutetoxicity/27> , <http://toxin.vub.be/resource/test/acutetoxicity/26> , <http://toxin.vub.be/resource/test/acutetoxicity/25> , <http://toxin.vub.be/resource/test/acutetoxicity/24> .
+
+<http://toxin.vub.be/resource/dossier/hydroxyethyl-2-nitro-p-toluidine>
+        a             ont:Report ;
+        rdfs:label    "hydroxyethyl-2-nitro-p-toluidine" ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/29> .
+
+<http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29>
+        a               ont:Compound ;
+        rdfs:label      "n-methyl-2-pyrrolidone (NMP)" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/n-methyl-2-pyrrolidone%20%28NMP%29> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/49>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/triclosan> ;
+        ont:observation_period  "OECD 451" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/sodium%20perborate%20and%20perboric%20acid>
+        a               ont:Compound ;
+        rdfs:label      "sodium perborate and perboric acid" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/sodium%20perborate%20and%20perboric%20acid> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/30>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/43>
+        a                 ont:Test ;
+        ont:compound      <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> ;
+        ont:observations  "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/15>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/acid%20red%2092>
+        a             ont:Report ;
+        rdfs:label    "acid red 92" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_087.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/58> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/56>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/acid%20orange%207> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/28>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/β-arbutin>
+        a             ont:Report ;
+        rdfs:label    "β-arbutin" ;
+        rdfs:seeAlso  <http://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_169.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/1> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/8>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/triclosan>
+        a             ont:Report ;
+        rdfs:label    "triclosan" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_166.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/49> , <http://toxin.vub.be/resource/test/acutetoxicity/48> , <http://toxin.vub.be/resource/test/acutetoxicity/47> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/50>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20red%20n°%203> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vitro" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/22>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt> ;
+        ont:observation_period  "non-OECD" ;
+        ont:observations        "in vitro" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/2>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/phenoxyethanol> ;
+        ont:observation_period  "OECD 451" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/35>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/48>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/triclosan> ;
+        ont:observation_period  "OECD 453" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204>
+        a               ont:Compound ;
+        rdfs:label      "hc yellow n° 4" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%204> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/42>
+        a                 ont:Test ;
+        ont:compound      <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> ;
+        ont:observations  "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/14>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/55>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20red%20n°%203> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/27>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate>
+        a               ont:Compound ;
+        rdfs:label      "2,4-diaminophenoxyethanol dihydrochloride and sulfate" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/7>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%204>
+        a             ont:Report ;
+        rdfs:label    "hc yellow n° 4" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_008.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/34> , <http://toxin.vub.be/resource/test/acutetoxicity/33> , <http://toxin.vub.be/resource/test/acutetoxicity/32> , <http://toxin.vub.be/resource/test/acutetoxicity/31> , <http://toxin.vub.be/resource/test/acutetoxicity/30> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/21>
+        a                 ont:Test ;
+        ont:compound      <http://toxin.vub.be/resource/compound/sodium%20perborate%20and%20perboric%20acid> ;
+        ont:observations  "in vitro" .
+
+<http://toxin.vub.be/resource/compound/hc%20red%20n°%203>
+        a               ont:Compound ;
+        rdfs:label      "hc red n° 3" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/hc%20red%20n°%203> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/1>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/β-arbutin> ;
+        ont:observation_period  "national official protocol (Japan)" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/34>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/47>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/triclosan> ;
+        ont:observation_period  "OECD 451" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/toluene-2%2C5-diamine%20and%20its%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "toluene-2,5-diamine and its sulfate" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_052.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/20> , <http://toxin.vub.be/resource/test/acutetoxicity/19> , <http://toxin.vub.be/resource/test/acutetoxicity/18> , <http://toxin.vub.be/resource/test/acutetoxicity/17> , <http://toxin.vub.be/resource/test/acutetoxicity/16> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/19>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/acid%20red%2092>
+        a               ont:Compound ;
+        rdfs:label      "acid red 92" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/acid%20red%2092> .
+
+<http://toxin.vub.be/resource/dossier/n-methyl-2-pyrrolidone%20%28NMP%29>
+        a             ont:Report ;
+        rdfs:label    "n-methyl-2-pyrrolidone (NMP)" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/44> , <http://toxin.vub.be/resource/test/acutetoxicity/43> , <http://toxin.vub.be/resource/test/acutetoxicity/42> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/41>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/13>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/phenoxyethanol>
+        a               ont:Compound ;
+        rdfs:label      "phenoxyethanol" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/phenoxyethanol> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/54>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20red%20n°%203> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/26>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/6>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate>
+        a             ont:Report ;
+        rdfs:label    "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_177.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/35> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/39>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%202> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/acid%20orange%207>
+        a               ont:Compound ;
+        rdfs:label      "acid orange 7" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/acid%20orange%207> .
+
+<http://toxin.vub.be/resource/dossier/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "2,4-diaminophenoxyethanol dihydrochloride and sulfate" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_035.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/41> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/20>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/33>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/o-aminophenol>
+        a               ont:Compound ;
+        rdfs:label      "o-aminophenol" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/o-aminophenol> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/46>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/2%2C6-dihydroxyethylaminotoluene> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vitro" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/18>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%202>
+        a               ont:Compound ;
+        rdfs:label      "hc yellow n° 2" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%202> .
+
+<http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate>
+        a               ont:Compound ;
+        rdfs:label      "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/40>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%202> ;
+        ont:observation_period  "/" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/compound/p-aminophenol>
+        a               ont:Compound ;
+        rdfs:label      "p-aminophenol" ;
+        ont:compoundOf  <http://toxin.vub.be/resource/dossier/p-aminophenol> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/12>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/dossier/hc%20red%20n°%203>
+        a             ont:Report ;
+        rdfs:label    "hc red n° 3" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_043.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/acutetoxicity/55> , <http://toxin.vub.be/resource/test/acutetoxicity/54> , <http://toxin.vub.be/resource/test/acutetoxicity/53> , <http://toxin.vub.be/resource/test/acutetoxicity/52> , <http://toxin.vub.be/resource/test/acutetoxicity/51> , <http://toxin.vub.be/resource/test/acutetoxicity/50> .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/53>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/hc%20red%20n°%203> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/25>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:observation_period  "OECD 451" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/5>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
+        ont:observation_period  "non OECD" ;
+        ont:observations        "in vivo" .
+
+<http://toxin.vub.be/resource/test/acutetoxicity/38>
+        a                       ont:Test ;
+        ont:compound            <http://toxin.vub.be/resource/compound/o-aminophenol> ;
+        ont:observation_period  "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_025.pdf" ;
+        ont:observations        "in vivo" .
