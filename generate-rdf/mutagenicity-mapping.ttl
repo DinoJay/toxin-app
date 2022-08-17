@@ -31,32 +31,32 @@
     ] ;
 .
 
-<#PDFlinkTriplesSecMap>
-    rr:logicalTable [ rr:sqlQuery """
-                WITH RECURSIVE PDFLINKSEC (ID, PDFLINKSEC, REST) AS
-                            (
-                                    SELECT
-                        ID,
-                        NULL,
-                        PDFLINKSEC || ','
-                    FROM (  SELECT
-                                ROWNUM() AS ID,
-                                \"PDF link\" AS PDFLINKSEC
-                            FROM MUTAGENICITY WHERE \"PDF link\" IS NOT NULL
-                    )
-                                    UNION ALL
-                                    SELECT
-                        ID,
-                        REST,
-                        SUBSTR(REST, INSTR(REST, ',') + 1)
-                    FROM PDFLINKSEC WHERE REST <> ''
-                            ) SELECT DISTINCT * FROM PDFLINKSEC
-        """ ] ;
+# <#PDFlinkTriplesSecMap>
+#     rr:logicalTable [ rr:sqlQuery """
+#                 WITH RECURSIVE PDFLINKSEC (ID, PDFLINKSEC, REST) AS
+#                             (
+#                                     SELECT
+#                         ID,
+#                         NULL,
+#                         PDFLINKSEC || ','
+#                     FROM (  SELECT
+#                                 ROWNUM() AS ID,
+#                                 \"PDF link\" AS PDFLINKSEC
+#                             FROM MUTAGENICITY WHERE \"PDF link\" IS NOT NULL
+#                     )
+#                                     UNION ALL
+#                                     SELECT
+#                         ID,
+#                         TRIM(SUBSTR(REST, 0, INSTR(REST, ',') - 1)),
+#                         SUBSTR(REST, INSTR(REST, ',') + 1)
+#                     FROM PDFLINKSEC WHERE REST <> ''
+#                             ) SELECT DISTINCT * FROM PDFLINKSEC
+#         """ ] ;
 
-            rr:subjectMap [
-        rr:template "http://toxin.vub.be/resource/pdfLinkSec/{PDFLINKSEC}" ;
-    ] ;
-.
+#             rr:subjectMap [
+#         rr:template "http://toxin.vub.be/resource/pdfLinkSec/{PDFLINKSEC}" ;
+#     ] ;
+# .
 
 
 <#DossierTriplesMap>
@@ -88,13 +88,13 @@
             rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
         ] ;
     ] ;
-    rr:predicateObjectMap [
-        rr:predicate ont:seeAlso2;
-        rr:objectMap [
-            rr:parentTriplesMap <#PDFlinkTriplesSecMap> ;
-            rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
-        ] ;
-    ] ;
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:seeAlso2;
+    #     rr:objectMap [
+    #         rr:parentTriplesMap <#PDFlinkTriplesSecMap> ;
+    #         rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
+    #     ] ;
+    # ] ;
 
     # rr:predicateObjectMap [
     #     rr:predicate rdfs:seeAlso ;
@@ -143,6 +143,7 @@
     rr:predicateObjectMap [
         rr:predicate rdf:type ;
         rr:objectMap [ rr:template "http://ontologies.vub.be/oecd#{type of study}" ; ] ;
+        rr:objectMap [ rr:column "type of study" ; ] ;
     ] ;
 
     rr:predicateObjectMap [
