@@ -12,7 +12,7 @@
 	export let label;
 	import uniqBy from '$lib/uniqBy';
 	// import Table from '$lib/table.svelte';
-	console.log('$$props', $$props);
+	// console.log('$$props', $$props);
 	const sparqlQuery = ` 
 		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

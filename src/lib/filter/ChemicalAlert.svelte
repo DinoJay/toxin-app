@@ -12,7 +12,7 @@
 	$: {
 		console.log('cas', cas);
 	}
-	const host = 'https://e483-134-184-212-153.eu.ngrok.io';
+	const host = 'https://6b50-134-184-212-153.eu.ngrok.io';
 
 	const q = `/api/v6/Search/cas/${cas}/true`;
 

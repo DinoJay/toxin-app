@@ -11,8 +11,6 @@
 	// console.log('categories', categories);
 
 	const cats = Object.entries(categories).map(([key, values]) => ({ key, values }));
-	console.log('key', key);
-	console.log('cats', cats);
 	// console.log('cats', cats);
 	// console.log('key', key);
 	// let open = false;

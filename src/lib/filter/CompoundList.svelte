@@ -7,16 +7,18 @@
 	export let results;
 	export let oecd;
 	export let nonOecd;
+	export let endpoint;
 	import ElementList from '$lib/element-list/index.svelte';
 	import transformObject from '$lib/transformObject';
 	import uniqBy from '$lib/uniqBy';
 	import getParentCategories from '$lib/getTestParentCategories';
 
 	const { bindings } = results;
+	console.log('$$props', $$props);
 	const data = uniqBy(
 		bindings
 			.map(transformObject)
-			.map((d) => ({ ...d, id: d.test, categories: getParentCategories(d) })),
+			.map((d) => ({ ...d, id: d.test, categories: getParentCategories(endpoint)(d) })),
 		(d) => d.id
 	);
 
