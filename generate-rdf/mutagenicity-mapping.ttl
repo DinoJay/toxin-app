@@ -31,34 +31,6 @@
     ] ;
 .
 
-# <#PDFlinkTriplesSecMap>
-#     rr:logicalTable [ rr:sqlQuery """
-#                 WITH RECURSIVE PDFLINKSEC (ID, PDFLINKSEC, REST) AS
-#                             (
-#                                     SELECT
-#                         ID,
-#                         NULL,
-#                         PDFLINKSEC || ','
-#                     FROM (  SELECT
-#                                 ROWNUM() AS ID,
-#                                 \"PDF link\" AS PDFLINKSEC
-#                             FROM MUTAGENICITY WHERE \"PDF link\" IS NOT NULL
-#                     )
-#                                     UNION ALL
-#                                     SELECT
-#                         ID,
-#                         TRIM(SUBSTR(REST, 0, INSTR(REST, ',') - 1)),
-#                         SUBSTR(REST, INSTR(REST, ',') + 1)
-#                     FROM PDFLINKSEC WHERE REST <> ''
-#                             ) SELECT DISTINCT * FROM PDFLINKSEC
-#         """ ] ;
-
-#             rr:subjectMap [
-#         rr:template "http://toxin.vub.be/resource/pdfLinkSec/{PDFLINKSEC}" ;
-#     ] ;
-# .
-
-
 <#DossierTriplesMap>
     rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM MUTAGENICITY" ] ;
 
@@ -88,18 +60,6 @@
             rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
         ] ;
     ] ;
-    # rr:predicateObjectMap [
-    #     rr:predicate ont:seeAlso2;
-    #     rr:objectMap [
-    #         rr:parentTriplesMap <#PDFlinkTriplesSecMap> ;
-    #         rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
-    #     ] ;
-    # ] ;
-
-    # rr:predicateObjectMap [
-    #     rr:predicate rdfs:seeAlso ;
-    #     rr:objectMap [ rr:column "\"PDF link\"" ; rr:termType rr:IRI ; ] ;
-    # ] ;
 .
 
 <#CompoundTriplesMap>
@@ -152,273 +112,440 @@
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:observations ;
-        rr:objectMap [ rr:column "OBSERVATIONS" ; ] ;
-    ] ; 
-
-
-    rr:predicateObjectMap [
-        rr:predicate ont:moribound_or_dead_animals_prior_to_study_termination ;
-        rr:objectMap [ rr:column "moribound or dead animals prior to study termination" ; rr:datatype xsd:boolean ; ] ;
-    ] ; 
-
-
-    rr:predicateObjectMap [
-        rr:predicate ont:conclusion ;
-        rr:objectMap [ rr:column "CONCLUSION" ; ] ;
+        rr:predicate ont:oecd_476_positive_mutant_frequency_result_at_dose ;
+        rr:objectMap [ rr:column "OECD_476_positive mutant frequency result at dose" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        # CLEANUP ONTOLOGY
-        rr:predicate ont:homogeneity_and_stability ;
-        rr:objectMap [ rr:column "HOMOGENEITY" ; ] ;
+        rr:predicate ont:oecd_476_positive_mutant_frequency_result_at_dose_s9 ;
+        rr:objectMap [ rr:column "OECD_476_positive mutant frequency result at dose + S9" ; ] ;
     ] ; 
 
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_476_relative_cell_survival_perc_at_dose;
+        rr:objectMap [ rr:column "OECD_476_relative cell survival % at dose" ; ] ;
+    ] ; 
+
+    # TODO
     # rr:predicateObjectMap [
-    #     # TODO
-    #     rr:predicate ont:treatment_prior_to_application ;
-    #     rr:objectMap [ rr:column "\"time between sampling and last treatment (h)\"" ; ] ;
+    #     rr:predicate ont:oecd_476_relative_cell_survival_perc_at_dose_s9;
+    #     rr:objectMap [ rr:column "OECD_476_relative cell survival % at dose + S9" ; ] ;
     # ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:pH ;
-        rr:objectMap [ rr:column "PH" ; ] ;
+        rr:predicate ont:oecd_476_outcome;
+        rr:objectMap [ rr:column "OECD_476_OUTCOME" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        # TODO: NORMALIZE (COMMA SEPARATED)
-        rr:predicate ont:concentration ;
-        rr:objectMap [ rr:column "\"concentration (%)\"" ; ] ;
+        rr:predicate ont:oecd_476_conclusion;
+        rr:objectMap [ rr:column "OECD_476_CONCLUSION" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        # CLEANUP ONTOLOGY
-        rr:predicate ont:composition ;
-        rr:objectMap [ rr:column "COMPOSITION" ; ] ;
+        rr:predicate ont:oecd_476_homogeneity;
+        rr:objectMap [ rr:column "OECD_476_HOMOGENEITY" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        # CLEANUP ONTOLOGY, NOT ALWAYS NUMERICAL AND 'UNKNOWN'
-        rr:predicate ont:purity ;
-        rr:objectMap [ rr:column "\"purity (%)\"" ; ] ;
+        rr:predicate ont:oecd_476_ph;
+        rr:objectMap [ rr:column "OECD_476_PH" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        # CLEANUP ONTOLOGY
-        rr:predicate ont:solubility_in_vehicle ;
-        rr:objectMap [ rr:column "\"solubility in vehicle\"" ; ] ;
+        rr:predicate ont:oecd_476_concentration;
+        rr:objectMap [ rr:column "OECD_476_concentration (%)" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:chemical_batch_nr ;
-        rr:objectMap [ rr:column "\"chemical batch nr\"" ; ] ;
+        rr:predicate ont:oecd_476_composition;
+        rr:objectMap [ rr:column "OECD_476_COMPOSITION" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:additional_info ;
-        rr:objectMap [ rr:column "\"additional info\"" ; ] ;
+        rr:predicate ont:oecd_476_purity;
+        rr:objectMap [ rr:column "OECD_476_purity (%)" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        # CLEANUP ONTOLOGY, NORMALIZE WITH IRIS
-        rr:predicate ont:species;
-        rr:objectMap [ rr:column "\"species/strain\"" ; ] ;
+        rr:predicate ont:oecd_476_solubility_in_vehicle;
+        rr:objectMap [ rr:column "OECD_476_solubility in vehicle" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:source ;
-        rr:objectMap [ rr:column "SOURCE" ; ] ;
+        rr:predicate ont:oecd_476_chemical_batch_nr;
+        rr:objectMap [ rr:column "OECD_476_chemical batch nr" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:age_at_start_of_experiment ;
-        rr:objectMap [ rr:column "\"age at start of experiment\"" ; ] ;
+        rr:predicate ont:oecd_476_additional_info;
+        rr:objectMap [ rr:column "OECD_476_additional info" ; ] ;
     ] ; 
 
+    # OECD_476_additionalrinfo	
+    # OECD_476_cell line	
+    # OECD_476_source	
+    # OECD_476_media	
+    # OECD_476_number of passages	
+    # OECD_476_replicates /dose	
+    # OECD_476_dose levels	
+    # OECD_476_type and composition of metabolic activation system	
+    # OECD_476_concentration metabolic activation system (%)	
+    # OECD_476_temperature 	
+    # OECD_476_exposure period ( incubation + expression + selection)	
+    # OECD_476_vehicle	
+    # OECD_476_SCCS comment to test	
+    # OECD_476_year	
+    # OECD_476_GLP	
+    # OECD_476_Ref. in dossier	
+    # OECD_476_preliminary study	
+    # OECD_476_control groups	
+    # OECD_476_Study duration	
+    # OECD_476_additional info	
+    # OECD_476_own comment
 
-    rr:predicateObjectMap [
-        rr:predicate ont:sex ;
-        rr:objectMap [ rr:column "SEX" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        rr:predicate ont:feed ;
-        rr:objectMap [ rr:column "FEED" ; ] ;
-    ] ; 
-
-
-    rr:predicateObjectMap [
-        # todo cleanup, normalize, wrong data?!
-        rr:predicate ont:animal_group ;
-        rr:objectMap [ rr:column "\"n animals / group\"" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:dose_levels ;
-        rr:objectMap [ rr:column "\"dose levels\"" ; ] ;
-    ] ; 
-
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:dose_volume ;
-        rr:objectMap [ rr:column "\"dose volume\"" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:administration_scheme ;
-        rr:objectMap [ rr:column "\"administration scheme\"" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        # HAS TO BE BOOLEAN AND OTHER PREDICATE (oral technique)
-        rr:predicate ont:oral ;
-        rr:objectMap [ rr:column "ORAL" ; ] ;
-    ] ; 
-
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:area_of_body ;
-        rr:objectMap [ rr:column "\"area of body\"" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:inhalation ;
-        rr:objectMap [ rr:column "INHALATION" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:vehicle_name ;
-        rr:objectMap [ rr:column "VEHICLE" ; ] ;
-    ] ; 
-
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:sampling ;
-        rr:objectMap [ rr:column "sampling time" ; ] ;
-    ] ; 
-
-#TODO
-#     rr:predicateObjectMap [
-#         # TODO: CLEANUP
-#         # NEEDS TO BE NORMALIZED!!!
-#         rr:predicate ont:exposure_time ;
-#         rr:objectMap [ rr:column "\"exposure period + recovery period days\"" ; ] ;
-#     ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        # NORMALIZE YEARS!!!
-        rr:predicate ont:year ;
-        rr:objectMap [ rr:column "YEAR" ; rr:datatype xsd:integer ; ] ;
-    ] ; 
 
     # rr:predicateObjectMap [
-    #     rr:predicate ont:glp ;
-    #     rr:objectMap [ rr:column "ISGLP" ; rr:datatype xsd:boolean ; ] ;
-    # ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:scss_comment_to_test ;
-        rr:objectMap [ rr:column "\"SCCS comment to test\"" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:ref_in_dossier ;
-        rr:objectMap [ rr:column "\"Ref. in dossier\"" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:preliminary_test ;
-        rr:objectMap [ rr:column "\"preliminary test\"" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:control_groups ;
-        rr:objectMap [ rr:column "\"control groups\"" ; ] ;
-    ] ; 
-
-    # rr:predicateObjectMap [
-    #     # TODO: CLEANUP
-    #     rr:predicate ont:klimisch_score ;
-    #     rr:objectMap [ rr:column "\"klimisch score evaluated by toxrtool\"" ; ] ;
-    # ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:study_duration ;
-        rr:objectMap [ rr:column "\"Study duration\"" ; ] ;
-    ] ; 
-
-    rr:predicateObjectMap [
-        # TODO: CLEANUP
-        rr:predicate ont:additional_info ;
-        rr:objectMap [ rr:column "\"additional info\"" ; ] ;
-    ] ; 
-
-    # rr:predicateObjectMap [
-    #     # TODO: CLEANUP
-    #     rr:predicate ont:comments ;
-    #     rr:objectMap [ rr:column "\"own comments\"" ; ] ;
+    #     rr:predicate ont:oecd_476_observations ;
+    #     rr:objectMap [ rr:column "OECD_476_OBSERVATIONS" ; ] ;
     # ] ; 
 
     # rr:predicateObjectMap [
-    #     rr:predicate ont:species ;
-    #     rr:objectMap [ 
-    #         rr:parentTriplesMap <#SPECIESTriplesMap> ; 
-    #         rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
-    #     ] ;
-    # ] ;
-.
+    #     rr:predicate ont:oecd_476_dose_related_increase_in_mutant_frequency ;
+    #     rr:objectMap [ rr:column "OECD_476_dose related increase in mutant frequency" ; ] ;
+    # ] ; 
 
-# <#SPECIESTriplesMap>
-#     # todo: \"type of study ( in vivo, in vitro, in silico, in chemico\" -> camelcase
-#     rr:logicalTable [ rr:sqlQuery """
-#             WITH RECURSIVE SPECIES (ID, SPECIES, REST) AS 
-# 			( 
-# 				SELECT 
-#                     ID, 
-#                     NULL, 
-#                     SPECIES || ',' 
-#                 FROM (  SELECT 
-#                             ROWNUM() AS ID, 
-#                             \"species/strain\" AS SPECIES 
-#                         FROM MUTAGENICITY WHERE \"species/strain\" IS NOT NULL
-#                 ) 
-# 				UNION ALL 
-# 				SELECT 
-#                     ID, 
-#                     TRIM(SUBSTR(REST, 0, INSTR(REST, ',') - 1)), 
-#                     SUBSTR(REST, INSTR(REST, ',') + 1) 
-#                 FROM SPECIES WHERE REST <> '' 
-# 			) SELECT DISTINCT * FROM SPECIES
-#     """ ] ;
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_mean_number_of_mutants_dose ;
+    #     rr:objectMap [ rr:column "\"OECD_476_mean number of mutants dose\"" ; ] ;
+    # ] ; 
 
-#     rr:subjectMap [
-#         rr:template "http://toxin.vub.be/resource/species/{SPECIES}" ;
-#         rr:class ont:Species ;
-#     ] ;
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_moribound_or_dead_animals_prior_to_study_termination ;
+    #     rr:objectMap [ rr:column "OECD_476_moribound or dead animals prior to study termination" ; ] ;
+    # ] ; 
 
-#     # rr:predicateObjectMap [
-#     #     # CLEANUP ONTOLOGY, NORMALIZE WITH IRIS
-#     #     rr:predicate ont:species_strain ;
-#     #     rr:objectMap [ rr:column "\"species/strain\"" ; ] ;
-#     # ] ; 
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_age_at_start_of_experiment;
+    #     rr:objectMap [ rr:column "\"OECD_476_age at start of experiment\"" ; ] ;
+    # ] ; 
 
-#     rr:predicateObjectMap [
-#         rr:predicate rdfs:label ;
-#         rr:objectMap [ rr:column "SPECIES" ; ] ;
-#     ] ; 
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_sex;
+    #     rr:objectMap [ rr:column "\"OECD_476_SEX\"" ; ] ;
+    # ] ; 
 
-# # .
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_feed;
+    #     rr:objectMap [ rr:column "\"OECD_476_FEED\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_method_of_euthanasia;
+    #     rr:objectMap [ rr:column "\"OECD_476_method of euthanasia\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_animals_group;
+    #     rr:objectMap [ rr:column "\"OECD_476_animals group\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_dose_levels;
+    #     rr:objectMap [ rr:column "\"OECD_476_dose levels\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_dose_volume;
+    #     rr:objectMap [ rr:column "\"OECD_476_dose volume\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_administration_scheme;
+    #     rr:objectMap [ rr:column "\"OECD_476_administration scheme\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_oral;
+    #     rr:objectMap [ rr:column "\"OECD_476_ORAL\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_percent_of_body_surface;
+    #     rr:objectMap [ rr:column "\"OECD_476_% of body surface\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_area_of_body;
+    #     rr:objectMap [ rr:column "\"OECD_476_area of body\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_vehicle;
+    #     rr:objectMap [ rr:column "\"OECD_476_VEHICLE\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_sampling_time;
+    #     rr:objectMap [ rr:column "\"OECD_476_sampling time\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_transgenic_model;
+    #     rr:objectMap [ rr:column "\"OECD_476_transgenic model\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_method_for_dna_isolation;
+    #     rr:objectMap [ rr:column "\"OECD_476_method for DNA isolation\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_method_for_molecular_analysis_of_mutants;
+    #     rr:objectMap [ rr:column "\"OECD_476_method for molecular analysis of mutants\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_sccs_comment_to_test;
+    #     rr:objectMap [ rr:column "\"OECD_476_SCCS comment to test\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_year;
+    #     rr:objectMap [ rr:column "\"OECD_476_YEAR\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_glp;
+    #     rr:objectMap [ rr:column "\"OECD_476_GLP\"" ; ] ;
+    # ] ; 
+    
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_ref_in_dossier;
+    #     rr:objectMap [ rr:column "\"OECD_476_Ref. in dossier\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_range_finding_study;
+    #     rr:objectMap [ rr:column "\"OECD_476_range-finding study study\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_control_group;
+    #     rr:objectMap [ rr:column "\"OECD_476_Control group\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_study_duration;
+    #     rr:objectMap [ rr:column "\"OECD_476_Study duration\"" ; ] ;
+    # ] ; 
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_additional_info;
+    #     rr:objectMap [ rr:column "\"OECD_476_additional info\"" ; ] ;
+    # ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_476_own_comment;
+    #     rr:objectMap [ rr:column "\"OECD_476_own comment\"" ; ] ;
+    # ] ; 
+
+
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_observations ;
+        rr:objectMap [ rr:column "OECD_488_OBSERVATIONS" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_dose_related_increase_in_mutant_frequency ;
+        rr:objectMap [ rr:column "OECD_488_dose related increase in mutant frequency" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_mean_number_of_mutants_dose ;
+        rr:objectMap [ rr:column "\"OECD_488_mean number of mutants dose\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_moribound_or_dead_animals_prior_to_study_termination ;
+        rr:objectMap [ rr:column "OECD_488_moribound or dead animals prior to study termination" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_conclusion;
+        rr:objectMap [ rr:column "\"OECD_488_CONCLUSION\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_homogeneity;
+        rr:objectMap [ rr:column "\"OECD_488_HOMOGENEITY\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_ph;
+        rr:objectMap [ rr:column "\"OECD_488_PH\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_concentration;
+        rr:objectMap [ rr:column "\"OECD_488_concentration (%)\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_composition;
+        rr:objectMap [ rr:column "\"OECD_488_COMPOSITION\"" ; ] ;
+    ] ; 
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_purity;
+        rr:objectMap [ rr:column "\"OECD_488_purity (%)\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_solubility_in_vehicle;
+        rr:objectMap [ rr:column "\"OECD_488_solubility in vehicle\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_chemical_batch_nr;
+        rr:objectMap [ rr:column "\"OECD_488_chemical batch nr\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_additional_info;
+        rr:objectMap [ rr:column "\"OECD_488_additional info\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_species_strain;
+        rr:objectMap [ rr:column "\"OECD_488_species strain\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_source;
+        rr:objectMap [ rr:column "\"OECD_488_SOURCE\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_age_at_start_of_experiment;
+        rr:objectMap [ rr:column "\"OECD_488_age at start of experiment\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_sex;
+        rr:objectMap [ rr:column "\"OECD_488_SEX\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_feed;
+        rr:objectMap [ rr:column "\"OECD_488_FEED\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_method_of_euthanasia;
+        rr:objectMap [ rr:column "\"OECD_488_method of euthanasia\"" ; ] ;
+    ] ; 
+
+    # rr:predicateObjectMap [
+    #     rr:predicate ont:oecd_488_animals_group;
+    #     rr:objectMap [ rr:column "\"OECD_488_animals group\"" ; ] ;
+    # ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_dose_levels;
+        rr:objectMap [ rr:column "\"OECD_488_dose levels\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_dose_volume;
+        rr:objectMap [ rr:column "\"OECD_488_dose volume\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_administration_scheme;
+        rr:objectMap [ rr:column "\"OECD_488_administration scheme\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_oral;
+        rr:objectMap [ rr:column "\"OECD_488_ORAL\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_percent_of_body_surface;
+        rr:objectMap [ rr:column "\"OECD_488_% of body surface\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_area_of_body;
+        rr:objectMap [ rr:column "\"OECD_488_area of body\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_vehicle;
+        rr:objectMap [ rr:column "\"OECD_488_VEHICLE\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_sampling_time;
+        rr:objectMap [ rr:column "\"OECD_488_sampling time\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_transgenic_model;
+        rr:objectMap [ rr:column "\"OECD_488_transgenic model\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_method_for_dna_isolation;
+        rr:objectMap [ rr:column "\"OECD_488_method for DNA isolation\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_method_for_molecular_analysis_of_mutants;
+        rr:objectMap [ rr:column "\"OECD_488_method for molecular analysis of mutants\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_sccs_comment_to_test;
+        rr:objectMap [ rr:column "\"OECD_488_SCCS comment to test\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_year;
+        rr:objectMap [ rr:column "\"OECD_488_YEAR\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_glp;
+        rr:objectMap [ rr:column "\"OECD_488_GLP\"" ; ] ;
+    ] ; 
+    
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_ref_in_dossier;
+        rr:objectMap [ rr:column "\"OECD_488_Ref. in dossier\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_range_finding_study;
+        rr:objectMap [ rr:column "\"OECD_488_range-finding study study\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_control_group;
+        rr:objectMap [ rr:column "\"OECD_488_Control group\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_study_duration;
+        rr:objectMap [ rr:column "\"OECD_488_Study duration\"" ; ] ;
+    ] ; 
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_additional_info;
+        rr:objectMap [ rr:column "\"OECD_488_additional info\"" ; ] ;
+    ] ; 
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_488_own_comment;
+        rr:objectMap [ rr:column "\"OECD_488_own comment\"" ; ] ;
+    ] ; 
