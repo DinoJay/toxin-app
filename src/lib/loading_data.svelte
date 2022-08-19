@@ -1,6 +1,6 @@
 <script>
 	import '../styles/tailwind.css';
-	import Filter from './filter/index.svelte';
+	import App from './App.svelte';
 </script>
 
-<Filter />
+<App />

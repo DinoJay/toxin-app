@@ -1,11 +1,11 @@
 <script>
-	import HealthEffectFilter from './HealthEffect.svelte';
-	import ChemicalCompoundFilter from './ChemicalCompound.svelte';
-	import CompoundList from './CompoundList.svelte';
-	import SafetyAssessment from './SafetyAssessment.svelte';
-	import TestSpecies from './TestSpecies.svelte';
-	import TestConditions from './TestConditions.svelte';
-	import CompoundInfoWrapper from './CompoundInfoWrapper.svelte';
+	import HealthEffectFilter from '$lib/HealthEffect/HealthEffect.svelte';
+	import ChemicalCompoundFilter from '$lib/CompoundInfo/ChemicalCompound.svelte';
+	import CompoundList from '$lib/HealthEffect/CompoundList.svelte';
+	import SafetyAssessment from '$lib/HealthEffect/SafetyAssessment.svelte';
+	import TestSpecies from '$lib/HealthEffect/TestSpecies.svelte';
+	import TestConditions from '$lib/HealthEffect/TestConditions.svelte';
+	import CompoundInfoWrapper from '$lib/CompoundInfo/CompoundInfoWrapper.svelte';
 
 	let promise = null;
 	$: console.log('props ', $$props);
