@@ -7,7 +7,6 @@
 	export let cas_number;
 	export let empirical_formula;
 	export let function_and_uses;
-	console.log('chemical info', $$props);
 </script>
 
 <div class="">

@@ -2,7 +2,7 @@
 	import { ACUTE_TOXICITY, MUTAGENICITY, REPEATED_DOSE_TOXICITY } from '$lib/endpoint_constants';
 
 	import Expandable from '$lib/Expandable.svelte';
-	import { constructQuery } from '$lib/sparql.js';
+	import { constructQuery, getSparqlQueryString } from '$lib/sparql.js';
 	export let openId;
 	export let promise;
 	export let onClick;
@@ -98,7 +98,7 @@
 				class="mt-3 border px-2 py-1 w-full {!valInList && 'opacity-50'}"
 				disabled={!valInList}
 				on:click={() => {
-					promise = fetch(constructQuery(endpoint))
+					promise = fetch(constructQuery({ endpoint }))
 						.then((res) => res.json())
 						.then((res) => ({
 							...res,

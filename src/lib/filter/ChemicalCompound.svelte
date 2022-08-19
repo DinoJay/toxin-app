@@ -4,56 +4,18 @@
 	export let openId;
 	export let onClick;
 	import { wikiDataQuery } from '$lib/compound-api.js';
-	import { constructQuery } from '$lib/sparql';
+	import { constructQuery, getSparqlQueryString } from '$lib/sparql';
 	import Expandable from '$lib/Expandable.svelte';
 	import { casRegex, smilesRegex } from '$lib/chemRegexes';
 	import ArrowRightSFill from 'svelte-remixicon/lib/icons/ArrowRightSFill.svelte';
 	import AttrElement from '$lib/element-list/attrElement.svelte';
+	import { CHEMICAL_IDENTITY } from '$lib/endpoint_constants';
 
 	let inputVal = 'C1=CC(=C(C=C1O)O)O';
 	// let imgPromise = null;
 	let compound = null;
 	// const defaultComp = chemicalIdentity.find((d) => d.smiles.toLowerCase() === q.toLowerCase());
 	console.log('chemicalIdentity', chemicalIdentity);
-
-	const makeSparqlQuery = ({ smiles, cas, inci }) => {
-		const smilesStr = smiles
-			? `?compound ont:SMILES "${smiles}" .`
-			: '?compound ont:SMILES ?smiles .';
-
-		const casStr = cas
-			? `?compound ont:CAS_number "${cas}" .`
-			: '?compound ont:CAS_number ?cas_number .';
-
-		const inciStr = inci ? `?compound ont:INCI "${inci}" .` : '?compound ont:INCI ?inci .';
-
-		return ` 
-			PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-			PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-			PREFIX ont: <http://ontologies.vub.be/oecd#>
-
-			SELECT DISTINCT *
-			{
-				?compound rdfs:label ?label .
-				${smilesStr}
-				?compound ont:SMILES ?smiles .
-				${casStr}
-				?compound ont:CAS_number ?cas_number .
-				${inciStr}
-				?compound ont:INCI ?inci .
-				OPTIONAL { ?compound ont:EC_number ?ec_number .  }
-				OPTIONAL { ?compound ont:additional_info ?additional_info .  }
-				OPTIONAL { ?compound ont:empirical_formula ?empirical_formula .  }
-				OPTIONAL { ?compound ont:function_and_uses ?function_and_uses .  }
-				OPTIONAL { ?compound ont:homogeneity_and_stability ?homogeneity_and_stability .  }
-				OPTIONAL { ?compound ont:impurity ?impurity .  }
-				OPTIONAL { ?compound ont:molecularweight ?molecularweight .  }
-				OPTIONAL { ?compound ont:physical_form ?physical_form .  }
-				OPTIONAL { ?compound ont:primary_name  ?primary_name .  }
-				OPTIONAL { ?compound ont:purity  ?purity .  }
-			}
-	`;
-	};
 </script>
 
 <Expandable open={openId === 'ChemicalCompound'} {onClick}>
@@ -73,9 +35,9 @@
 				else if (smilesMatch) sparqlQueryArg = { smiles: trimmed };
 				else sparqlQueryArg = { inci: trimmed };
 
-				console.log('sparqlQueryArg', sparqlQueryArg);
-
-				return fetch(constructQuery('chemical-identity', makeSparqlQuery(sparqlQueryArg)))
+				const q = constructQuery({ endpoint: CHEMICAL_IDENTITY, ...sparqlQueryArg });
+				console.log('q', q);
+				return fetch(q)
 					.then((res) => res.json())
 					.then((res) => {
 						console.log('res', res);

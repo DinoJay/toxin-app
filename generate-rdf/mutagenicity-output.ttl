@@ -1711,7 +1711,7 @@
 
 <http://toxin.vub.be/resource/test/mutagenicity/206>
         a                               "in vitro" ;
-        a                               <http://ontologies.vub.be/oecd#in%20vitro> , ont:Test ;
+        a                               ont:Test , <http://ontologies.vub.be/oecd#in%20vitro> ;
         rdfs:label                      "1-hexyl 4,5-diamino pyrazole sulfate Test (206)" ;
         ont:compound                    <http://toxin.vub.be/resource/compound/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate> ;
         ont:oecd_476_additional_info    "test substance: 4,5-Diamino-1-hexyl-1H-pyrazole, dihydrochloride" ;

@@ -1,4 +1,4 @@
-import { ACUTE_TOXICITY, MUTAGENICITY, REPEATED_DOSE_TOXICITY } from "./endpoint_constants"
+import { ACUTE_TOXICITY, MUTAGENICITY, REPEATED_DOSE_TOXICITY, CHEMICAL_IDENTITY } from "./endpoint_constants"
 
 export const repeatedDoseToxicityQuery = ` 
 		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -129,15 +129,56 @@ export const repeatedDoseToxicityQuery = `
 		}	
     `
 
-export const getSparqlQueryString = (endp) => {
-	console.log('endp', endp)
-	if (endp === REPEATED_DOSE_TOXICITY)
+
+const chemicalIdentityQuery = ({ smiles, cas, inci }) => {
+	const smilesStr = smiles
+		? `?compound ont:SMILES "${smiles}" .`
+		: '?compound ont:SMILES ?smiles .';
+
+	const casStr = cas
+		? `?compound ont:CAS_number "${cas}" .`
+		: '?compound ont:CAS_number ?cas_number .';
+
+	const inciStr = inci ? `?compound ont:INCI "${inci}" .` : '?compound ont:INCI ?inci .';
+
+	return ` 
+			PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+			PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+			PREFIX ont: <http://ontologies.vub.be/oecd#>
+
+			SELECT DISTINCT *
+			{
+				?compound rdfs:label ?label .
+				${smilesStr}
+				?compound ont:SMILES ?smiles .
+				${casStr}
+				?compound ont:CAS_number ?cas_number .
+				${inciStr}
+				?compound ont:INCI ?inci .
+				OPTIONAL { ?compound ont:EC_number ?ec_number .  }
+				OPTIONAL { ?compound ont:additional_info ?additional_info .  }
+				OPTIONAL { ?compound ont:empirical_formula ?empirical_formula .  }
+				OPTIONAL { ?compound ont:function_and_uses ?function_and_uses .  }
+				OPTIONAL { ?compound ont:homogeneity_and_stability ?homogeneity_and_stability .  }
+				OPTIONAL { ?compound ont:impurity ?impurity .  }
+				OPTIONAL { ?compound ont:molecularweight ?molecularweight .  }
+				OPTIONAL { ?compound ont:physical_form ?physical_form .  }
+				OPTIONAL { ?compound ont:primary_name  ?primary_name .  }
+				OPTIONAL { ?compound ont:purity  ?purity .  }
+			}
+	`;
+};
+
+export const getSparqlQueryString = ({ endpoint, smiles = null, cas = null, inci = null }) => {
+	if (endpoint === REPEATED_DOSE_TOXICITY)
 		return repeatedDoseToxicityQuery
 
-	if (endp === ACUTE_TOXICITY)
+	if (endpoint === ACUTE_TOXICITY)
 		return repeatedDoseToxicityQuery
-	if (endp === MUTAGENICITY)
+	if (endpoint === MUTAGENICITY)
 		return mutagenicityQuery
+	if (endpoint === CHEMICAL_IDENTITY)
+		return chemicalIdentityQuery({ smiles, cas, inci })
 
 }
 
@@ -165,5 +206,5 @@ export const mutagenicityQuery = `
     `
 export const endpointMaker = (n) => `https://wise.vub.ac.be/fuseki/${n}/sparql`;
 // export const endpointMaker = (n) => `http://localhost:3030/${n}/sparql`;
-export const constructQuery = (e) => `${endpointMaker(e)}?query=${encodeURIComponent(getSparqlQueryString(e))}&format=json`;
+export const constructQuery = ({ endpoint, cas = null, inci = null, smiles = null }) => `${endpointMaker(endpoint)}?query=${encodeURIComponent(getSparqlQueryString({ endpoint, cas, inci, smiles }))}&format=json`;
 
