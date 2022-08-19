@@ -1,5 +1,7 @@
+import { ACUTE_TOXICITY, MUTAGENICITY, REPEATED_DOSE_TOXICITY } from "./endpoint_constants";
 
-export default endpoint => obj => {
+const repeatedDoseToxicityCats = (obj) => {
+
     const MORIBOUND_OR_DEAD_ANIMALS_PRIOR_TO_STUDY_TERMINATION =
         'moribound_or_dead_animals_prior_to_study_termination';
     // const MORTILATY_RATE = 'mortality_rate';
@@ -126,4 +128,30 @@ export default endpoint => obj => {
         guideline
         // type
     };
+}
+
+const mutagenicityCats = (obj) => {
+
+    const type = obj.type;
+    const guideline = obj.guideline;
+    const oecd_476_positive_mutant_frequency_result_at_dose = obj.oecd_476_positive_mutant_frequency_result_at_dose;
+    const oecd_476_positive_mutant_frequency_result_at_dose_s9 = obj.oecd_476_positive_mutant_frequency_result_at_dose_s9
+    const oecd_476_outcome = obj.oecd_476_outcome
+    const oecd_476_conclusion = obj.oecd_476_conclusion
+    return {
+        guideline,
+        type,
+        oecd_476_positive_mutant_frequency_result_at_dose,
+        oecd_476_positive_mutant_frequency_result_at_dose_s9,
+        oecd_476_outcome,
+        oecd_476_conclusion
+    };
+}
+
+
+export default endpoint => obj => {
+    if (endpoint === REPEATED_DOSE_TOXICITY || endpoint === ACUTE_TOXICITY)
+        return repeatedDoseToxicityCats(obj)
+    if (endpoint === MUTAGENICITY)
+        return mutagenicityCats(obj)
 };

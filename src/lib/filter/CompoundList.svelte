@@ -14,13 +14,14 @@
 	import getParentCategories from '$lib/getTestParentCategories';
 
 	const { bindings } = results;
-	console.log('$$props', $$props);
+	console.log('$$props compoundlist', $$props);
 	const data = uniqBy(
 		bindings
 			.map(transformObject)
 			.map((d) => ({ ...d, id: d.test, categories: getParentCategories(endpoint)(d) })),
 		(d) => d.id
 	);
+	console.log('bindings', bindings);
 
 	$: filteredData = data.filter((d) => {
 		if (oecd && nonOecd) return true;

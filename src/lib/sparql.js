@@ -1,3 +1,4 @@
+import { ACUTE_TOXICITY, MUTAGENICITY, REPEATED_DOSE_TOXICITY } from "./endpoint_constants"
 
 export const repeatedDoseToxicityQuery = ` 
 		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -129,14 +130,39 @@ export const repeatedDoseToxicityQuery = `
     `
 
 export const getSparqlQueryString = (endp) => {
-    console.log('endp', endp)
-    if (endp === 'repeated-toxicity')
-        return repeatedDoseToxicityQuery
+	console.log('endp', endp)
+	if (endp === REPEATED_DOSE_TOXICITY)
+		return repeatedDoseToxicityQuery
 
-    return repeatedDoseToxicityQuery
+	if (endp === ACUTE_TOXICITY)
+		return repeatedDoseToxicityQuery
+	if (endp === MUTAGENICITY)
+		return mutagenicityQuery
 
 }
 
+export const mutagenicityQuery = ` 
+		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		PREFIX ont: <http://ontologies.vub.be/oecd#>
+
+		SELECT DISTINCT *
+		WHERE {
+			?test a ont:Test .
+			?test ont:compound ?compound .
+			?compound rdfs:label ?compoundLabel .
+			?test rdf:type ?type .
+			#?test rdf:type_of_study ?type_of_study .
+			?test ont:oecd_test_nr ?guideline .
+
+			# OPTIONAL { ?test ont:oecd_476_positive_mutant_frequency_result_at_dose ?oecd_476_positive_mutant_frequency_result_at_dose .  }
+			# OPTIONAL { ?test ont:oecd_476_positive_mutant_frequency_result_at_dose_s9 ?oecd_476_positive_mutant_frequency_result_at_dose_s9 .  }
+			# OPTIONAL { ?test ont:dose_descriptor ?dose_descriptor .  }
+			# OPTIONAL { ?test ont:moribound_or_dead_animals_prior_to_study_termination ?moribound_or_dead_animals_prior_to_study_termination .  }
+			OPTIONAL { ?test ont:oecd_476_outcome ?oecd_476_outcome .  }
+			OPTIONAL { ?test ont:oecd_476_conclusion ?oecd_476_conclusion .  }
+		}
+    `
 export const endpointMaker = (n) => `https://wise.vub.ac.be/fuseki/${n}/sparql`;
 // export const endpointMaker = (n) => `http://localhost:3030/${n}/sparql`;
 export const constructQuery = (e) => `${endpointMaker(e)}?query=${encodeURIComponent(getSparqlQueryString(e))}&format=json`;

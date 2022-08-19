@@ -1,19 +1,20 @@
 <script>
+	import { ACUTE_TOXICITY, MUTAGENICITY, REPEATED_DOSE_TOXICITY } from '$lib/endpoint_constants';
+
 	import Expandable from '$lib/Expandable.svelte';
 	import { constructQuery } from '$lib/sparql.js';
-	import { get } from 'svelte/store';
 	export let openId;
 	export let promise;
 	export let onClick;
 
 	const data = [
-		{ label: 'Acute Toxicity', endpoint: 'acute-toxicity' },
+		{ label: 'Acute Toxicity', endpoint: ACUTE_TOXICITY },
 		{ label: 'Irritation and corrosivity' },
 		{ label: 'Skin sensitisation' },
 		{ label: 'Organ-specific toxicity' },
-		{ label: 'Repeated dose toxicity', endpoint: 'repeated-toxicity' },
+		{ label: 'Repeated dose toxicity', endpoint: REPEATED_DOSE_TOXICITY },
 		{ label: 'Reproductive toxicity' },
-		{ label: 'Mutagenicity / genotoxicity', endpoint: 'mutagenicity' },
+		{ label: 'Mutagenicity / genotoxicity', endpoint: MUTAGENICITY },
 		{ label: 'Carcinogenicity' },
 		{ label: 'Photo-induced toxicity' },
 		{ label: 'Human data' },
@@ -29,8 +30,6 @@
 	$: valInList = !!data.find((d) => d.label.toLowerCase() === val.toLowerCase());
 
 	$: endpoint = data.find((d) => d.label.toLowerCase() === val.toLowerCase())?.endpoint;
-
-	console.log('val', val, 'endpoint', endpoint);
 
 	let oecd = true;
 	let nonOecd = true;
