@@ -7,14 +7,14 @@
 <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%202>
         a             ont:Report ;
         rdfs:label    "hc yellow n° 2" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_038.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%202> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%202> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_038.pdf> .
 
 <http://toxin.vub.be/resource/dossier/quinolinium%2C%204-formyl-1-methyl-%2C%20salt%20with%204-methylbenzene%20sulfonic%20acid%20%281%3A1%29>
         a             ont:Report ;
         rdfs:label    "quinolinium, 4-formyl-1-methyl-, salt with 4-methylbenzene sulfonic acid (1:1)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_080.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/4-formyl-1-methylquinolinium-p-toluenesulfonate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/4-formyl-1-methylquinolinium-p-toluenesulfonate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_080.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/a%29%20cetrimonium%20chloride%2C%20b%29%20steartrimonium%20chloride%2C%20c%29%20behentrimonium%20chloride>
         a                              ont:Compound ;
@@ -67,20 +67,20 @@
 <http://toxin.vub.be/resource/dossier/2-methoxy-methyl-p-phenylenediamine%20and%20its%20sulfate%20salt>
         a             ont:Report ;
         rdfs:label    "2-methoxy-methyl-p-phenylenediamine and its sulfate salt" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_123.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2-methoxy-methyl-p-phenylenediamine%3B%202-methoxy-methyl-p-phenylenediamine%20sulfate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2-methoxy-methyl-p-phenylenediamine%3B%202-methoxy-methyl-p-phenylenediamine%20sulfate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_123.pdf> .
 
 <http://toxin.vub.be/resource/dossier/2%2C6-dihydroxyethylaminotoluene>
         a             ont:Report ;
         rdfs:label    "2,6-dihydroxyethylaminotoluene" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_188.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C6-dihydroxyethylaminotoluene> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C6-dihydroxyethylaminotoluene> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_188.pdf> .
 
 <http://toxin.vub.be/resource/dossier/2%2C6-diaminopyridine>
         a             ont:Report ;
         rdfs:label    "2,6-diaminopyridine" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_084.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C6-diaminopyridine> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C6-diaminopyridine> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_084.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/acid%20orange%207>
         a                              ont:Compound ;
@@ -127,8 +127,8 @@
 <http://toxin.vub.be/resource/dossier/2-amino-4-hydroxyethylaminoanisole%20sulfate>
         a             ont:Report ;
         rdfs:label    "2-amino-4-hydroxyethylaminoanisole sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health//sites/health/files/scientific_committees/consumer_safety/opinions/sccs_o_003.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2-amino-4-hydroxyethylaminoanisole%20sulfate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2-amino-4-hydroxyethylaminoanisole%20sulfate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2F%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fopinions%2Fsccs_o_003.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/5%2C6%2C5’%2C6’-tetraphenyl-3%2C3%27-%281%2C4-phenylene%29bis%5B1%2C2%2C4-triazine%5D>
         a                              ont:Compound ;
@@ -159,8 +159,8 @@
 <http://toxin.vub.be/resource/dossier/acid%20orange%207>
         a             ont:Report ;
         rdfs:label    "acid orange 7" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_158.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/acid%20orange%207> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/acid%20orange%207> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_087.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/retinyl%20acetate>
         a                              ont:Compound ;
@@ -213,20 +213,20 @@
 <http://toxin.vub.be/resource/dossier/2-amino-5-ethylphenol%20HCl>
         a             ont:Report ;
         rdfs:label    "2-amino-5-ethylphenol HCl" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_085.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2-amino-5-ethylphenol%20HCl> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2-amino-5-ethylphenol%20HCl> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_085.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%207>
         a             ont:Report ;
         rdfs:label    "hc yellow n° 7" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_032.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%207> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%207> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_032.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%2017%20%28b121%29>
         a             ont:Report ;
         rdfs:label    "hc yellow n° 17 (b121)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_186.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°17> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°17> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_186.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl>
         a                          ont:Compound ;
@@ -251,8 +251,8 @@
 <http://toxin.vub.be/resource/dossier/1%2C3%2C5-triazine%2C%202%2C4%2C6-tris%281%2C1%27-biphenyl%29-4-yl->
         a             ont:Report ;
         rdfs:label    "1,3,5-triazine, 2,4,6-tris(1,1'-biphenyl)-4-yl-" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_070.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1%2C3%2C5-triazine%2C%202%2C4%2C6-tris%281%2C1%27-biphenyl%29-4-yl-> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1%2C3%2C5-triazine%2C%202%2C4%2C6-tris%281%2C1%27-biphenyl%29-4-yl-> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_070.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/2-amino-4-hydroxyethylaminoanisole%20sulfate>
         a                              ont:Compound ;
@@ -334,14 +334,14 @@
 <http://toxin.vub.be/resource/dossier/phenylene%20bis-diphenyltriazine>
         a             ont:Report ;
         rdfs:label    "phenylene bis-diphenyltriazine" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_215.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/5%2C6%2C5’%2C6’-tetraphenyl-3%2C3%27-%281%2C4-phenylene%29bis%5B1%2C2%2C4-triazine%5D> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/5%2C6%2C5’%2C6’-tetraphenyl-3%2C3%27-%281%2C4-phenylene%29bis%5B1%2C2%2C4-triazine%5D> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_215.pdf> .
 
 <http://toxin.vub.be/resource/dossier/resorcinol>
         a             ont:Report ;
         rdfs:label    "resorcinol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_015.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/resorcinol> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/resorcinol> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_015.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/1%2C3%2C5-triazine%2C%202%2C4%2C6-tris%281%2C1%27-biphenyl%29-4-yl->
         a                              ont:Compound ;
@@ -368,8 +368,8 @@
 <http://toxin.vub.be/resource/dossier/trisodium%20nitrilotriacetate>
         a             ont:Report ;
         rdfs:label    "trisodium nitrilotriacetate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_046.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/trisodium%20nitrilotriacetate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/trisodium%20nitrilotriacetate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_046.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/potassium%20o-phenylphenate>
         a                      ont:Compound ;
@@ -387,8 +387,8 @@
 <http://toxin.vub.be/resource/dossier/alkyl%20%28c16%2C%20C18%2C%20C22%29%20trimethylammonium%20chloride>
         a             ont:Report ;
         rdfs:label    "alkyl (c16, C18, C22) trimethylammonium chloride" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_012.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/a%29%20cetrimonium%20chloride%2C%20b%29%20steartrimonium%20chloride%2C%20c%29%20behentrimonium%20chloride> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/a%29%20cetrimonium%20chloride%2C%20b%29%20steartrimonium%20chloride%2C%20c%29%20behentrimonium%20chloride> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_086.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/zinc%20pyrithione>
         a                              ont:Compound ;
@@ -416,8 +416,8 @@
 <http://toxin.vub.be/resource/dossier/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate>
         a             ont:Report ;
         rdfs:label    "1-hexyl 4,5-diamino pyrazole sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_181.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1-hexyl-1H-pyrazole-4%2C5-diamine%20dihydrochloride> , <http://toxin.vub.be/resource/chemicalidentity/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1-hexyl-1H-pyrazole-4%2C5-diamine%20dihydrochloride> , <http://toxin.vub.be/resource/chemicalidentity/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_181.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hc%20red%20n°%207>
         a                              ont:Compound ;
@@ -444,20 +444,20 @@
 <http://toxin.vub.be/resource/dossier/basic%20red%2051>
         a             ont:Report ;
         rdfs:label    "basic red 51" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_067.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/basic%20red%2051> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/basic%20red%2051> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_067.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hc%20red%20n°%207>
         a             ont:Report ;
         rdfs:label    "hc red n° 7" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_007.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20red%20n°%207> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20red%20n°%207> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_007.pdf> .
 
 <http://toxin.vub.be/resource/dossier/sodium%20perborate%20and%20perboric%20acid>
         a             ont:Report ;
         rdfs:label    "sodium perborate and perboric acid" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_031.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/sodium%20perborate%20and%20perboric%20acid> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/sodium%20perborate%20and%20perboric%20acid> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_031.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hc%20blue%20n°%2015>
         a                              ont:Compound ;
@@ -488,8 +488,8 @@
 <http://toxin.vub.be/resource/dossier/phenoxyethanol>
         a             ont:Report ;
         rdfs:label    "phenoxyethanol" ;
-        rdfs:seeAlso  <http://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_195.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/phenoxyethanol> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/phenoxyethanol> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/http%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_195.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hydroxyethyl-p-phenylenediamine%20sulfate>
         a                              ont:Compound ;
@@ -521,8 +521,8 @@
 <http://toxin.vub.be/resource/dossier/o-aminophenol>
         a             ont:Report ;
         rdfs:label    "o-aminophenol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_025.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/o-aminophenol> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/o-aminophenol> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_025.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%202>
         a                              ont:Compound ;
@@ -586,14 +586,14 @@
 <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%2013>
         a             ont:Report ;
         rdfs:label    "hc yellow n° 13" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_044.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%2013> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%2013> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_044.pdf> .
 
 <http://toxin.vub.be/resource/dossier/p-aminophenol>
         a             ont:Report ;
         rdfs:label    "p-aminophenol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_078.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/p-aminophenol> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/p-aminophenol> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_078.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/2%2C4-diaminophenoxy%20ethanol%20HCl%2C%202%2C4-diaminophenoxyethanol%20sulfate>
         a                              ont:Compound ;
@@ -619,14 +619,14 @@
 <http://toxin.vub.be/resource/dossier/hydroxyethyl-2-nitro-p-toluidine>
         a             ont:Report ;
         rdfs:label    "hydroxyethyl-2-nitro-p-toluidine" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_061.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxyethyl-2-nitro-p-toluidine> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxyethyl-2-nitro-p-toluidine> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_061.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt%20%28A165%29>
         a             ont:Report ;
         rdfs:label    "hydroxypropyl p-phenylenediamine and its dihydrochloride salt (A165)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_230.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxypropyl%20p-phenylenediamine%202HCl%20%28dihydrochloride%20salt%29> , <http://toxin.vub.be/resource/chemicalidentity/hydroxypropyl%20p-phenylenediamine%20%28base%29> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxypropyl%20p-phenylenediamine%202HCl%20%28dihydrochloride%20salt%29> , <http://toxin.vub.be/resource/chemicalidentity/hydroxypropyl%20p-phenylenediamine%20%28base%29> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_230.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/acid%20black%201>
         a                              ont:Compound ;
@@ -651,7 +651,7 @@
 
 <http://toxin.vub.be/resource/chemicalidentity/4-formyl-1-methylquinolinium-p-toluenesulfonate>
         a                              ont:Compound ;
-        rdfs:label                     "4-formyl-1-methylquinolinium-p-toluenesulfonate" , "quinolinium, 4-formyl-1-methyl-, salt with 4-methylbenzene sulfonic acid (1:1)" ;
+        rdfs:label                     "quinolinium, 4-formyl-1-methyl-, salt with 4-methylbenzene sulfonic acid (1:1)" , "4-formyl-1-methylquinolinium-p-toluenesulfonate" ;
         ont:CAS_number                 "223398-02-5" ;
         ont:EC_number                  "453-790-8" ;
         ont:INCI                       "4-formyl-1-methylquinolinium-p-toluenesulfonate" ;
@@ -795,8 +795,8 @@
 <http://toxin.vub.be/resource/dossier/1%2C5-naphthalenediol>
         a             ont:Report ;
         rdfs:label    "1,5-naphthalenediol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_033.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1%2C5-naphthalenediol> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1%2C5-naphthalenediol> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_033.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate>
         a                              ont:Compound ;
@@ -827,8 +827,8 @@
 <http://toxin.vub.be/resource/dossier/acid%20red%2092>
         a             ont:Report ;
         rdfs:label    "acid red 92" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_087.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/acid%20red%2092> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/acid%20red%2092> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_012.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/β-arbutin>
         a                              ont:Compound ;
@@ -854,8 +854,8 @@
 <http://toxin.vub.be/resource/dossier/β-arbutin>
         a             ont:Report ;
         rdfs:label    "β-arbutin" ;
-        rdfs:seeAlso  <http://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_169.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/β-arbutin> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/β-arbutin> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/http%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_169.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/1-hexyl-1H-pyrazole-4%2C5-diamine%20dihydrochloride>
         a                              ont:Compound ;
@@ -897,13 +897,14 @@
 <http://toxin.vub.be/resource/dossier/basic%20red%2076>
         a             ont:Report ;
         rdfs:label    "basic red 76" ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/basic%20red%2076> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/basic%20red%2076> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_158.pdf> .
 
 <http://toxin.vub.be/resource/dossier/triclosan>
         a             ont:Report ;
         rdfs:label    "triclosan" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_166.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/triclosan> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/triclosan> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fph_risk%2Fcommittees%2F04_sccp%2Fdocs%2Fsccp_o_166.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/2-hydroxyethylamino-5-nitroanisole>
         a                              ont:Compound ;
@@ -951,26 +952,26 @@
 <http://toxin.vub.be/resource/dossier/tetrabromophenol%20blue%20%28C183%29>
         a             ont:Report ;
         rdfs:label    "tetrabromophenol blue (C183)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_232.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/tetrabromophenol%20blue> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/tetrabromophenol%20blue> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_232.pdf> .
 
 <http://toxin.vub.be/resource/dossier/5-amino-6-chloro-o-cresol>
         a             ont:Report ;
         rdfs:label    "5-amino-6-chloro-o-cresol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_005.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/5-amino-6-chloro-o-cresol> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/5-amino-6-chloro-o-cresol> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_005.pdf> .
 
 <http://toxin.vub.be/resource/dossier/methoxypropylamino%20cyclohexenylidene%20ethoxyethylcyanoacetate%20%28S87%29>
         a             ont:Report ;
         rdfs:label    "methoxypropylamino cyclohexenylidene ethoxyethylcyanoacetate (S87)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_227.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/methoxypropylamino%20cyclohexenylidene%20ethoxyethylcyanoacetate%20%28S87%29> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/methoxypropylamino%20cyclohexenylidene%20ethoxyethylcyanoacetate%20%28S87%29> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_227.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hydroxyethyl-p-phenylenediamine%20sulfate>
         a             ont:Report ;
         rdfs:label    "hydroxyethyl-p-phenylenediamine sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_017.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxyethyl-p-phenylenediamine%20sulfate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxyethyl-p-phenylenediamine%20sulfate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_017.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/vitamin%20a>
         a                      ont:Compound ;
@@ -986,8 +987,8 @@
 <http://toxin.vub.be/resource/dossier/vetiveryl%20acetate>
         a             ont:Report ;
         rdfs:label    "vetiveryl acetate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_167.pdf; https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_221.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/subm.%202%3A%20vetiveryl%20acetate.%20subm.%203%3A%20acetylated%20vetiver%20oil%20%28avo%29> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/subm.%202%3A%20vetiveryl%20acetate.%20subm.%203%3A%20acetylated%20vetiver%20oil%20%28avo%29> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_167.pdf%3B%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_221.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/4-nitrophenyl%20aminoethylurea>
         a                              ont:Compound ;
@@ -1086,8 +1087,8 @@
 <http://toxin.vub.be/resource/dossier/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate>
         a             ont:Report ;
         rdfs:label    "1-hydroxyethyl-4,5-diamino pyrazole sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_079.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_079.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/1%2C2%2C4-trihydroxybenzene>
         a                              ont:Compound ;
@@ -1113,8 +1114,8 @@
 <http://toxin.vub.be/resource/dossier/polysilicone-15>
         a             ont:Report ;
         rdfs:label    "polysilicone-15" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_024.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/polysilicone-15> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/polysilicone-15> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_024.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl>
         a                              ont:Compound ;
@@ -1159,26 +1160,26 @@
 <http://toxin.vub.be/resource/dossier/2-hydroxyethylamino-5-nitroanisole>
         a             ont:Report ;
         rdfs:label    "2-hydroxyethylamino-5-nitroanisole" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/ph_risk/committees/04_sccs/docs/sccs_o_001.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2-hydroxyethylamino-5-nitroanisole> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2-hydroxyethylamino-5-nitroanisole> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fph_risk%2Fcommittees%2F04_sccs%2Fdocs%2Fsccs_o_001.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°9>
         a             ont:Report ;
         rdfs:label    "hc yellow n°9" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_026.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°9> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°9> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_026.pdf> .
 
 <http://toxin.vub.be/resource/dossier/methylimidazoliumpropyl%20p-phenylenediamine%20HCl%20%28A166%29>
         a             ont:Report ;
         rdfs:label    "methylimidazoliumpropyl p-phenylenediamine HCl (A166)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_231.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/methylimidazoliumpropyl%20p-phenylenediamine%20HCl%20%28A166%29> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/methylimidazoliumpropyl%20p-phenylenediamine%20HCl%20%28A166%29> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_231.pdf> .
 
 <http://toxin.vub.be/resource/dossier/vitamin%20a>
         a             ont:Report ;
         rdfs:label    "vitamin a" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_199.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/retinyl%20palmitate> , <http://toxin.vub.be/resource/chemicalidentity/retinyl%20acetate> , <http://toxin.vub.be/resource/chemicalidentity/retinol> , <http://toxin.vub.be/resource/chemicalidentity/vitamin%20a> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/retinyl%20palmitate> , <http://toxin.vub.be/resource/chemicalidentity/retinyl%20acetate> , <http://toxin.vub.be/resource/chemicalidentity/retinol> , <http://toxin.vub.be/resource/chemicalidentity/vitamin%20a> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_199.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate>
         a                              ont:Compound ;
@@ -1268,14 +1269,14 @@
 <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%204>
         a             ont:Report ;
         rdfs:label    "hc yellow n° 4" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_008.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%204> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%204> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_008.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hydroxyethoxyphenyl%20butanone>
         a             ont:Report ;
         rdfs:label    "hydroxyethoxyphenyl butanone" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_225.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxyethoxyphenyl%20butanone> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxyethoxyphenyl%20butanone> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_225.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hydroxyethoxyphenyl%20butanone>
         a                              ont:Compound ;
@@ -1327,8 +1328,8 @@
 <http://toxin.vub.be/resource/dossier/picramic%20acid%20and%20sodium%20picramate>
         a             ont:Report ;
         rdfs:label    "picramic acid and sodium picramate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_042.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/sodium%20picramate> , <http://toxin.vub.be/resource/chemicalidentity/picramic%20acid> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/sodium%20picramate> , <http://toxin.vub.be/resource/chemicalidentity/picramic%20acid> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_042.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/p-aminophenol>
         a                              ont:Compound ;
@@ -1423,14 +1424,14 @@
 <http://toxin.vub.be/resource/dossier/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine>
         a             ont:Report ;
         rdfs:label    "2,6-diamino-3-((pyridin-3-yl)azo)pyridine" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_065.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C6-diamino-3-%28%28pyridine-3-yl%29azo%29pyridine> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C6-diamino-3-%28%28pyridine-3-yl%29azo%29pyridine> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_065.pdf> .
 
 <http://toxin.vub.be/resource/dossier/toluene-2%2C5-diamine%20and%20its%20sulfate>
         a             ont:Report ;
         rdfs:label    "toluene-2,5-diamine and its sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_052.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/toluene-2%2C5-diamine%20sulfate> , <http://toxin.vub.be/resource/chemicalidentity/toluene-2%2C5-diamine> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/toluene-2%2C5-diamine%20sulfate> , <http://toxin.vub.be/resource/chemicalidentity/toluene-2%2C5-diamine> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_052.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/triclosan>
         a                              ont:Compound ;
@@ -1458,7 +1459,6 @@
 <http://toxin.vub.be/resource/dossier/basic%20violet%202>
         a             ont:Report ;
         rdfs:label    "basic violet 2" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_066.pdf> ;
         ont:contains  <http://toxin.vub.be/resource/chemicalidentity/basic%20violet%202> .
 
 <http://toxin.vub.be/resource/chemicalidentity/trisodium%20nitrilotriacetate>
@@ -1483,8 +1483,8 @@
 <http://toxin.vub.be/resource/dossier/n-methyl-2-pyrrolidone%20%28NMP%29>
         a             ont:Report ;
         rdfs:label    "n-methyl-2-pyrrolidone (NMP)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1-methylpyrrolidin-2-one> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1-methylpyrrolidin-2-one> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_050.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/basic%20violet%202>
         a                              ont:Compound ;
@@ -1512,26 +1512,26 @@
 <http://toxin.vub.be/resource/dossier/4-nitrophenyl%20aminoethylurea>
         a             ont:Report ;
         rdfs:label    "4-nitrophenyl aminoethylurea" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_036.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/4-nitrophenyl%20aminoethylurea> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/4-nitrophenyl%20aminoethylurea> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_036.pdf> .
 
 <http://toxin.vub.be/resource/dossier/1%2C2%2C4-trihydroxybenzene>
         a             ont:Report ;
         rdfs:label    "1,2,4-trihydroxybenzene" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_222.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1%2C2%2C4-trihydroxybenzene> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/1%2C2%2C4-trihydroxybenzene> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_222.pdf> .
 
 <http://toxin.vub.be/resource/dossier/4-amino-2-nitrodiphenylamine-2%27-carboxylic%20acid>
         a             ont:Report ;
         rdfs:label    "4-amino-2-nitrodiphenylamine-2'-carboxylic acid" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_058.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/4-amino-2-nitrodiphenylamine-2%27-carboxylic%20acid> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/4-amino-2-nitrodiphenylamine-2%27-carboxylic%20acid> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_058.pdf> .
 
 <http://toxin.vub.be/resource/dossier/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate>
         a             ont:Report ;
         rdfs:label    "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_177.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/potassium%20o-phenylphenate> , <http://toxin.vub.be/resource/chemicalidentity/sodium%20o-phenylphenate> , <http://toxin.vub.be/resource/chemicalidentity/o-phenylphenol> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/potassium%20o-phenylphenate> , <http://toxin.vub.be/resource/chemicalidentity/sodium%20o-phenylphenate> , <http://toxin.vub.be/resource/chemicalidentity/o-phenylphenol> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_177.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/2%2C6-diamino-3-%28%28pyridine-3-yl%29azo%29pyridine>
         a                              ont:Compound ;
@@ -1561,14 +1561,14 @@
 <http://toxin.vub.be/resource/dossier/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate>
         a             ont:Report ;
         rdfs:label    "2,4-diaminophenoxyethanol dihydrochloride and sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_035.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C4-diaminophenoxy%20ethanol%20HCl%2C%202%2C4-diaminophenoxyethanol%20sulfate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C4-diaminophenoxy%20ethanol%20HCl%2C%202%2C4-diaminophenoxyethanol%20sulfate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_035.pdf> .
 
 <http://toxin.vub.be/resource/dossier/basic%20brown%2017>
         a             ont:Report ;
         rdfs:label    "basic brown 17" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_086.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/basic%20brown%2017> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/basic%20brown%2017> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_089.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°9>
         a                              ont:Compound ;
@@ -1638,20 +1638,20 @@
 <http://toxin.vub.be/resource/dossier/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate>
         a             ont:Report ;
         rdfs:label    "2,5,6-triamino-4-pyrimidinol sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_185.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_185.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl>
         a             ont:Report ;
         rdfs:label    "hydroxyethyl-3,4-methylenedioxyaniline HCl" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_006.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_006.pdf> .
 
 <http://toxin.vub.be/resource/dossier/acid%20black%201>
         a             ont:Report ;
         rdfs:label    "acid black 1" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_018.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/acid%20black%201> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/acid%20black%201> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_018.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/toluene-2%2C5-diamine%20sulfate>
         a                          ont:Compound ;
@@ -1687,14 +1687,14 @@
 <http://toxin.vub.be/resource/dossier/4-chlororesorcinol>
         a             ont:Report ;
         rdfs:label    "4-chlororesorcinol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_016.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/4-chlororesorcinol> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/4-chlororesorcinol> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_016.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hydroxypropyl%20bis%28N-hydroxyethyl-p-phenylenediamine%29%20HCl>
         a             ont:Report ;
         rdfs:label    "hydroxypropyl bis(N-hydroxyethyl-p-phenylenediamine) HCl" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_011.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_011.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/5-amino-6-chloro-o-cresol>
         a                              ont:Compound ;
@@ -1719,8 +1719,8 @@
 <http://toxin.vub.be/resource/dossier/n%2Cn%27-bis-%282-hydroxyethyl%29-2-nitro-p-phenylenediamine%20%28B34%29>
         a             ont:Report ;
         rdfs:label    "n,n'-bis-(2-hydroxyethyl)-2-nitro-p-phenylenediamine (B34)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_196.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/n%2Cn’-bis-%282-hydroxyethyl%29-2-nitro-p-phenylenediamine> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/n%2Cn’-bis-%282-hydroxyethyl%29-2-nitro-p-phenylenediamine> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_196.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hc%20red%20n°%203>
         a                              ont:Compound ;
@@ -1849,8 +1849,8 @@
 <http://toxin.vub.be/resource/dossier/hc%20red%20n°%203>
         a             ont:Report ;
         rdfs:label    "hc red n° 3" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_043.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20red%20n°%203> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20red%20n°%203> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_043.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/2%2C6-diaminopyridine>
         a                              ont:Compound ;
@@ -1877,14 +1877,14 @@
 <http://toxin.vub.be/resource/dossier/zinc%20pyrithione>
         a             ont:Report ;
         rdfs:label    "zinc pyrithione" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_133.pdf/https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_236.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/zinc%20pyrithione> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/zinc%20pyrithione> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_133.pdf%2Fhttps%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_236.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hc%20blue%20n°%2015>
         a             ont:Report ;
         rdfs:label    "hc blue n° 15" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_089.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20blue%20n°%2015> .
+        ont:contains  <http://toxin.vub.be/resource/chemicalidentity/hc%20blue%20n°%2015> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_066.pdf> .
 
 <http://toxin.vub.be/resource/chemicalidentity/hc%20yellow%20n°%2013>
         a                              ont:Compound ;

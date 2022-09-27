@@ -1,0 +1,154 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ont: <http://ontologies.vub.be/oecd#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<#PDFlinkTriplesFirstMap>
+    rr:logicalTable [ rr:sqlQuery """
+                WITH RECURSIVE PDFLINKFIRST (ID, PDFLINKFIRST, REST) AS
+                            (
+                                    SELECT
+                        ID,
+                        NULL,
+                        PDFLINKFIRST || ','
+                    FROM (  SELECT
+                                ROWNUM() AS ID,
+                                \"PDF link\" AS PDFLINKFIRST
+                            FROM SKINSENSITISATION_UNMERGED WHERE \"PDF link\" IS NOT NULL
+                    )
+                                    UNION ALL
+                                    SELECT
+                        ID,
+                        TRIM(SUBSTR(REST, 0, INSTR(REST, ',') - 1)),
+                        SUBSTR(REST, INSTR(REST, ',') + 1)
+                    FROM PDFLINKFIRST WHERE REST <> ''
+                            ) SELECT DISTINCT * FROM PDFLINKFIRST
+        """ ] ;
+
+            rr:subjectMap [
+        rr:template "http://toxin.vub.be/resource/pdfLink/{PDFLINKFIRST}" ;
+    ] ;
+.
+
+<#DossierTriplesMap>
+    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM SKINSENSITISATION_UNMERGED" ] ;
+
+
+    rr:subjectMap [
+        rr:template "http://toxin.vub.be/resource/dossier/{DOSSIER}" ;
+        rr:class ont:Report ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:contains ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#TestTriplesMap> ; 
+            rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [ rr:column "DOSSIER" ; ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:seeAlso;
+        rr:objectMap [
+            rr:parentTriplesMap <#PDFlinkTriplesFirstMap> ;
+            rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
+        ] ;
+    ] ;
+.
+
+<#CompoundTriplesMap>
+    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM SKINSENSITISATION_UNMERGED" ] ;
+
+    rr:subjectMap [
+        rr:template "http://toxin.vub.be/resource/compound/{DOSSIER}" ;
+        rr:class ont:Compound ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [ rr:column "DOSSIER" ; ] ;
+    ] ;
+.
+
+<#TestTriplesMap>
+    # todo: \"type of study ( in vivo, in vitro, in silico, in chemico\" -> camelcase
+    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM SKINSENSITISATION_UNMERGED" ] ;
+
+    ## BEGIN LINK WITH COMPOUND
+    rr:predicateObjectMap [
+        rr:predicate ont:compound ;
+        rr:objectMap [ 
+            rr:parentTriplesMap <#CompoundTriplesMap> ; 
+            rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
+        ] ;
+    ] ;
+    ### END LINK WITH COMPOUND
+
+    rr:subjectMap [
+        rr:template "http://toxin.vub.be/resource/test/skinsensitisation-unmerged/{ID}" ;
+        rr:class ont:Test ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [ rr:template "{DOSSIER} Test ({ID})" ; rr:termType rr:Literal ;] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [ rr:template "http://ontologies.vub.be/oecd#{type of study}" ; ] ;
+        rr:objectMap [ rr:column "type of study" ; ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:oecd_test_nr ;
+        rr:objectMap [ rr:column "\"GUIDELINE\"" ; ] ;
+    ] ; 
+
+#observations and recording of toxicity	stimulation index (SI)	
+    rr:predicateObjectMap [
+        rr:predicate ont:429_observations_and_recording_of_toxicity ;
+        rr:objectMap [ rr:column "\"429_442A_442B_observations and recording of toxicity\"" ; ] ;
+    ] ; 
+
+#stimulation index (SI)
+#ATP measurments	
+#relative luminecence units (RLU)	
+#BrdI labelling index	
+#erythema scores	
+#ear thickness	
+#conclusion	
+#homogeneity	
+#pH	
+#physical form	
+#concentration (%)	
+#composition	
+#purity (%)	
+#solubility in vehicle	
+#chemical batch nr	
+#additional info	
+#species/strain	
+#source	
+#age at start of experiment	
+#sex	
+#feed	
+#n animals / group	
+#deviation from guideline	
+#dose levels	
+# volume	
+#administration scheme	
+#vehicle	
+#year	
+#GLP	
+#SCCS comment to test	
+#Ref. in dossier	
+#control group	
+#preliminary test	
+#additional information	
+#own comments

@@ -1,0 +1,1563 @@
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix ont:   <http://ontologies.vub.be/oecd#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://toxin.vub.be/resource/dossier/hc%20red%20n°%2016>
+        a             ont:Report ;
+        rdfs:label    "hc red n° 16" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/135> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/dossier/basic%20orange%2031>
+        a             ont:Report ;
+        rdfs:label    "basic orange 31" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/131> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/130> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf%20%26%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/17>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (17)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/148>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (148)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/compound/tetrabromophenol%20blue>
+        a           ont:Compound ;
+        rdfs:label  "tetrabromophenol blue" .
+
+<http://toxin.vub.be/resource/dossier/β-arbutin>
+        a             ont:Report ;
+        rdfs:label    "β-arbutin" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/9> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_167.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/127>
+        a                 ont:Test ;
+        rdfs:label        "hc blue n° 15 Test (127)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "morbidity/mortality checks were performed twice daily. clinical examinations were performed daily. Individual body weights were recorded on days -1 and 5. all animals were sacrificed on day 5 for the assessment of cell proliferation. no mortality was observed during the study. there were no treatment-related clinical signs. there were no treatment-related effects on body weight or body weight gains. the test substance induced a negative response, as it did not elicit a least a 3-fold increase in isotope incorporation relative to the vehicle. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20blue%20n°%2015> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/106>
+        a                 ont:Test ;
+        rdfs:label        "basic red 51 Test (106)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20red%2051> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/compound/phenylene%20bis-diphenyltriazine>
+        a           ont:Compound ;
+        rdfs:label  "phenylene bis-diphenyltriazine" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/88>
+        a             ont:Test ;
+        rdfs:label    "o-aminophenol Test (88)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/o-aminophenol> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/67>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (67)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/46>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/25>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (25)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/compound/vitamin%20a>
+        a           ont:Compound ;
+        rdfs:label  "vitamin a" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/156>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (156)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/dossier/methoxypropylamino%20cyclohexenylidene%20ethoxyethylcyanoacetate%20%28S87%29>
+        a             ont:Report ;
+        rdfs:label    "methoxypropylamino cyclohexenylidene ethoxyethylcyanoacetate (S87)" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/90> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_038.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/135>
+        a                 ont:Test ;
+        rdfs:label        "hc red n° 16 Test (135)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no clinical signs were observed in any animals of the control group and the low and mid dose group. on the second application day, all mice of the high dose group excreted deep yellow urine, persisting for a total of three days." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20red%20n°%2016> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/114>
+        a                 ont:Test ;
+        rdfs:label        "2,4-diaminophenoxyethanol dihydrochloride and sulfate Test (114)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "in 2,4-diaminophenoxyethanol dihydrochloride groups, a dose-related increase in stimulation index was observed, and the threshold positive value of 3 was exceeded at concentrations of 5 and 10%. in the absence of local irritation attributed to 2,4- diaminophenoxyethanol dihydrochloride, these lymphoproliferative responses were attributed to delayed contact hypersensitivity, and the EC3 value was calculated to be 3.2%. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/compound/hc%20red%20n°%207>
+        a           ont:Compound ;
+        rdfs:label  "hc red n° 7" .
+
+<http://toxin.vub.be/resource/compound/vetiveryl%20acetate>
+        a           ont:Compound ;
+        rdfs:label  "vetiveryl acetate" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/96>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n°9 Test (96)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "the stimulation index was lower than 3 at all the five concentrations assayed. no dose related effect was observed. hc yellow n° 9 at concentrations up to 1% did not induce delayed contact hypersensitivity in the murine local lymph node assay. no cutaneous reactions and no noteworthy increase in ear thickness were observed in the animals of the treated groups." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°9> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%207>
+        a             ont:Report ;
+        rdfs:label    "hc yellow n° 7" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/120> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_082.pdf> .
+
+<http://toxin.vub.be/resource/dossier/1%2C2%2C4-trihydroxybenzene%20>
+        a             ont:Report ;
+        rdfs:label    "1,2,4-trihydroxybenzene " ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/2> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/1> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_222.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_113.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/75>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 4 Test (75)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/compound/basic%20orange%2031>
+        a           ont:Compound ;
+        rdfs:label  "basic orange 31" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/54>
+        a                 ont:Test ;
+        rdfs:label        "picramic acid and sodium picramate Test (54)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "the calculated EC3 value for sodium picramate was 6.7% w/v. For the positive control, α-hexylcinnamaldehyde was 12.96%. therefore, sodium picramate is a skin sensitiser. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/picramic%20acid%20and%20sodium%20picramate> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/33>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (33)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/12>
+        a                 ont:Test ;
+        rdfs:label        "vetiveryl acetate Test (12)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no erythema or oedema was noted in any of the mice at any time during the study,  there were no statistically significant differences in mean body weights at day 1 and day 6 or in mean body weight changes. the lymph nodes from all mice treated with the test substance at 25% and with HCA at 35% were enlarged, but otherwise appeared normal. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/vetiveryl%20acetate> ;
+        ont:oecd_test_nr  "OECD TG 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/143>
+        a             ont:Test ;
+        rdfs:label    "butylphenyl methylpropional (p-bmhca) Test (143)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/6>
+        a                 ont:Test ;
+        rdfs:label        "vitamin a Test (6)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/vitamin%20a> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/122>
+        a                 ont:Test ;
+        rdfs:label        "2,6-diamino-3-((pyridin-3-yl)azo)pyridine  Test (122)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine%20> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/101>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 17 (b121) Test (101)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "mild local irritation was observed using the highest concentrations of hc yellow no.17. SI’s higher than 3 were observed for the test concentrations at and above 1 (4.3 for 1% to 19.7 for 50%) suggesting a high sensitising potency. because an EC3 could not be calculated, the second experiment with lower concentrations of hc yellow no.17 was conducted. based on the calculated EC value of 0.7% once solutions of 2,5%, 1%, 0,5%, 0,25% and 0,1% w/v were used, it was concluded that hc yellow no.17 has sensitising potential. the validity criteria were fulfilled in both. SI values of 9.1 and 6.1 were obtained with the positive control HCA in the first and second experiments, respectively. the lymphoproliferative responses were observed at all concentrations tested in the first experiment. it was attributed to delayed contact hypersensitivity in the absence of excessive local irritation" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%2017%20%28b121%29> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/compound/p-aminophenol>
+        a           ont:Compound ;
+        rdfs:label  "p-aminophenol" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/83>
+        a             ont:Test ;
+        rdfs:label    "o-aminophenol Test (83)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/o-aminophenol> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/62>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (62)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/41>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (41)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/20>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/151>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (151)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "non oecd" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/130>
+        a                 ont:Test ;
+        rdfs:label        "basic orange 31 Test (130)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20orange%2031> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/dossier/bis%28butylbenzoate%29%20diaminotriazine%20aminopropyltrisiloxane>
+        a             ont:Report ;
+        rdfs:label    "bis(butylbenzoate) diaminotriazine aminopropyltrisiloxane" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/138> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/dossier/vitamin%20a>
+        a             ont:Report ;
+        rdfs:label    "vitamin a" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/8> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/6> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/5> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/4> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/http%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_169.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_199.pdf> .
+
+<http://toxin.vub.be/resource/dossier/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt>
+        a             ont:Report ;
+        rdfs:label    "hydroxypropyl p-phenylenediamine and its dihydrochloride salt" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/49> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_231.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/109>
+        a                 ont:Test ;
+        rdfs:label        "1,3,5-triazine, 2,4,6-tris[1,1’-biphenyl]-4-yl- Test (109)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no cutaneous reactions and no increase in ear thickness were observed in the animals of the treated groups. a positive lymphoproliferative response (SI >3) was noted at the concentration of 0.5%. however, as no positive response and no dose-response relationship were observed at the highest tested concentrations, this positive response could not be considered as biologically relevant. it is concluded that under these experimental conditions, the test item fat 65’080/a does not induce delayed contact hypersensitivity in the murine local lymph node assay." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/1%2C3%2C5-triazine%2C%202%2C4%2C6-tris%5B1%2C1’-biphenyl%5D-4-yl-> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/dossier/basic%20red%2076>
+        a             ont:Report ;
+        rdfs:label    "basic red 76" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/132> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf%20%26%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/compound/sodium%20perborate%20monohydrate>
+        a           ont:Compound ;
+        rdfs:label  "sodium perborate monohydrate" .
+
+<http://toxin.vub.be/resource/dossier/o-aminophenol>
+        a             ont:Report ;
+        rdfs:label    "o-aminophenol" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/88> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/86> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/87> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/85> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/84> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/83> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_017.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_038.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_225.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_026.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/91>
+        a                 ont:Test ;
+        rdfs:label        "hydroxyethyl-p-phenylenediamine sulfate Test (91)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hydroxyethyl-p-phenylenediamine%20sulfate> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%202>
+        a             ont:Report ;
+        rdfs:label    "hc yellow n° 2" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/100> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/99> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/98> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/97> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_079.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_070.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_181.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/70>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (70)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate>
+        a           ont:Compound ;
+        rdfs:label  "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate" .
+
+<http://toxin.vub.be/resource/compound/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate>
+        a           ont:Compound ;
+        rdfs:label  "1-hydroxyethyl-4,5-diamino pyrazole sulfate" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/49>
+        a                 ont:Test ;
+        rdfs:label        "hydroxypropyl p-phenylenediamine and its dihydrochloride salt Test (49)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "in the preliminary assay, treated mice showed no sign of toxicity at the dose concentration of 1.0%, 5.0%, 10.0% and 25% (w/v). there was no noteworthy increase observed in ear thickness measurement. there were lymphoproliferative responses with SI values of 1.72, 2.35, 3.53, 15.97 and 19.2 obtained at hydroxypropyl p-phenylenediamine HCl concentrations of 1%, 2.5%, 5%, 10% and 25%, respectively. the threshold value of 3 for positive results was exceeded at 5%, and the EC3 value was calculated to be 3.88%. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt> ;
+        ont:oecd_test_nr  "429, EC B.42" .
+
+<http://toxin.vub.be/resource/dossier/hc%20blue%20n°%2015>
+        a             ont:Report ;
+        rdfs:label    "hc blue n° 15" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/127> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_055.pdf> .
+
+<http://toxin.vub.be/resource/dossier/2-amino-5-ethylphenol%20HCl>
+        a             ont:Report ;
+        rdfs:label    "2-amino-5-ethylphenol HCl" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/125> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_182.pdf> .
+
+<http://toxin.vub.be/resource/dossier/hc%20red%20n°%207>
+        a             ont:Report ;
+        rdfs:label    "hc red n° 7" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/103> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_035.pdf> .
+
+<http://toxin.vub.be/resource/compound/n%2Cn’-bis-%282-hydroxyethyl%29-2-nitro-p-phenylenediamine>
+        a           ont:Compound ;
+        rdfs:label  "n,n’-bis-(2-hydroxyethyl)-2-nitro-p-phenylenediamine" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/28>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (28)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/138>
+        a                 ont:Test ;
+        rdfs:label        "bis(butylbenzoate) diaminotriazine aminopropyltrisiloxane Test (138)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no mortality and no clinical signs were observed during the study. among the different concentrations of test item applied, the highest concentration (25%) revealed to be slightly irritant based on an increase in ear thickness. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/bis%28butylbenzoate%29%20diaminotriazine%20aminopropyltrisiloxane> ;
+        ont:oecd_test_nr  "OECD TG 429 / EC B.42" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/1>
+        a                 ont:Test ;
+        rdfs:label        "1,2,4-trihydroxybenzene  Test (1)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no clinical signs and no mortality related to treatment were observed during the study. in the first experiment, dryness of the skin was noted on day 6 in 2/4 and 4/4 animals given 1,2,4-trihydroxybenzene at the concentrations of 1 and 2.5%, respectively. in addition, a moderate increase in ear thickness shows the irritant potential of 1,2,4-trihydroxybenzene at mentioned concentrations. no cutaneous reactions and no noteworthy increases in ear thickness were observed in the second experiment. in the first experiment, positive lympho-proliferative responses were observed at all tested concentrations but without clear evidence of a dose-response relationship. in the absence of local irritation, the positive responses observed at the concentrations of 0.25 and 0.5% were attributed to delayed contact hypersensitivity. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/1%2C2%2C4-trihydroxybenzene%20> ;
+        ont:oecd_test_nr  "429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/117>
+        a             ont:Test ;
+        rdfs:label    "n-methyl-2-pyrrolidone (NMP) Test (117)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> .
+
+<http://toxin.vub.be/resource/compound/1%2C3%2C5-triazine%2C%202%2C4%2C6-tris%5B1%2C1’-biphenyl%5D-4-yl->
+        a           ont:Compound ;
+        rdfs:label  "1,3,5-triazine, 2,4,6-tris[1,1’-biphenyl]-4-yl-" .
+
+<http://toxin.vub.be/resource/compound/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt>
+        a           ont:Compound ;
+        rdfs:label  "hydroxypropyl p-phenylenediamine and its dihydrochloride salt" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/99>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 2 Test (99)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%202> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/78>
+        a                 ont:Test ;
+        rdfs:label        "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate Test (78)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
+        ont:oecd_test_nr  "OECD TG 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/57>
+        a                 ont:Test ;
+        rdfs:label        "phenylene bis-diphenyltriazine Test (57)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "amount of cells, cellularity index and stimulation index of so2771 at 6.25%, 12.5% and mainly at 25% were higher than the values found for the vehicle. stimulation index of so2771 6.25%, 12.5% and 25% were in the range of the values found for the vehicle. whatever the dose tested, so2771 did not produce a SI equal to or greater than 3. consequently, the EC3 value, defined as the theoretical concentration resulting in a SI value of 3, cannot be calculated for so2771. DNCB at 0.5% showed a statistically significant stimulation index of 3.3. DNCB at 0.5% induced a cellularity index of 5.3 with a total amount of viable cells per node of 17.9 x 106 compared to 3.4 x 106 with the vehicle control group. a statistically significant increase of 35% in ear thickness was observed on day 3 compared with the vehicle control group." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/phenylene%20bis-diphenyltriazine> ;
+        ont:oecd_test_nr  "OECD TG442B" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/36>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (36)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/compound/disperse%20violet%201>
+        a           ont:Compound ;
+        rdfs:label  "disperse violet 1" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/15>
+        a                 ont:Test ;
+        rdfs:label        "trisodium nitrilotriacetat Test (15)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetat> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204>
+        a           ont:Compound ;
+        rdfs:label  "hc yellow n° 4" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/146>
+        a             ont:Test ;
+        rdfs:label    "butylphenyl methylpropional (p-bmhca) Test (146)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/9>
+        a                 ont:Test ;
+        rdfs:label        "β-arbutin Test (9)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/β-arbutin> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/125>
+        a                 ont:Test ;
+        rdfs:label        "2-amino-5-ethylphenol HCl Test (125)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "animals were checked for morbidity/mortality at least once daily. observation for clinical signs was done before and once per day after dosing. body weight was determined at day - 1 and day 5. at day 5, the mice received an intravenous injection of 250 µl solution containing 22.6 µCi of [H3] methyl thymidine. approximately 5 h later, the mice were sacrificed, and the draining auricular lymph nodes were removed and collected in PBS. after preparing a single cell suspension for each mouse, cells were precipitated by 5% trichloro-acetic acid (TCA), and the radioactivity was determined (incorporation of [H3] methyl thymidine in the pellets) by means of liquid scintillation counting as disintegration per minute (dpm). the positive control ppd at a concentration of 1% in dmso gave a mean stimulation index of 6.6. in dmso, 2-amino-5-ethylphenol phosphate was positive in the local lymph node assay, as there was more than 3-fold increase in isotope incorporation in the draining auricular lymph nodes relative to the vehicle. the mean stimulation indices were 1.3, 2.1, 1.8 and 4.9 at the concentrations of 0.5%, 1.5%, 5.0% and 15.0%, respectively. the EC3 value was 8.9% in DMSO. in acetone/water/olive oil, 2-amino-5-ethylphenol phosphate was negative in the local lymph node assay, as there was less than a 3-fold increase in isotope incorporation in the draining auricular lymph nodes relative to the vehicle. the mean stimulation indices were 0.9, 1.2, 1.2 and 1.3 at the concentrations of 0.5%, 1.5%, 5.0% and 15.0%, respectively. an EC3 value could therefore not be calculated. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2-amino-5-ethylphenol%20HCl> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/104>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°9>
+        a           ont:Compound ;
+        rdfs:label  "hc yellow n°9" .
+
+<http://toxin.vub.be/resource/dossier/hydroxyethyl-2-nitro-p-toluidine>
+        a             ont:Report ;
+        rdfs:label    "hydroxyethyl-2-nitro-p-toluidine" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/72> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_177.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/86>
+        a             ont:Test ;
+        rdfs:label    "o-aminophenol Test (86)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/o-aminophenol> .
+
+<http://toxin.vub.be/resource/dossier/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "2,5,6-triamino-4-pyrimidinol sulfate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/116> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/115> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_089.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_086.pdf> .
+
+<http://toxin.vub.be/resource/compound/hc%20blue%20n°%2015>
+        a           ont:Compound ;
+        rdfs:label  "hc blue n° 15" .
+
+<http://toxin.vub.be/resource/dossier/disperse%20violet%201>
+        a             ont:Report ;
+        rdfs:label    "disperse violet 1" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/134> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf%20%26%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/dossier/basic%20yellow%2057>
+        a             ont:Report ;
+        rdfs:label    "basic yellow 57" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/133> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf%20%26%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/65>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (65)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/compound/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate>
+        a           ont:Compound ;
+        rdfs:label  "2,4-diaminophenoxyethanol dihydrochloride and sulfate" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/44>
+        a                 ont:Test ;
+        rdfs:label        "resorcinol Test (44)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "lymphoproliferative responses observed in negative control groups fell within historical ranges, while significant lymphoproliferation was observed with α-hexylcinnamaldehyde at 25% ( positive control), thus validating the sensitivity of the test system and procedure used. no mortality and no clinical signs were observed in the first experiment. in the second experiment, hypoactivity, piloerection and dyspnoea were observed on day 3 in 1/4 and 2/4 animals of the treated groups given 1% and 5%, respectively. no cutaneous reactions and no increase in ear thickness were observed at any tested concentrations." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/resorcinol> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/23>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (23)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/154>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (154)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/compound/β-arbutin>
+        a           ont:Compound ;
+        rdfs:label  "β-arbutin" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/133>
+        a                 ont:Test ;
+        rdfs:label        "basic yellow 57 Test (133)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20yellow%2057> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/112>
+        a                 ont:Test ;
+        rdfs:label        "1-hydroxyethyl-4,5-diamino pyrazole sulfate Test (112)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "1-hydroxyethyl 4,5-diamino pyrazole sulfate did not induce a biologically relevant immune response in local lymph nodes after dermal application up to the maximum test concentration of 10%" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/dossier/resorcinol>
+        a             ont:Report ;
+        rdfs:label    "resorcinol" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/44> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_024.pdf> .
+
+<http://toxin.vub.be/resource/compound/2-amino-5-ethylphenol%20HCl>
+        a           ont:Compound ;
+        rdfs:label  "2-amino-5-ethylphenol HCl" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/94>
+        a                 ont:Test ;
+        rdfs:label        "hydroxyethoxyphenyl butanone Test (94)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "positive control HCA generated a SI value of 3.38. the test substance induced a small increase in lymphoproliferation" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hydroxyethoxyphenyl%20butanone> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/compound/phenoxyethanol>
+        a           ont:Compound ;
+        rdfs:label  "phenoxyethanol" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/73>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 4 Test (73)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/52>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/compound/quinolinium%2C%204-formyl-1-methyl-%2C%20salt%20with%204-methylbenzene%20sulfonic%20acid%20%281%3A1%29>
+        a           ont:Compound ;
+        rdfs:label  "quinolinium, 4-formyl-1-methyl-, salt with 4-methylbenzene sulfonic acid (1:1)" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/31>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (31)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/10>
+        a                 ont:Test ;
+        rdfs:label        "vetiveryl acetate Test (10)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no erythema or oedema was noted in any of the mice at any time during the study, except positive control. there were no statistically significant differences in mean body weights at day 1 and day 6 or in mean body weight changes. the lymph nodes from all mice treated with the test substance at 25% and with HCA at 35% were enlarged, but otherwise appeared normal. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/vetiveryl%20acetate> ;
+        ont:oecd_test_nr  "OECD TG 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/141>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (141)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "OECD 406 and 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/4>
+        a                 ont:Test ;
+        rdfs:label        "vitamin a Test (4)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/vitamin%20a> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/120>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 7 Test (120)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no irritation reactions, no lymphoproliferative responses, and the threshold SI of 3 values was not approached in any of the groups." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%207> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/compound/basic%20yellow%2057>
+        a           ont:Compound ;
+        rdfs:label  "basic yellow 57" .
+
+<http://toxin.vub.be/resource/compound/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine%20>
+        a           ont:Compound ;
+        rdfs:label  "2,6-diamino-3-((pyridin-3-yl)azo)pyridine " .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/81>
+        a                 ont:Test ;
+        rdfs:label        "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate Test (81)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
+        ont:oecd_test_nr  "non-OECD (in compliance with EPA guidelines)" .
+
+<http://toxin.vub.be/resource/dossier/2-amino-4-hydroxyethylaminoanisole%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "2-amino-4-hydroxyethylaminoanisole sulfate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/124> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_045.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/60>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (60)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/compound/basic%20red%2076>
+        a           ont:Compound ;
+        rdfs:label  "basic red 76" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/39>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (39)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/dossier/hc%20red%20n°%2017>
+        a             ont:Report ;
+        rdfs:label    "hc red n° 17" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/136> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/18>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%207>
+        a           ont:Compound ;
+        rdfs:label  "hc yellow n° 7" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/149>
+        a             ont:Test ;
+        rdfs:label    "butylphenyl methylpropional (p-bmhca) Test (149)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> .
+
+<http://toxin.vub.be/resource/dossier/hydroxyethyl-p-phenylenediamine%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "hydroxyethyl-p-phenylenediamine sulfate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/93> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/92> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/91> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_007.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_044.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_186.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/128>
+        a                 ont:Test ;
+        rdfs:label        "basic violet 2 Test (128)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20violet%202> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/compound/o-aminophenol>
+        a           ont:Compound ;
+        rdfs:label  "o-aminophenol" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/107>
+        a                 ont:Test ;
+        rdfs:label        "1,5-naphthalenediol Test (107)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "EC3 value of 3.4% was calculated, based on data from the two experiments." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/1%2C5-naphthalenediol> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/89>
+        a                 ont:Test ;
+        rdfs:label        "n,n’-bis-(2-hydroxyethyl)-2-nitro-p-phenylenediamine Test (89)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "slight skin irritation was noted on the ear dorsum of the treated mice at a concentration of 10% (w/v). the Stimulation Index (S.I.) was below 3 in all dose groups. no dose response relation was noted. the EC3 value was not calculated because no test concentrations produced a S.I. of 3 or higher. the EC3 value for the positive control was 11.7% w/v." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/n%2Cn’-bis-%282-hydroxyethyl%29-2-nitro-p-phenylenediamine> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/dossier/n%2Cn’-bis-%282-hydroxyethyl%29-2-nitro-p-phenylenediamine>
+        a             ont:Report ;
+        rdfs:label    "n,n’-bis-(2-hydroxyethyl)-2-nitro-p-phenylenediamine" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/89> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_038.pdf> .
+
+<http://toxin.vub.be/resource/dossier/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "1-hexyl 4,5-diamino pyrazole sulfate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/108> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_006.pdf> .
+
+<http://toxin.vub.be/resource/compound/hydroxyethyl-p-phenylenediamine%20sulfate>
+        a           ont:Compound ;
+        rdfs:label  "hydroxyethyl-p-phenylenediamine sulfate" .
+
+<http://toxin.vub.be/resource/dossier/basic%20violet%202>
+        a             ont:Report ;
+        rdfs:label    "basic violet 2" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/129> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/128> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf%20%26%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_034.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/68>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (68)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/compound/hc%20red%20n°%2016>
+        a           ont:Compound ;
+        rdfs:label  "hc red n° 16" .
+
+<http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate>
+        a           ont:Compound ;
+        rdfs:label  "toluene-2,5-diamine and its sulfate" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/47>
+        a                 ont:Test ;
+        rdfs:label        "quinolinium, 4-formyl-1-methyl-, salt with 4-methylbenzene sulfonic acid (1:1) Test (47)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no mortality was observed throughout the study period. no test item related clinical signs were observed in any animals of the control group, group2 (5%), or group 3 (10%). on the bthird application day, slight ear swelling was observed at both doing sites in all animals of group 4 (25%), persisting for the remainder of the in-life phase of the study." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/quinolinium%2C%204-formyl-1-methyl-%2C%20salt%20with%204-methylbenzene%20sulfonic%20acid%20%281%3A1%29> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/26>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (26)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%2013>
+        a           ont:Compound ;
+        rdfs:label  "hc yellow n° 13" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/136>
+        a                 ont:Test ;
+        rdfs:label        "hc red n° 17 Test (136)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "the validity criteria were fulfilled. in particular, a si value of 5.21 was obtained with the positive control hca. si values of 1.42, 1.53, 1.75, 2.36 and 2.55 were obtained at hc red n° 17 concentrations of 1%, 2.5%, 5%, 10% and 25%, respectively. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20red%20n°%2017> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/115>
+        a                 ont:Test ;
+        rdfs:label        "2,5,6-triamino-4-pyrimidinol sulfate Test (115)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/compound/hydroxyethyl-2-nitro-p-toluidine>
+        a           ont:Compound ;
+        rdfs:label  "hydroxyethyl-2-nitro-p-toluidine" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/97>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 2 Test (97)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%202> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/76>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 4 Test (76)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/55>
+        a                 ont:Test ;
+        rdfs:label        "phenylene bis-diphenyltriazine Test (55)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "the sensitising potential of wp30 was tested in a LLNA in mice using in vivo 5-bromo-20-deoxyuridine incorporation according to OECD 429, EC B.42, OPPTS 870.2600, EPA 712-C03-197 under GLP conditions. evaluation of local irritation was carried out in parallel. after a standard work-up procedure, the radioactivity was determined. the solubility of wp30 as suspension in AOO (3+1) was verified up to the investigated concentration of 10%. none of the three tested concentrations of the test item reached the stimulation index of 3. all animals survived throughout the test period without showing any clinical signs. all animals showed the excepted body weight gain, which includes a body weight reduction of up to 2 g throughout the study. results of radioactivity determination were supported by the means of the lymph node weights per group, which showed no significant difference compared to the negative control. the solubility of wp30 as suspension in AOO (3+1) was verified up to the investigated concentration of 10%. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/phenylene%20bis-diphenyltriazine> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/compound/picramic%20acid%20and%20sodium%20picramate>
+        a           ont:Compound ;
+        rdfs:label  "picramic acid and sodium picramate" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/34>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (34)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/13>
+        a                 ont:Test ;
+        rdfs:label        "vetiveryl acetate Test (13)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "1 dead animal ( no gross lesions were found upon necropsy and the cause of dead was unknown), no erythema or oedema was noted in any of the mice at any time during the study, there were no statistically significant differences in mean body weights at day 1 and day 6 or in mean body weight changes. the lymph nodes from all mice treated with the test substance at 25% and with HCA at 35% were enlarged, but otherwise appeared normal. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/vetiveryl%20acetate> ;
+        ont:oecd_test_nr  "OECD TG 429" .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%202>
+        a           ont:Compound ;
+        rdfs:label  "hc yellow n° 2" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/144>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (144)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/dossier/tetrabromophenol%20blue>
+        a             ont:Report ;
+        rdfs:label    "tetrabromophenol blue" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/16> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_052.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/7>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/123>
+        a                 ont:Test ;
+        rdfs:label        "2,6-dihydroxyethylaminotoluene Test (123)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no  symptoms of local toxicity at the ears of treated mice and no systemic findings were observed during the study period. the stimulation index (S.I.) was below 3 in all dose groups. no dose response relation was noted." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C6-dihydroxyethylaminotoluene> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/102>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 13 Test (102)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%2013> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/compound/2%2C6-diaminopyridine>
+        a           ont:Compound ;
+        rdfs:label  "2,6-diaminopyridine" .
+
+<http://toxin.vub.be/resource/dossier/n-methyl-2-pyrrolidone%20%28NMP%29>
+        a             ont:Report ;
+        rdfs:label    "n-methyl-2-pyrrolidone (NMP)" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/117> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_066.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/84>
+        a             ont:Test ;
+        rdfs:label    "o-aminophenol Test (84)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/o-aminophenol> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/63>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (63)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/42>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (42)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/dossier/polysilicone-15>
+        a             ont:Report ;
+        rdfs:label    "polysilicone-15" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/50> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_078.pdf> .
+
+<http://toxin.vub.be/resource/compound/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl>
+        a           ont:Compound ;
+        rdfs:label  "hydroxyethyl-3,4-methylenedioxyaniline HCl" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/21>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (21)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/152>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (152)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/131>
+        a                 ont:Test ;
+        rdfs:label        "basic orange 31 Test (131)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no increase in ear thickness was observed in the animals of the treated group. a red coloration of the skin, which could have masked an erythema, was noted on the ears of the treated animals from day 2 up to the end of the study." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20orange%2031> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/compound/2%2C7-naphthalenediol>
+        a           ont:Compound ;
+        rdfs:label  "2,7-naphthalenediol" .
+
+<http://toxin.vub.be/resource/dossier/2%2C6-diaminopyridine>
+        a             ont:Report ;
+        rdfs:label    "2,6-diaminopyridine" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/118> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_066.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/110>
+        a                 ont:Test ;
+        rdfs:label        "1-hydroxyethyl-4,5-diamino pyrazole sulfate Test (110)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate> ;
+        ont:oecd_test_nr  "directive 92/69/EEC, method B.6." .
+
+<http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetat>
+        a           ont:Compound ;
+        rdfs:label  "trisodium nitrilotriacetat" .
+
+<http://toxin.vub.be/resource/dossier/vetiveryl%20acetate>
+        a             ont:Report ;
+        rdfs:label    "vetiveryl acetate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/13> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/12> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/11> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/10> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_046.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_167.pdf> .
+
+<http://toxin.vub.be/resource/dossier/quinolinium%2C%204-formyl-1-methyl-%2C%20salt%20with%204-methylbenzene%20sulfonic%20acid%20%281%3A1%29>
+        a             ont:Report ;
+        rdfs:label    "quinolinium, 4-formyl-1-methyl-, salt with 4-methylbenzene sulfonic acid (1:1)" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/47> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/45> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_184.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_042.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/92>
+        a             ont:Test ;
+        rdfs:label    "hydroxyethyl-p-phenylenediamine sulfate Test (92)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/hydroxyethyl-p-phenylenediamine%20sulfate> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/71>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (71)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/50>
+        a                 ont:Test ;
+        rdfs:label        "polysilicone-15 Test (50)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/polysilicone-15> ;
+        ont:oecd_test_nr  "406" .
+
+<http://toxin.vub.be/resource/compound/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate>
+        a           ont:Compound ;
+        rdfs:label  "1-hexyl 4,5-diamino pyrazole sulfate" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/29>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (29)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/dossier/2%2C7-naphthalenediol>
+        a             ont:Report ;
+        rdfs:label    "2,7-naphthalenediol" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/139> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf%20%26%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/compound/hydroxyethoxyphenyl%20butanone>
+        a           ont:Compound ;
+        rdfs:label  "hydroxyethoxyphenyl butanone" .
+
+<http://toxin.vub.be/resource/dossier/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl>
+        a             ont:Report ;
+        rdfs:label    "hydroxypropyl bis(n-hydroxyethyl-p-phenylenediamine) HCl" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/105> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_185.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/139>
+        a                 ont:Test ;
+        rdfs:label        "2,7-naphthalenediol Test (139)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "the ec3 value calculated from these data was 2.8%." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C7-naphthalenediol> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/118>
+        a                 ont:Test ;
+        rdfs:label        "2,6-diaminopyridine Test (118)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C6-diaminopyridine> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/2>
+        a                 "In Chemico" ;
+        a                 <http://ontologies.vub.be/oecd#In%20Chemico> , ont:Test ;
+        rdfs:label        "1,2,4-trihydroxybenzene  Test (2)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/1%2C2%2C4-trihydroxybenzene%20> ;
+        ont:oecd_test_nr  "OECD 442D" .
+
+<http://toxin.vub.be/resource/dossier/phenoxyethanol>
+        a             ont:Report ;
+        rdfs:label    "phenoxyethanol" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/3> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/http%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_195.pdf> .
+
+<http://toxin.vub.be/resource/dossier/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate>
+        a             ont:Report ;
+        rdfs:label    "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/82> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/81> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/79> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/78> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_017.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_196.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_025.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/79>
+        a                 ont:Test ;
+        rdfs:label        "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate Test (79)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
+        ont:oecd_test_nr  "OECD TG 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/58>
+        a                 ont:Test ;
+        rdfs:label        "methylimidazoliumpropyl p-phenylenediamine HCl Test (58)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "a SI value of 8.04 was obtained with the positive control HCA. the threshold value of 3 for positive results was exceeded at 5% with a dose-response effect" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/methylimidazoliumpropyl%20p-phenylenediamine%20HCl> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/37>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/16>
+        a                 ont:Test ;
+        rdfs:label        "tetrabromophenol blue Test (16)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no mortality was observed during the study. there were no treatment-related clinical signs. there were no treatment-related effects on body weight or body weight gains. the positive control (p-phenylenediamine) induced a positive response, as it elicited at least a 3-fold increase in isotope incorporation relative to the vehicle. the mean stimulation index was 3.9 at the concentration of 1%. the test substance induced a negative response, as it did not elicit at least a 3-fold increase in isotope incorporation relative to the vehicle" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/tetrabromophenol%20blue> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/147>
+        a             ont:Test ;
+        rdfs:label    "butylphenyl methylpropional (p-bmhca) Test (147)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> .
+
+<http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29>
+        a           ont:Compound ;
+        rdfs:label  "butylphenyl methylpropional (p-bmhca)" .
+
+<http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29>
+        a           ont:Compound ;
+        rdfs:label  "n-methyl-2-pyrrolidone (NMP)" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/126>
+        a                 ont:Test ;
+        rdfs:label        "basic brown 17 Test (126)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no clinical signs were observed in any animals of the control groups. on the third application day, a slight erythema was observed at both dosing sites in all mice of the 3%- group. from the second application day, a moderate or slight erythema was observed at both dosing sites in all mice of 6%-group, persisting for the remainder of the in-life phase of the study. no test item related findings, such as significant body weight loss or local/systemic findings were observed up to the concentration of 1 %. at the higher concentrations tested, i.e. 3 and 6%, some test item related signs, such as slight to moderate ear erythema, were observed at the local dosing sites but no clear change of dpm/LN was caused by this local irritant effect. all treated animals survived the scheduled study period. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20brown%2017> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/dossier/toluene-2%2C5-diamine%20and%20its%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "toluene-2,5-diamine and its sulfate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/40> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/17> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/32> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/31> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/21> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/33> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/19> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/22> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/41> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/30> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/42> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/34> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/36> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/23> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/35> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/25> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/24> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/26> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/27> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/39> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/38> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/28> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/29> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_031.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_015.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_080.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_052.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/105>
+        a                 ont:Test ;
+        rdfs:label        "hydroxypropyl bis(n-hydroxyethyl-p-phenylenediamine) HCl Test (105)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/dossier/basic%20red%2051>
+        a             ont:Report ;
+        rdfs:label    "basic red 51" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/106> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_050.pdf> .
+
+<http://toxin.vub.be/resource/compound/resorcinol>
+        a           ont:Compound ;
+        rdfs:label  "resorcinol" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/87>
+        a             ont:Test ;
+        rdfs:label    "o-aminophenol Test (87)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/o-aminophenol> .
+
+<http://toxin.vub.be/resource/dossier/2%2C6-dihydroxyethylaminotoluene>
+        a             ont:Report ;
+        rdfs:label    "2,6-dihydroxyethylaminotoluene" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/123> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_028.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/66>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (66)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%2017%20%28b121%29>
+        a           ont:Compound ;
+        rdfs:label  "hc yellow n° 17 (b121)" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/45>
+        a                 ont:Test ;
+        rdfs:label        "quinolinium, 4-formyl-1-methyl-, salt with 4-methylbenzene sulfonic acid (1:1) Test (45)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/quinolinium%2C%204-formyl-1-methyl-%2C%20salt%20with%204-methylbenzene%20sulfonic%20acid%20%281%3A1%29> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/24>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (24)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/155>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (155)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/dossier/1%2C3%2C5-triazine%2C%202%2C4%2C6-tris%5B1%2C1’-biphenyl%5D-4-yl->
+        a             ont:Report ;
+        rdfs:label    "1,3,5-triazine, 2,4,6-tris[1,1’-biphenyl]-4-yl-" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/109> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_032.pdf> .
+
+<http://toxin.vub.be/resource/dossier/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "2,4-diaminophenoxyethanol dihydrochloride and sulfate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/114> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/113> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_085.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2F%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fopinions%2Fsccs_o_003.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/134>
+        a                 ont:Test ;
+        rdfs:label        "disperse violet 1 Test (134)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "ec3: 3.75%." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/disperse%20violet%201> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/113>
+        a                 ont:Test ;
+        rdfs:label        "2,4-diaminophenoxyethanol dihydrochloride and sulfate Test (113)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/dossier/basic%20yellow%2087>
+        a             ont:Report ;
+        rdfs:label    "basic yellow 87" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/137> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf%20%26%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/compound/bis%28butylbenzoate%29%20diaminotriazine%20aminopropyltrisiloxane>
+        a           ont:Compound ;
+        rdfs:label  "bis(butylbenzoate) diaminotriazine aminopropyltrisiloxane" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/95>
+        a             ont:Test ;
+        rdfs:label    "hc yellow n°9 Test (95)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/hc%20yellow%20n°9> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/74>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 4 Test (74)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/53>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/dossier/butylphenyl%20methylpropional%20%28p-bmhca%29>
+        a             ont:Report ;
+        rdfs:label    "butylphenyl methylpropional (p-bmhca)" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/147> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/146> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/142> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/149> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/150> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/144> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/152> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/141> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/151> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/154> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/143> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/153> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/156> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/148> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/145> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/155> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/140> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf%20%26%20https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsystem%2Ffiles%2F2021-08%2Fsccs_o_213_0.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/32>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (32)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/11>
+        a                 ont:Test ;
+        rdfs:label        "vetiveryl acetate Test (11)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "3 dead animal ( no gross lesions were found upon necropsy and the cause of dead was unknown), no erythema or oedema was noted in any of the mice at any time during the study. there were no statistically significant differences in mean body weights at day 1 and day 6 or in mean body weight changes. the lymph nodes from all mice treated with the test substance at 25% and with HCA at 35% were enlarged, but otherwise appeared normal. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/vetiveryl%20acetate> ;
+        ont:oecd_test_nr  "OECD TG 429" .
+
+<http://toxin.vub.be/resource/compound/basic%20brown%2017>
+        a           ont:Compound ;
+        rdfs:label  "basic brown 17" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/142>
+        a             ont:Test ;
+        rdfs:label    "butylphenyl methylpropional (p-bmhca) Test (142)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> .
+
+<http://toxin.vub.be/resource/dossier/trisodium%20nitrilotriacetat>
+        a             ont:Report ;
+        rdfs:label    "trisodium nitrilotriacetat" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/15> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/14> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_232.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_046.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/5>
+        a                 ont:Test ;
+        rdfs:label        "vitamin a Test (5)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/vitamin%20a> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/121>
+        a                 ont:Test ;
+        rdfs:label        "2,6-diamino-3-((pyridin-3-yl)azo)pyridine  Test (121)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine%20> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/100>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 2 Test (100)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%202> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/dossier/basic%20brown%2017>
+        a             ont:Report ;
+        rdfs:label    "basic brown 17" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/126> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_081.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/82>
+        a                 ont:Test ;
+        rdfs:label        "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate Test (82)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/61>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (61)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/compound/methoxypropylamino%20cyclohexenylidene%20ethoxyethylcyanoacetate%20%28S87%29>
+        a           ont:Compound ;
+        rdfs:label  "methoxypropylamino cyclohexenylidene ethoxyethylcyanoacetate (S87)" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/40>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (40)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/19>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (19)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/dossier/methylimidazoliumpropyl%20p-phenylenediamine%20HCl>
+        a             ont:Report ;
+        rdfs:label    "methylimidazoliumpropyl p-phenylenediamine HCl" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/58> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_078.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/150>
+        a             ont:Test ;
+        rdfs:label    "butylphenyl methylpropional (p-bmhca) Test (150)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/129>
+        a                 ont:Test ;
+        rdfs:label        "basic violet 2 Test (129)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20violet%202> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/108>
+        a                 ont:Test ;
+        rdfs:label        "1-hexyl 4,5-diamino pyrazole sulfate Test (108)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "none of the animals died during the study, bodyweights were not altered and all animals appeared clinically normal throughout the study. some orange staining on the ears and on the fur occurred, which was considered to be related to the staining properties of 4,5-diamino-1-hexyl-1H-pyrazole dihydrochloride. no treatment-related effects on bodyweight or bodyweight gain. 4,5-diamino-1-hexyl-1H-pyrazole dihydrochloride was positive in the llna, as there was a statistically significant increase in isotope incorporation in the draining auricular lymph nodes relative to the vehicle at 10% and 15%, which were greater than a 3-fold increase" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/compound/basic%20yellow%2087>
+        a           ont:Compound ;
+        rdfs:label  "basic yellow 87" .
+
+<http://toxin.vub.be/resource/dossier/picramic%20acid%20and%20sodium%20picramate>
+        a             ont:Report ;
+        rdfs:label    "picramic acid and sodium picramate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/54> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_078.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/90>
+        a                 ont:Test ;
+        rdfs:label        "methoxypropylamino cyclohexenylidene ethoxyethylcyanoacetate (S87) Test (90)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "no clinical signs, including skin irritation at the application area, were observed in any animal in the test item-treated or vehicle control group. no appreciable body weight changes were observed. in the positive control group, very slight erythema was observed in both ear auricles of all animals at approximately 1 hour after application on days 2 and 3 only." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/methoxypropylamino%20cyclohexenylidene%20ethoxyethylcyanoacetate%20%28S87%29> ;
+        ont:oecd_test_nr  "OECD 442B" .
+
+<http://toxin.vub.be/resource/compound/1%2C2%2C4-trihydroxybenzene%20>
+        a           ont:Compound ;
+        rdfs:label  "1,2,4-trihydroxybenzene " .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/69>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (69)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/compound/hc%20red%20n°%2017>
+        a           ont:Compound ;
+        rdfs:label  "hc red n° 17" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/48>
+        a       ont:Test ;
+        ont:429_observations_and_recording_of_toxicity
+                "body weight development was not affected by the treatment. the mean stimulation indices (SI), 1.5 group2, 1.3 group 3 and 1.9 group 4;  were not affected in a dose dependent manner by the treatment with Moe-HM-6116-190. EC3 value was not calculated because no test concentration produced a stimulation index of 3 or higher. the concurrent positive control (using alpha-hexyl cinnamic aldehyde) demonstrated the sensitivity of the assay. " .
+
+<http://toxin.vub.be/resource/dossier/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine%20>
+        a             ont:Report ;
+        rdfs:label    "2,6-diamino-3-((pyridin-3-yl)azo)pyridine " ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/122> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/121> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_020.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_051.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/27>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (27)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/compound/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl>
+        a           ont:Compound ;
+        rdfs:label  "hydroxypropyl bis(n-hydroxyethyl-p-phenylenediamine) HCl" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/137>
+        a                 ont:Test ;
+        rdfs:label        "basic yellow 87 Test (137)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20yellow%2087> ;
+        ont:oecd_test_nr  "OECD 406 (1992)" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/116>
+        a                 ont:Test ;
+        rdfs:label        "2,5,6-triamino-4-pyrimidinol sulfate Test (116)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/compound/1%2C5-naphthalenediol>
+        a           ont:Compound ;
+        rdfs:label  "1,5-naphthalenediol" .
+
+<http://toxin.vub.be/resource/dossier/phenylene%20bis-diphenyltriazine>
+        a             ont:Report ;
+        rdfs:label    "phenylene bis-diphenyltriazine" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/57> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/56> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/55> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_078.pdf> .
+
+<http://toxin.vub.be/resource/compound/basic%20violet%202>
+        a           ont:Compound ;
+        rdfs:label  "basic violet 2" .
+
+<http://toxin.vub.be/resource/compound/2%2C6-dihydroxyethylaminotoluene>
+        a           ont:Compound ;
+        rdfs:label  "2,6-dihydroxyethylaminotoluene" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/98>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 2 Test (98)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%202> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/77>
+        a                 ont:Test ;
+        rdfs:label        "hc yellow n° 4 Test (77)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/56>
+        a                 ont:Test ;
+        rdfs:label        "phenylene bis-diphenyltriazine Test (56)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "all animals survived throughout the test period without showing any clinical signs. mean values of the stimulation indices were ≤ 1.2 for all three concentrations and no dose response relationship was seen. hence, none of the three tested concentrations of the test item reached the stimulation index of 3. all animals showed the accepted weight development, which includes a weight loss of up to 2 grams throughout the study. EC3 values (derived by linear interpolation) could not be calculated because the stimulation indices of all concentrations were below 3." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/phenylene%20bis-diphenyltriazine> ;
+        ont:oecd_test_nr  "OECD TG429" .
+
+<http://toxin.vub.be/resource/dossier/hydroxyethoxyphenyl%20butanone>
+        a             ont:Report ;
+        rdfs:label    "hydroxyethoxyphenyl butanone" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/94> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_011.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/35>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (35)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/compound/basic%20red%2051>
+        a           ont:Compound ;
+        rdfs:label  "basic red 51" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/14>
+        a                 ont:Test ;
+        rdfs:label        "trisodium nitrilotriacetat Test (14)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetat> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/145>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (145)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/dossier/1%2C5-naphthalenediol>
+        a             ont:Report ;
+        rdfs:label    "1,5-naphthalenediol" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/107> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_084.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/8>
+        a                 ont:Test ;
+        rdfs:label        "vitamin a Test (8)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/vitamin%20a> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/124>
+        a                 ont:Test ;
+        rdfs:label        "2-amino-4-hydroxyethylaminoanisole sulfate Test (124)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/2-amino-4-hydroxyethylaminoanisole%20sulfate> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/103>
+        a                 ont:Test ;
+        rdfs:label        "hc red n° 7 Test (103)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "the EC3 for hc red nº 7 is equal to 1.2%" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hc%20red%20n°%207> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/85>
+        a             ont:Test ;
+        rdfs:label    "o-aminophenol Test (85)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/o-aminophenol> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/64>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (64)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/dossier/p-aminophenol>
+        a             ont:Report ;
+        rdfs:label    "p-aminophenol" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/71> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/61> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/62> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/65> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/60> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/66> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/70> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/59> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/69> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/67> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/68> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/63> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/64> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_078.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_008.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_061.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_177.pdf> .
+
+<http://toxin.vub.be/resource/dossier/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl>
+        a             ont:Report ;
+        rdfs:label    "hydroxyethyl-3,4-methylenedioxyaniline HCl" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/119> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_082.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/43>
+        a             ont:Test ;
+        rdfs:label    "sodium perborate monohydrate Test (43)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/sodium%20perborate%20monohydrate> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/22>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (22)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/compound/methylimidazoliumpropyl%20p-phenylenediamine%20HCl>
+        a           ont:Compound ;
+        rdfs:label  "methylimidazoliumpropyl p-phenylenediamine HCl" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/153>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (153)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "non OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/132>
+        a                 ont:Test ;
+        rdfs:label        "basic red 76 Test (132)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "calculation of the EC 3 value was not performed as no test concentration produced a stimulation index of 3 or above." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/basic%20red%2076> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/111>
+        a                 ont:Test ;
+        rdfs:label        "1-hydroxyethyl-4,5-diamino pyrazole sulfate Test (111)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/compound/polysilicone-15>
+        a           ont:Compound ;
+        rdfs:label  "polysilicone-15" .
+
+<http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%2013>
+        a             ont:Report ;
+        rdfs:label    "hc yellow n° 13" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/102> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_035.pdf> .
+
+<http://toxin.vub.be/resource/dossier/hc%20yellow%20n°9>
+        a             ont:Report ;
+        rdfs:label    "hc yellow n°9" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/96> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/95> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_033.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_067.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/93>
+        a             ont:Test ;
+        rdfs:label    "hydroxyethyl-p-phenylenediamine sulfate Test (93)" ;
+        ont:compound  <http://toxin.vub.be/resource/compound/hydroxyethyl-p-phenylenediamine%20sulfate> .
+
+<http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%204>
+        a             ont:Report ;
+        rdfs:label    "hc yellow n° 4" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/77> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/76> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/75> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/74> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/73> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_025.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/72>
+        a                 ont:Test ;
+        rdfs:label        "hydroxyethyl-2-nitro-p-toluidine Test (72)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "there were no clinical signs or deaths. Minor body weight loss (in fewer than 10% animals) was not considered to be treatment related. the mean stimulation index was not affected by hydroxyethyl-2-nitro-p-toluidine treatment at any concentration or by either vehicle. hydroxyethyl-2-nitro-p-toluidine did not induce a biologically relevant immune response at any concentration with either vehicle and the stimulation index at each concentration was comparable with the vehicle controls. the EC3 could not be calculated as the stimulation index was below 3." ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hydroxyethyl-2-nitro-p-toluidine> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/51>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/30>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (30)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/140>
+        a                 ont:Test ;
+        rdfs:label        "butylphenyl methylpropional (p-bmhca) Test (140)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
+        ont:oecd_test_nr  "OECD 406, OPPTS 870.2600 (rifm 2001a,b,c,d; rifm #37065, #37066, #37067, #37068; isola & lalko 2001, rifm #38352, lalko et al. 2004, rifm #45128)" .
+
+<http://toxin.vub.be/resource/dossier/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "1-hydroxyethyl-4,5-diamino pyrazole sulfate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/112> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/111> , <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/110> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_188.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_065.pdf> .
+
+<http://toxin.vub.be/resource/compound/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate>
+        a           ont:Compound ;
+        rdfs:label  "2,5,6-triamino-4-pyrimidinol sulfate" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/3>
+        a                 "In vivo" ;
+        a                 <http://ontologies.vub.be/oecd#In%20vivo> , ont:Test ;
+        rdfs:label        "phenoxyethanol Test (3)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/phenoxyethanol> ;
+        ont:oecd_test_nr  "OECD 406" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/119>
+        a                 ont:Test ;
+        rdfs:label        "hydroxyethyl-3,4-methylenedioxyaniline HCl Test (119)" ;
+        ont:429_observations_and_recording_of_toxicity
+                "animals were checked for morbidity/mortality at least once daily. observation for clinical signs was done daily before and at least once after dosing. body weight was determined at day -1 and at day 5. slight to severe skin desquamation on the ears was noted in animals treated with hydroxyethyl-3,4-methylenedioxyaniline HCl at 1.5 % in dmso at day 5. this effect was associated with erythema in one animal. this effect was interpreted as being due to the low pH value of the hydroxyethyl-3,4-methylenedioxyaniline HCl solution. an EC3 value (equal to the concentration inducing a stimulation index of 3) was not calculated, since all stimulation indices were above 3. however, an EC3 value well below 0.5 % can be deduced from these findings. in the second vehicle (aqua/acetone/olive oil), an EC3 value was not calculated, since all stimulation indices were above 3, but as for dmso an EC3 < 0.5 % can be deduced from the data obtained. the responses noted in both groups are considered positive and indicate a skin sensitising potential of hydroxyethyl-3,4-methylenedioxyaniline HCl. " ;
+        ont:compound      <http://toxin.vub.be/resource/compound/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl> ;
+        ont:oecd_test_nr  "OECD 429" .
+
+<http://toxin.vub.be/resource/compound/2-amino-4-hydroxyethylaminoanisole%20sulfate>
+        a           ont:Compound ;
+        rdfs:label  "2-amino-4-hydroxyethylaminoanisole sulfate" .
+
+<http://toxin.vub.be/resource/dossier/sodium%20perborate%20monohydrate>
+        a             ont:Report ;
+        rdfs:label    "sodium perborate monohydrate" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/43> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_230.pdf> .
+
+<http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%2017%20%28b121%29>
+        a             ont:Report ;
+        rdfs:label    "hc yellow n° 17 (b121)" ;
+        ont:contains  <http://toxin.vub.be/resource/test/skinsensitisation-unmerged/101> ;
+        ont:seeAlso   <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_079.pdf> .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/80>
+        a       ont:Test .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/59>
+        a                 ont:Test ;
+        rdfs:label        "p-aminophenol Test (59)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/p-aminophenol> ;
+        ont:oecd_test_nr  "non-OECD" .
+
+<http://toxin.vub.be/resource/test/skinsensitisation-unmerged/38>
+        a                 ont:Test ;
+        rdfs:label        "toluene-2,5-diamine and its sulfate Test (38)" ;
+        ont:compound      <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate> ;
+        ont:oecd_test_nr  "/" .

@@ -7,6 +7,7 @@
 	export let cas_number;
 	export let empirical_formula;
 	export let function_and_uses;
+	export let see_also;
 </script>
 
 <div class="">

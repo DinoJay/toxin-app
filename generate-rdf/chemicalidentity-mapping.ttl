@@ -4,6 +4,33 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
+<#PDFlinkTriplesFirstMap>
+    rr:logicalTable [ rr:sqlQuery """
+                WITH RECURSIVE PDFLINKFIRST (ID, PDFLINKFIRST, REST) AS
+                            (
+                                    SELECT
+                        ID,
+                        NULL,
+                        PDFLINKFIRST || ','
+                    FROM (  SELECT
+                                ROWNUM() AS ID,
+                                \"PDF link\" AS PDFLINKFIRST
+                            FROM CHEMICALIDENTITY WHERE \"PDF link\" IS NOT NULL
+                    )
+                                    UNION ALL
+                                    SELECT
+                        ID,
+                        TRIM(SUBSTR(REST, 0, INSTR(REST, ',') - 1)),
+                        SUBSTR(REST, INSTR(REST, ',') + 1)
+                    FROM PDFLINKFIRST WHERE REST <> ''
+                            ) SELECT DISTINCT * FROM PDFLINKFIRST
+        """ ] ;
+
+            rr:subjectMap [
+        rr:template "http://toxin.vub.be/resource/pdfLink/{PDFLINKFIRST}" ;
+    ] ;
+.
+
 <#DossierTriplesMap>
     rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM CHEMICALIDENTITY" ] ;
 
@@ -24,13 +51,15 @@
         rr:predicate rdfs:label ;
         rr:objectMap [ rr:column "DOSSIER" ; ] ;
     ] ;
-
+    
     rr:predicateObjectMap [
-        rr:predicate rdfs:seeAlso ;
-        rr:objectMap [ rr:column "\"PDF link\"" ; rr:termType rr:IRI ; ] ;
+        rr:predicate ont:seeAlso;
+        rr:objectMap [
+            rr:parentTriplesMap <#PDFlinkTriplesFirstMap> ;
+            rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
+        ] ;
     ] ;
-.
-
+    .
 <#CompoundTriplesMap>
     # todo: \"type of study ( in vivo, in vitro, in silico, in chemico\" -> camelcase
     rr:logicalTable [ rr:sqlQuery """
