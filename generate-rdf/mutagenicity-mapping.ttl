@@ -951,220 +951,220 @@
 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_observations;
+        rr:predicate ont:observations;
         rr:objectMap [ rr:column "\"OECD_474_OBSERVATIONS\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_dose_with_significant_increase_in_positive_cells;
+        rr:predicate ont:dose_with_significant_increase_in_positive_cells;
         rr:objectMap [ rr:column "\"OECD_474_dose with significant increase in positive cells\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_moribound_or_dead_animals_prior_to_study_termination;
+        rr:predicate ont:moribound_or_dead_animals_prior_to_study_termination;
         rr:objectMap [ rr:column "\"OECD_474_moribound or dead animals prior to study termination\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_conclusion;
+        rr:predicate ont:conclusion;
         rr:objectMap [ rr:column "\"OECD_474_CONCLUSION\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_homogeneity;
+        rr:predicate ont:homogeneity;
         rr:objectMap [ rr:column "\"OECD_474_HOMOGENEITY\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_ph;
+        rr:predicate ont:ph;
         rr:objectMap [ rr:column "\"OECD_474_PH\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_concentration;
+        rr:predicate ont:concentration;
         rr:objectMap [ rr:column "\"OECD_474_concentration (%)\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_composition;
+        rr:predicate ont:composition;
         rr:objectMap [ rr:column "\"OECD_474_COMPOSITION\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_purity;
+        rr:predicate ont:purity;
         rr:objectMap [ rr:column "\"OECD_474_purity (%)\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_solubility_in_vehicle;
+        rr:predicate ont:solubility_in_vehicle;
         rr:objectMap [ rr:column "\"OECD_474_solubility in vehicle\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_chemical_batch_nr;
+        rr:predicate ont:chemical_batch_nr;
         rr:objectMap [ rr:column "\"OECD_474_chemical batch nr\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:OECD_474_TMAX;
+        rr:predicate ont:tmax;
         rr:objectMap [ rr:column "\"OECD_474_TMAX\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_additional_info;
+        rr:predicate ont:additional_info;
         rr:objectMap [ rr:column "\"OECD_474_additional info\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:OECD_474_species_strain;
+        rr:predicate ont:species_strain;
         rr:objectMap [ rr:column "\"OECD_474_species/strain\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_source;
+        rr:predicate ont:source;
         rr:objectMap [ rr:column "\"OECD_474_SOURCE\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_age_at_start_of_experiment;
+        rr:predicate ont:age_at_start_of_experiment;
         rr:objectMap [ rr:column "\"OECD_474_age at start of experiment\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_sex;
+        rr:predicate ont:sex;
         rr:objectMap [ rr:column "\"OECD_474_SEX\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_feed;
+        rr:predicate ont:feed;
         rr:objectMap [ rr:column "\"OECD_474_FEED\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:OECD_474_n_animals_group;
+        rr:predicate ont:n_animals_group;
         rr:objectMap [ rr:column "\"OECD_474_n animals / group\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_dose_levels;
+        rr:predicate ont:dose_levels;
         rr:objectMap [ rr:column "\"OECD_474_dose levels\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_volume;
+        rr:predicate ont:volume;
         rr:objectMap [ rr:column "\"OECD_474_VOLUME\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_administration_scheme;
+        rr:predicate ont:administration_scheme;
         rr:objectMap [ rr:column "\"OECD_474_administration scheme\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_oral;
+        rr:predicate ont:oral;
         rr:objectMap [ rr:column "\"OECD_474_ORAL\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_perc_body_surface;
+        rr:predicate ont:perc_body_surface;
         rr:objectMap [ rr:column "\"OECD_474_% of body surface\"" ; ] ;
     ] ; 
 
 #OECD_474_area of body	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_area_of_body;
+        rr:predicate ont:area_of_body;
         rr:objectMap [ rr:column "\"OECD_474_area of body\"" ; ] ;
     ] ; 
 
 #OECD_474_inhalation	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_inhalation;
+        rr:predicate ont:inhalation;
         rr:objectMap [ rr:column "\"OECD_474_INHALATION\"" ; ] ;
     ] ; 
 
 #OECD_474_intravenous	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_intravenous;
+        rr:predicate ont:intravenous;
         rr:objectMap [ rr:column "\"OECD_474_INTRAVENOUS\"" ; ] ;
     ] ; 
 #OECD_474_intraperitoneal	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_intraperitoneal;
+        rr:predicate ont:intraperitoneal;
         rr:objectMap [ rr:column "\"OECD_474_INTRAPERITONEAL\"" ; ] ;
     ] ; 
 #OECD_474_subcutaneous	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_subcutaneous;
+        rr:predicate ont:subcutaneous;
         rr:objectMap [ rr:column "\"OECD_474_SUBCUTANEOUS\"" ; ] ;
     ] ; 
 #OECD_474_vehicle	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_vehicle;
+        rr:predicate ont:vehicle;
         rr:objectMap [ rr:column "\"OECD_474_VEHICLE\"" ; ] ;
     ] ; 
 #OECD_474_time between last treatment and sacrifice (h)	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_time_between_last_treatment_and_sacrifice;
+        rr:predicate ont:time_between_last_treatment_and_sacrifice;
         rr:objectMap [ rr:column "\"OECD_474_time between last treatment and sacrifice  (h)\"" ; ] ;
     ] ; 
 #OECD_474_bone marrow or blood used for isolation	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_bone_marrow_or_blood_used_for_isolation;
+        rr:predicate ont:bone_marrow_or_blood_used_for_isolation;
         rr:objectMap [ rr:column "\"OECD_474_bone marrow or blood used for isolation\"" ; ] ;
     ] ; 
 #OECD_474_number of cells analyzed /animal	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_number_of_cells_analyzed_animal;
+        rr:predicate ont:number_of_cells_analyzed_animal;
         rr:objectMap [ rr:column "\"OECD_474_number of cells analyzed /animal\"" ; ] ;
     ] ; 
 #OECD_474_method to characterize micronuclei	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_method_to_characterize_micronuclei;
+        rr:predicate ont:method_to_characterize_micronuclei;
         rr:objectMap [ rr:column "\"OECD_474_method to characterize micronuclei\"" ; ] ;
     ] ; 
 #OECD_474_SCCS comment to test	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_sccs_comment_to_test;
+        rr:predicate ont:sccs_comment_to_test;
         rr:objectMap [ rr:column "\"OECD_474_SCCS comment to test\"" ; ] ;
     ] ; 
 #OECD_474_year	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_year;
+        rr:predicate ont:year;
         rr:objectMap [ rr:column "\"OECD_474_YEAR\"" ; ] ;
     ] ; 
 #oecd_474_glp	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_glp;
+        rr:predicate ont:glp;
         rr:objectMap [ rr:column "\"OECD_474_GLP\"" ; ] ;
     ] ; 
 #OECD_474_Ref. in dossier	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_ref_in_dossier;
+        rr:predicate ont:ref_in_dossier;
         rr:objectMap [ rr:column "\"OECD_474_Ref. in dossier\"" ; ] ;
     ] ; 
 #OECD_474_preliminary study	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_preliminary_study;
+        rr:predicate ont:preliminary_study;
         rr:objectMap [ rr:column "\"OECD_474_preliminary study\"" ; ] ;
     ] ; 
 #OECD_474_control	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_control;
+        rr:predicate ont:control;
         rr:objectMap [ rr:column "\"OECD_474_CONTROL\"" ; ] ;
     ] ; 
 #OECD_474_Study duration	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_study_duration;
+        rr:predicate ont:study_duration;
         rr:objectMap [ rr:column "\"OECD_474_Study duration\"" ; ] ;
     ] ; 
 #OECD_474_additional info	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_additional_info;
+        rr:predicate ont:additional_info;
         rr:objectMap [ rr:column "\"OECD_474_additional info\"" ; ] ;
     ] ; 
 #OECD_474_own comment
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_474_own_comment;
+        rr:predicate ont:own_comment;
         rr:objectMap [ rr:column "\"OECD_474_own comment\"" ; ] ;
     ] ; 
 
