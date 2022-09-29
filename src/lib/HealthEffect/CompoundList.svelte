@@ -21,14 +21,8 @@
 			.map((d) => ({ ...d, id: d.test, categories: getParentCategories(endpoint)(d) })),
 		(d) => d.id
 	);
-	console.log('bindings', bindings);
 
-	$: filteredData = data.filter((d) => {
-		if (oecd && nonOecd) return true;
-		if (oecd && !nonOecd) return !!d.oecd_test_nr;
-		if (!oecd && nonOecd) return !d.oecd_test_nr;
-		return false;
-	});
+	$: filteredData = data.sort((a, b) => Object.values(b).length - Object.values(a).length);
 
 	$: console.log('filteredData', filteredData, 'oecd', oecd, 'nonOecd', nonOecd);
 

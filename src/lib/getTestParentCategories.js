@@ -138,14 +138,16 @@ const mutagenicityCats = (obj) => {
     const oecd_476_positive_mutant_frequency_result_at_dose_s9 = obj.oecd_476_positive_mutant_frequency_result_at_dose_s9
     const oecd_476_outcome = obj.oecd_476_outcome
     const oecd_476_conclusion = obj.oecd_476_conclusion
-    return {
-        guideline,
-        type,
-        oecd_476_positive_mutant_frequency_result_at_dose,
-        oecd_476_positive_mutant_frequency_result_at_dose_s9,
-        oecd_476_outcome,
-        oecd_476_conclusion
-    };
+    console.log('obj', obj)
+    return obj;
+    // return {
+    //     guideline,
+    //     type,
+    //     oecd_476_positive_mutant_frequency_result_at_dose,
+    //     oecd_476_positive_mutant_frequency_result_at_dose_s9,
+    //     oecd_476_outcome,
+    //     oecd_476_conclusion
+    // };
 }
 
 
@@ -154,4 +156,5 @@ export default endpoint => obj => {
         return repeatedDoseToxicityCats(obj)
     if (endpoint === MUTAGENICITY)
         return mutagenicityCats(obj)
+    return obj
 };

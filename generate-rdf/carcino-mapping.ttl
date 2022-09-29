@@ -59,7 +59,7 @@
   
 
     rr:subjectMap [
-        rr:template "http://toxin.vub.be/resource/test/acutetoxicity/{ID}" ;
+        rr:template "http://toxin.vub.be/resource/test/carcinogenicity/{ID}" ;
         rr:class ont:Test ;
     ] ;
 
@@ -95,172 +95,172 @@
 
     #OECD_451_453_observations	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_observations ;
+        rr:predicate ont:observations ;
         rr:objectMap [ rr:column "OECD_451_453_OBSERVATIONS" ; ] ;
     ] ; 
     #OECD_451_453_neoplastiv findings (organ)	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_neoplastiv_findings ;
+        rr:predicate ont:neoplastiv_findings ;
         rr:objectMap [ rr:column "OECD_451_453_neoplastiv findings (organ)" ; ] ;
     ] ;
     #OECD_451_453_moribound or dead animals prior to study termination	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_moribound_or_dead_animals_prior_to_study_termination ;
+        rr:predicate ont:moribound_or_dead_animals_prior_to_study_termination ;
         rr:objectMap [ rr:column "OECD_451_453_moribound or dead animals prior to study termination" ; ] ;
     ] ;
     #OECD_451_453_conclusion	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_conclusion ;
+        rr:predicate ont:conclusion ;
         rr:objectMap [ rr:column "OECD_451_453_CONCLUSION" ; ] ;
     ] ;
     #OECD_451_453_homogeneity	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_homogeneity ;
+        rr:predicate ont:homogeneity ;
         rr:objectMap [ rr:column "OECD_451_453_HOMOGENEITY" ; ] ;
     ] ;
     #OECD_451_453_pH	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_ph ;
+        rr:predicate ont:ph ;
         rr:objectMap [ rr:column "OECD_451_453_PH" ; ] ;
     ] ;
     #OECD_451_453_concentration (%)	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_concentration ;
+        rr:predicate ont:concentration ;
         rr:objectMap [ rr:column "OECD_451_453_concentration (%)" ; ] ;
     ] ;
     #OECD_451_453_composition	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_composition ;
+        rr:predicate ont:composition ;
         rr:objectMap [ rr:column "OECD_451_453_COMPOSITION" ; ] ;
     ] ;
     #OECD_451_453_purity (%)	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_purity ;
+        rr:predicate ont:purity ;
         rr:objectMap [ rr:column "OECD_451_453_purity (%)" ; ] ;
     ] ;
     #OECD_451_453_solubility in vehicle	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_solubility_in_vehicle ;
+        rr:predicate ont:solubility_in_vehicle ;
         rr:objectMap [ rr:column "OECD_451_453_solubility in vehicle" ; ] ;
     ] ;
     #OECD_451_453_chemical batch nr	
    rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_chemical_batch_nr ;
+        rr:predicate ont:chemical_batch_nr ;
         rr:objectMap [ rr:column "OECD_451_453_chemical batch nr" ; ] ;
     ] ;
     #OECD_451_453_additional info	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_additional_info;
+        rr:predicate ont:additional_info;
         rr:objectMap [ rr:column "\"OECD_451_453_additional info\"" ; ] ;
     ] ; 
     #OECD_451_453_species/strain	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_species_strain;
+        rr:predicate ont:species_strain;
         rr:objectMap [ rr:column "\"OECD_451_453_species/strain\"" ; ] ;
     ] ; 
     #OECD_451_453_source	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_source;
+        rr:predicate ont:source;
         rr:objectMap [ rr:column "\"OECD_451_453_SOURCE\"" ; ] ;
     ] ; 
     #OECD_451_453_age at start of experiment	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_age_at_start_of_experiment;
+        rr:predicate ont:age_at_start_of_experiment;
         rr:objectMap [ rr:column "\"OECD_451_453_age at start of experiment\"" ; ] ;
     ] ; 
     #OECD_451_453_sex	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_sex;
+        rr:predicate ont:sex;
         rr:objectMap [ rr:column "\"OECD_451_453_SEX\"" ; ] ;
     ] ; 
     #OECD_451_453_feed	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_feed;
+        rr:predicate ont:feed;
         rr:objectMap [ rr:column "\"OECD_451_453_FEED\"" ; ] ;
     ] ; 
     #OECD_451_453_n animals / group	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_n_animals_group;
+        rr:predicate ont:n_animals_group;
         rr:objectMap [ rr:column "\"OECD_451_453_n animals / group\"" ; ] ;
     ] ; 
     #OECD_451_453_dose levels	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_n_animals_group;
+        rr:predicate ont:n_animals_group;
         rr:objectMap [ rr:column "\"OECD_451_453_n animals / group\"" ; ] ;
     ] ; 
     #OECD_451_453_administration scheme	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_administration_scheme;
+        rr:predicate ont:administration_scheme;
         rr:objectMap [ rr:column "\"OECD_451_453_administration scheme\"" ; ] ;
     ] ; 
     #OECD_451_453_oral	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_oral;
+        rr:predicate ont:oral;
         rr:objectMap [ rr:column "\"OECD_451_453_ORAL\"" ; ] ;
     ] ; 
     #OECD_451_453_% of body surface	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_perc_body_surface;
+        rr:predicate ont:perc_body_surface;
         rr:objectMap [ rr:column "\"OECD_451_453_% of body surface\"" ; ] ;
     ] ; 
     #OECD_451_453_area of body	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_area_of_body;
+        rr:predicate ont:area_of_body;
         rr:objectMap [ rr:column "\"OECD_451_453_area of body\"" ; ] ;
     ] ; 
     #OECD_451_453_inhalation	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_inhalation;
+        rr:predicate ont:inhalation;
         rr:objectMap [ rr:column "\"OECD_451_453_INHALATION\"" ; ] ;
     ] ; 
     #OECD_451_453_vehicle	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_vehicle;
+        rr:predicate ont:vehicle;
         rr:objectMap [ rr:column "\"OECD_451_453_VEHICLE\"" ; ] ;
     ] ; 
     #OECD_451_453_observation period	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_observation_period;
+        rr:predicate ont:observation_period;
         rr:objectMap [ rr:column "\"OECD_451_453_observation period\"" ; ] ;
     ] ; 
     #OECD_451_453_control and recovery group ( satelite group)	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_control_and_recovery_group;
+        rr:predicate ont:control_and_recovery_group;
         rr:objectMap [ rr:column "\"OECD_451_453_control and recovery group ( satelite group)\"" ; ] ;
     ] ; 
     #OECD_451_453_Study duration	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_study_duration;
+        rr:predicate ont:study_duration;
         rr:objectMap [ rr:column "\"OECD_451_453_Study duration\"" ; ] ;
     ] ; 
     #OECD_451_453_SCCS comment to test	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_sccs_comment_to_test;
+        rr:predicate ont:sccs_comment_to_test;
         rr:objectMap [ rr:column "\"OECD_451_453_SCCS comment to test\"" ; ] ;
     ] ; 
     #OECD_451_453_year	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_year;
+        rr:predicate ont:year;
         rr:objectMap [ rr:column "\"OECD_451_453_YEAR\"" ; ] ;
     ] ; 
     #OECD_451_453_GLP	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_glp;
+        rr:predicate ont:glp;
         rr:objectMap [ rr:column "\"OECD_451_453_GLP\"" ; ] ;
     ] ; 
     #OECD_451_453_Ref. in dossier	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_ref_in_dossier;
+        rr:predicate ont:ref_in_dossier;
         rr:objectMap [ rr:column "\"OECD_451_453_Ref. in dossier\"" ; ] ;
     ] ; 
     #OECD_451_453_additional info	
     rr:predicateObjectMap [
-        rr:predicate ont:oecd_451_453_additional_info;
+        rr:predicate ont:additional_info;
         rr:objectMap [ rr:column "\"OECD_451_453_additional info\"" ; ] ;
     ] ; 
     #OECD_451_453_own comment
     rr:predicateObjectMap [
-        rr:predicate ont:OECD_451_453_own_comment;
+        rr:predicate ont:own_comment;
         rr:objectMap [ rr:column "\"OECD_451_453_own comment\"" ; ] ;
     ] ; 
 

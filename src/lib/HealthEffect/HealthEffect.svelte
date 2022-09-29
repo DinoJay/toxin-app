@@ -1,5 +1,11 @@
 <script>
-	import { ACUTE_TOXICITY, MUTAGENICITY, REPEATED_DOSE_TOXICITY } from '$lib/endpoint_constants';
+	import {
+		ACUTE_TOXICITY,
+		CARCINOGENICIY,
+		MUTAGENICITY,
+		REPEATED_DOSE_TOXICITY,
+		SKIN_SENSITISATION_UNMERGED
+	} from '$lib/endpoint_constants';
 
 	import Expandable from '$lib/Expandable.svelte';
 	import { constructQuery, getSparqlQueryString } from '$lib/sparql.js';
@@ -9,22 +15,19 @@
 
 	const data = [
 		{ label: 'Acute Toxicity', endpoint: ACUTE_TOXICITY },
-		{ label: 'Irritation and corrosivity' },
-		{ label: 'Skin sensitisation' },
-		{ label: 'Organ-specific toxicity' },
+		{ label: 'Skin sensitisation', endpoint: SKIN_SENSITISATION_UNMERGED },
 		{ label: 'Repeated dose toxicity', endpoint: REPEATED_DOSE_TOXICITY },
-		{ label: 'Reproductive toxicity' },
-		{ label: 'Mutagenicity / genotoxicity', endpoint: MUTAGENICITY },
-		{ label: 'Carcinogenicity' },
-		{ label: 'Photo-induced toxicity' },
-		{ label: 'Human data' },
-		{ label: 'Special investigations' },
-		{ label: 'Absorption' },
-		{ label: 'Toxicokinetics' },
-		{ label: 'Distribution' },
-		{ label: 'Metabolism' },
-		{ label: 'Extraction' }
+		{ label: 'Mutagenicity', endpoint: MUTAGENICITY },
+		{ label: 'Carcinogenicity', endpoint: CARCINOGENICIY }
 	];
+	// { label: 'Photo-induced toxicity' },
+	// { label: 'Human data' },
+	// { label: 'Special investigations' },
+	// { label: 'Absorption' },
+	// { label: 'Toxicokinetics' },
+	// { label: 'Distribution' },
+	// { label: 'Metabolism' },
+	// { label: 'Extraction' }
 
 	let val = '';
 	$: valInList = !!data.find((d) => d.label.toLowerCase() === val.toLowerCase());
