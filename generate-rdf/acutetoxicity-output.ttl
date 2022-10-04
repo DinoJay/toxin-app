@@ -5,8 +5,9 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/6>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/β-arbutin> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/β-arbutin> ;
+        ont:guideline  "OECD TG 401" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/128>
         a                       ont:Test ;
@@ -22,6 +23,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -53,6 +55,7 @@
         ont:dose_levels           "4,976" ;
         ont:exposure_time         "4" ;
         ont:glp                   "yes"^^xsd:boolean ;
+        ont:guideline             "OECD 403" ;
         ont:inhalation            "yes, nose only flow-past" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
@@ -71,6 +74,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  "> 2000" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "15" ;
         ont:sex              "f & m" ;
         ont:species          "rat" .
@@ -92,6 +96,7 @@
         ont:dose_volume            "10" ;
         ont:feed                   "starved overnight before treatment" ;
         ont:glp                    "yes"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "8 died at 2000mg/kg bw" ;
@@ -121,6 +126,7 @@
         ont:dose_volume         "10" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD TG 404 and 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -140,6 +146,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
         ont:conclusion       "nta has a low acute toxicity by inhalation route" ;
         ont:dose_descriptor  ">5.0" ;
+        ont:guideline        "non OECD" ;
         ont:inhalation       "yes" ;
         ont:ref_in_dossier   "2" .
 
@@ -154,6 +161,7 @@
         ont:conclusion       "triclosan is not acutely toxic via the oral route of administration, with high oral intubation ld50" ;
         ont:dose_descriptor  "4350" ;
         ont:glp              "no"^^xsd:boolean ;
+        ont:guideline        "non OECD" ;
         ont:oral             "oral, gavage" ;
         ont:ref_in_dossier   "1" ;
         ont:species          "mouse" ;
@@ -174,6 +182,7 @@
         ont:dose_level_unit     "mg/kg bw in step 2 and 3; in step 1" ;
         ont:dose_levels         "50; 300" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 423" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "9" ;
@@ -188,14 +197,16 @@
         ont:year                "2006" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/91>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/methoxypropylamino%20cyclohexenylidene%20ethoxyethylcyanoacetate%20%28S87%29> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/methoxypropylamino%20cyclohexenylidene%20ethoxyethylcyanoacetate%20%28S87%29> ;
+        ont:guideline  "non OECD" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/70>
         a                    ont:Test ;
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "2733" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "77" ;
         ont:sex              "f & m" ;
@@ -211,6 +222,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  "37" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "c29" ;
         ont:species          "cat" .
 
@@ -224,6 +236,7 @@
         ont:additional_info  "test substance: sodium perborate tetrahydrate" ;
         ont:compound         <http://toxin.vub.be/resource/compound/sodium%20perborate%20%20and%20perboric%20acid> ;
         ont:dose_descriptor  "2567" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "degussa 1987" ;
         ont:species          "rat" ;
@@ -254,6 +267,7 @@
         ont:dose_level_unit       "mg/kg bw" ;
         ont:dose_levels           "100, 250, 350, 500, 1000 " ;
         ont:glp                   "no"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate        "death occurred within 24 hours after substance administration" ;
@@ -271,6 +285,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/acid%20orange%207> ;
         ont:conclusion       "the test substance is of very low acute oral toxicity." ;
         ont:dose_descriptor  "> 10.000" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "2, 3, 2004" ;
         ont:source           "rat" ;
@@ -288,6 +303,7 @@
         ont:dose_levels         "2000" ;
         ont:dose_volume         "10" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 423" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate      "one out of the 6 treated females was euthanized 2.5 h after treatment" ;
@@ -309,6 +325,7 @@
         ont:dose_level_unit     "mg/kg bw" ;
         ont:dose_levels         "500, 1000, 1500, 2000" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate      "most animals, except one female and 2 males at the lowest dose (500 mg/kg bw), died within the first 24 h of the experiment. the female died on day 1" ;
@@ -331,6 +348,7 @@
         ont:dose_levels            "300, 2000 " ;
         ont:dose_volume            "20" ;
         ont:glp                    "yes"^^xsd:boolean ;
+        ont:guideline              "OECD 420" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "at 2000 mg/kg, the mortality was 3/5 (60%). at 300 mg/kg no mortality was observed" ;
@@ -349,6 +367,7 @@
         ont:additional_info  "test substance: SOPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "846, 591" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "78" ;
         ont:sex              "f & m" ;
@@ -358,6 +377,7 @@
         a                         ont:Test ;
         ont:compound              <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> ;
         ont:dose_descriptor       "7710 (5900-9600)" ;
+        ont:guideline             "non OECD" ;
         ont:oral                  "yes" ;
         ont:ref_in_dossier        "4" ;
         ont:scss_comment_to_test  "nmp has low acute toxicity by oral route" ;
@@ -373,6 +393,7 @@
         ont:dose_volume            "5" ;
         ont:feed                   "animals  had been fasted for 17 hours" ;
         ont:glp                    "yes"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose         "10" ;
@@ -400,6 +421,7 @@
         ont:dose_level_unit     "g/kg" ;
         ont:dose_levels         "2.5, 5.0, 10.0, 20.0" ;
         ont:exposure_time       "24" ;
+        ont:guideline           "non OECD" ;
         ont:observations        "no observable systemic effects in animals treated with 2.5, 5.0, or 10.0 g/kg. two of the four animals dosed with 20 g/kg showed a slight temporary depression. there were no deaths at any level." ;
         ont:patching_technique  "occluded with rubber sleeve" ;
         ont:ref_in_dossier      "b61, b67" ;
@@ -416,6 +438,7 @@
         ont:dose_levels           "0.53, 0.95, 1.82" ;
         ont:exposure_time         "4" ;
         ont:glp                   "yes"^^xsd:boolean ;
+        ont:guideline             "OECD 403" ;
         ont:inhalation            "yes, nose-only" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
@@ -444,6 +467,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -460,8 +484,9 @@
                 "the test substance was moistened with distilled water immediately before testing," .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/110>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/dossier/vitamin%20a>
         a             ont:Report ;
@@ -486,6 +511,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "> 1331" ;
         ont:exposure_time    "1" ;
+        ont:guideline        "non OECD" ;
         ont:particle_size    "aerosol" ;
         ont:ref_in_dossier   "161" ;
         ont:sex              "m" ;
@@ -503,6 +529,7 @@
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "≈ 3000" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "154" ;
         ont:species          "rat" .
@@ -511,6 +538,7 @@
         a                    ont:Test ;
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dose_descriptor  "671, 1270" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "c26" ;
         ont:species          "rat" ;
@@ -526,6 +554,7 @@
         ont:dose_levels           "5000" ;
         ont:exposure_time         "24" ;
         ont:glp                   "no"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose        "10" ;
@@ -588,6 +617,7 @@
         ont:dose_level_unit  "mg/kg" ;
         ont:dose_levels      "10, 20, 30" ;
         ont:glp              "no"^^xsd:boolean ;
+        ont:guideline        "non OECD" ;
         ont:observations     "showed signs of mydriasis, dyspnoea, and ventral decubitus, with recovery by 24 to 48 h after dosing." ;
         ont:other            "intravenous" ;
         ont:ref_in_dossier   "3" ;
@@ -604,6 +634,7 @@
         ont:dose_level_unit        "mg/kg bw" ;
         ont:dose_levels            "346, 600, 1039, 1800  " ;
         ont:glp                    "yes"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "at 346 mg/kg bw (male & female), mortality: no deaths. at 600 mg/kg bw (male & female), mortality: 3/5 on application day of each sex. at 1039 mg/kg bw (female), mortality: 2/5 females first day of dosing. at 1800 mg/kg bw (female), mortality: all died on application day. " ;
@@ -634,6 +665,7 @@
         ont:dose_level_unit        "mg/kg bw" ;
         ont:dose_levels            "700, 910, 1180, 1540, 2000" ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "mortalities occurred in all dose groups within 1 hour of treatment. numbers of deaths were 2, 4, 5, 5, 5 males and 1, 1, 1, 3, 3 females at 700, 910, 1180, 1540 and 2000 mg/kg bw, respectively" ;
@@ -651,6 +683,7 @@
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "3499, 3152" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "280" ;
         ont:sex              "f & m" ;
@@ -666,6 +699,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  ">8000; >5000" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "a2" ;
         ont:species          "rabbit and rat" .
 
@@ -680,6 +714,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/sodium%20perborate%20%20and%20perboric%20acid> ;
         ont:dose_descriptor  "1164" ;
         ont:exposure_time    "4" ;
+        ont:guideline        "non OECD" ;
         ont:inhalation       "yes" ;
         ont:ref_in_dossier   "asta medica" ;
         ont:species          "rat" ;
@@ -695,6 +730,7 @@
         ont:dose_levels           "0.24, 0.61" ;
         ont:exposure_time         "4" ;
         ont:glp                   "yes"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:inhalation            "yes, nose-only " ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
@@ -725,6 +761,7 @@
         ont:dose_volume           "2" ;
         ont:exposure_time         "24" ;
         ont:glp                   "no"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:mortality_rate        "3 out of 5 female rats died at 1470 mg/kg bw, at a dose level of 3160 mg/kg bw, 2 males and 4 females died, respectively. at the highest dose level 3 males and all females died." ;
@@ -750,6 +787,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/2-methoxy-methyl-p-phenylenediamine%20and%20its%20sulfate%20salt> ;
         ont:conclusion       "LD50 mice (intraperitoneal): 100 - 250 mg/kg bw" ;
         ont:dose_level_unit  "mg/kg bw" ;
+        ont:guideline        "non OECD" ;
         ont:other            "intraperitoneal" ;
         ont:ref_in_dossier   "51, 53, 54" ;
         ont:species          "mouse" .
@@ -763,6 +801,7 @@
         ont:dose_level_unit     "mg/kg bw" ;
         ont:dose_levels         "2000" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 423" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "6" ;
@@ -780,13 +819,15 @@
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  "> 2000" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "16" ;
         ont:sex              "f & m" ;
         ont:species          "rat" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/60>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%204> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/compound/hc%20yellow%20n°9>
         a               ont:Compound ;
@@ -816,6 +857,7 @@
         ont:dose_volume            "1.0 to 6.4" ;
         ont:feed                   "starved overnight before treatment" ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "death occurred from within one to 19 hours of treatment." ;
@@ -841,6 +883,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/trisodium%20nitrilotriacetate> ;
         ont:conclusion       "nta has a low acute toxicity by oral route" ;
         ont:dose_descriptor  "750; 1300-1470, 1600-2220; >5000 " ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "1" .
 
@@ -864,6 +907,7 @@
         ont:dose_level_unit  "mg/kg bw" ;
         ont:dose_levels      "5000" ;
         ont:dose_volume      "20" ;
+        ont:guideline        "non OECD" ;
         ont:n_animals_dose   "10" ;
         ont:oral             "oral, gavage" ;
         ont:ref_in_dossier   "2" ;
@@ -877,8 +921,9 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/β-arbutin> .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/113>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/dossier/resorcinol>
         a             ont:Report ;
@@ -890,6 +935,7 @@
         a                    ont:Test ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-aminophenol> ;
         ont:dose_descriptor  "1.259" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "2,4,6 (subm. 5)" ;
         ont:species          "mouse" .
 
@@ -898,6 +944,7 @@
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "2600, 2850 " ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "278" ;
         ont:sex              "f & m" ;
@@ -907,6 +954,7 @@
         a                    ont:Test ;
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dose_descriptor  "393, 1139; 4-10" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "a2" ;
         ont:sex              "f & m" ;
@@ -922,6 +970,7 @@
         ont:additional_info  "test substance: sodium perborate(not specified)" ;
         ont:compound         <http://toxin.vub.be/resource/compound/sodium%20perborate%20%20and%20perboric%20acid> ;
         ont:dose_descriptor  "3250, 3600\nmale : 3600" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "ecb 2007" ;
         ont:sex              "f & m" ;
@@ -944,6 +993,7 @@
         ont:conclusion       "triclosan is not acutely toxic via the oral route of administration, with high oral intubation ld50" ;
         ont:dose_descriptor  "> 5000" ;
         ont:glp              "no"^^xsd:boolean ;
+        ont:guideline        "non OECD" ;
         ont:oral             "oral capsule" ;
         ont:ref_in_dossier   "1" ;
         ont:species          "dog" ;
@@ -958,6 +1008,7 @@
         ont:dose_level_unit        "mg/kg bw rat; mouse" ;
         ont:dose_levels            "250, 375, 500, 625, 750 ; 250, 375, 500, 625, 750, 875 " ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "at dosages of 375 mg/kg bw and above, deaths in mice occurred within 48h, whilst in rats the deaths occurred mainly after 4-5 days. mortality in rats and mice after a single oral application; mice female: dose [mg/kg bw] 250: 0/10, 375: 2/10, 500: 6/10, 625: 5/10, 750: 9/10, 875: 10/10. rats female: dose [mg/kg bw] 250: 0/5, 375: 2/5, 500: 2/5, 625: 4/5, 750: 5/5, 875: -. rats male: dose [mg/kg bw] 250: 0/5, 375: 3/5, 500: 4/5, 625: 5/5, 750: 5/5, 875: -." ;
@@ -972,18 +1023,21 @@
         ont:vehicle_concentration  "10" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/100>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/97>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%2013> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%2013> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/76>
         a                    ont:Test ;
         ont:additional_info  "test substance: SOPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "1650, 1550" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "276" ;
         ont:sex              "f & m" ;
@@ -993,6 +1047,7 @@
         a                         ont:Test ;
         ont:compound              <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> ;
         ont:dose_descriptor       "4150 (3100-5560)" ;
+        ont:guideline             "non OECD" ;
         ont:oral                  "yes" ;
         ont:ref_in_dossier        "3" ;
         ont:scss_comment_to_test  "nmp has low acute toxicity by oral route" ;
@@ -1016,6 +1071,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:n_animals_dose      "10" ;
         ont:observation_period  "14" ;
         ont:patching_technique  "semi-occluded" ;
@@ -1029,6 +1085,7 @@
         a                   ont:Test ;
         ont:compound        <http://toxin.vub.be/resource/compound/zinc%20pyrithione> ;
         ont:conclusion      "zinc pyrithione in a cream shampoo product is a potent emetic (ED50 app. 0.05 g/kg).  the ratios of ED50 to LD50 for both forms of the product are 1:125 for the cream shampoo and 1:42 for the lotion shampoo; therefore it was concluded in that it is unlikely that a human accidentally ingesting shampoo could retain a hazardous amount." ;
+        ont:guideline       "non OECD" ;
         ont:observations    "product derived emetic study, in the study with dogs, the emesis typically occurred within 60 minutes of dosing, the average being 30 minutes, and involved two to four episodes. occasional bloody vomitus was seen, indicating gastric irritation." ;
         ont:oral            "yes" ;
         ont:ref_in_dossier  "b14, b15, b38" ;
@@ -1054,6 +1111,7 @@
         ont:dose_levels           "928" ;
         ont:dose_volume           "3" ;
         ont:glp                   "no"^^xsd:boolean ;
+        ont:guideline             "OECD TG 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose        "20" ;
@@ -1084,6 +1142,7 @@
         ont:dose_levels            "0, 160, 250, 400, 640" ;
         ont:dose_volume            "1.6 - 6.4" ;
         ont:feed                   "starved overnight before treatment" ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:n_animals_dose         "10" ;
@@ -1116,6 +1175,7 @@
         ont:dose_levels                 "200, 2000 " ;
         ont:dose_volume                 "10" ;
         ont:glp                         "yes"^^xsd:boolean ;
+        ont:guideline                   "OECD 423" ;
         ont:n_animals_dose              "3, 3+ 3" ;
         ont:observation_period          "14" ;
         ont:observations                "at 200 mg/kg bw, no clinical signs were observed. at 2000 mg/kg bw, piloerection and dyspnea, together with hypoactivity in females, were observed in all animals on day 1. when compared to historical control animals, a slight reduced body weight gain was recorded in 2/3 males given 200 mg/kg bw during the first or second week of the study. at 2000 mg/kg bw, a reduced body weight gain was noted in 1/3 females during the second week of the study. the overall body weight gain of the other animals was not affected by the treatment with the test substance." ;
@@ -1137,6 +1197,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "> 949" ;
         ont:exposure_time    "1" ;
+        ont:guideline        "non OECD" ;
         ont:particle_size    "aerosol" ;
         ont:ref_in_dossier   "161" ;
         ont:sex              "m" ;
@@ -1152,6 +1213,7 @@
         ont:dose_level_unit        "mg/kg bw in rats; in mice" ;
         ont:dose_levels            "900, 1700, 2500; 1000, 1500, 2000, 2500" ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         ", mortalities occurred within 24h of administering the test substance. rat  at dose mg/kg bw 900: male 2/6, female 1/6; at dose 1700: male 3/6, female 3/6; at dose 2500: male 6/6, female 6/6. mouse at dose mg/kg bw 1000: male 2/10, female 0/10; at dose 1500: male 4/10, female 4/10; at dose 2000: male 7/10, female 6/10; at dose 2500: male 10/10, female 10/10. " ;
@@ -1177,6 +1239,7 @@
         ont:dose_levels           " 0, 0,63, 1.21, 2.13" ;
         ont:exposure_time         "1, 2, 4 (acute toxicity) ; 14-day exposure, 4 hours per day (repeated dose)" ;
         ont:glp                   "no"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:inhalation            "yes, nose-only" ;
         ont:n_animals_dose        "2" ;
         ont:observation_period    "14" ;
@@ -1203,6 +1266,7 @@
         ont:dose_levels           "2000" ;
         ont:dose_volume           "10" ;
         ont:glp                   "yes"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose        "6" ;
@@ -1237,6 +1301,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/triclosan> ;
         ont:dose_descriptor  "184" ;
         ont:glp              "no"^^xsd:boolean ;
+        ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:observations     "mice in the intraperitoneal studies showed signs of general lethargy, lassitude, close huddling, lack of response to tactile stimuli and no increase in respiration rate and hyperactivity with death occurring between 6 and 72 hours. " ;
@@ -1262,6 +1327,7 @@
         ont:dose_level_unit        "mg/kg bw in rats; in mice" ;
         ont:dose_levels            "1000, 1500, 2000, 2500;  500, 750, 1000, 1250 " ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "animals died within 2-72h after substance administration." ;
@@ -1285,6 +1351,7 @@
         ont:dose_level_unit        "mg/kg bw/day in rat; in mouse" ;
         ont:dose_levels            "50, 100, 200, 300, 400;  50, 100, 150" ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:n_animals_dose         "10" ;
         ont:observation_period     "14" ;
         ont:observations           "20 minutes after administration, the test compound caused moderate sedation and ataxia. no changes were observed in organs. " ;
@@ -1306,6 +1373,7 @@
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "≈ 2000" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "313" ;
         ont:species          "mouse" .
@@ -1315,6 +1383,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  "470" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "a2" ;
         ont:species          "mouse" .
 
@@ -1323,6 +1392,7 @@
         ont:additional_info  "test substance: boric acid, sodium borate, or sodium perborate " ;
         ont:compound         <http://toxin.vub.be/resource/compound/sodium%20perborate%20%20and%20perboric%20acid> ;
         ont:dose_descriptor  "100-500" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "dreisbach, 1987" ;
         ont:species          "human" ;
@@ -1345,6 +1415,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -1361,6 +1432,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/acid%20orange%207> ;
         ont:conclusion       "the test substance is of very low acute oral toxicity." ;
         ont:dose_descriptor  "11,300" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "5" ;
         ont:source           "rat" ;
@@ -1382,6 +1454,7 @@
         ont:dose_level_unit     "mg/kg bw" ;
         ont:dose_levels         "500" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 420" ;
         ont:n_animals_dose      "5" ;
         ont:observation_period  "14" ;
         ont:observations        "clinical signs and mortality were recorded and body weights were recorded on day 1, 8, and 15. all animals were sacrificed on day 15 and subjected to macroscopic examination. no mortality was observed at 500 mg/kg bw. hypoactivity or sedation, pilorection, dyspnea and yellow extremities were noted on day 1 in all animals. the overall body weight was not affected and macroscopic examination revealed no abnormalities." ;
@@ -1399,6 +1472,7 @@
         ont:dose_level_unit     "mg/kg bw" ;
         ont:dose_levels         "250, 500" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate      "2 males receiving 500 mg/kg bw died on day 1. all other animals survived until the end of the experiment." ;
@@ -1417,6 +1491,7 @@
         ont:additional_info  "test substance: SOPP produced by DOW chemicals / SOPP produced by Tokyo Kasei Co" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "857, 812 / 1018, 683 " ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "206" ;
         ont:sex              "f & m" ;
@@ -1427,6 +1502,7 @@
         ont:compound              <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> ;
         ont:dermal                "yes" ;
         ont:dose_descriptor       "2500 - 5000" ;
+        ont:guideline             "non OECD" ;
         ont:ref_in_dossier        "5" ;
         ont:scss_comment_to_test  "nmp has low acute toxicity by dermal route" ;
         ont:species               "rat" .
@@ -1452,6 +1528,7 @@
         ont:dose_level_unit     "pure active substance was applied" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -1474,6 +1551,7 @@
         a                    ont:Test ;
         ont:compound         <http://toxin.vub.be/resource/compound/zinc%20pyrithione> ;
         ont:dose_descriptor  "36; 500" ;
+        ont:guideline        "non OECD" ;
         ont:other            "intraperitoneal" ;
         ont:ref_in_dossier   "b71, b73" ;
         ont:species          "rat and mouse" .
@@ -1502,6 +1580,7 @@
         ont:dose_volume           "20" ;
         ont:feed                  "starved 16h before and 3 h after treatment" ;
         ont:glp                   "no"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate        "no death occurred at a dose of 0.5 g/kg and one death at a dose of 1.00 g/kg. in the dose range of 1.25 to 1.99 g/kg 8 and 9 deaths respectively were observed. death occurred from within one to twenty four hours after treatment." ;
@@ -1526,6 +1605,7 @@
         ont:dose_levels         "5.24 ± 0.31" ;
         ont:exposure_time       "4" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 403" ;
         ont:inhalation          "yes" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
@@ -1551,6 +1631,7 @@
         ont:dose_descriptor        "1.052" ;
         ont:dose_level_unit        "mg/kg bw" ;
         ont:dose_levels            "500, 1000, 1250, 2000, 2500" ;
+        ont:guideline              "non OECD" ;
         ont:n_animals_dose         "10" ;
         ont:ref_in_dossier         "1 (subm. 1)" ;
         ont:sex                    "f & m" ;
@@ -1568,6 +1649,7 @@
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "≈ 2700" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "105" ;
         ont:sex              "m" ;
@@ -1577,6 +1659,7 @@
         a                    ont:Test ;
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dose_descriptor  "375" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "c23" ;
         ont:species          "rat" ;
@@ -1596,6 +1679,7 @@
         ont:dose_level_unit       "ml/kg bw" ;
         ont:dose_levels           "2, 5, 10" ;
         ont:feed                  "fasted" ;
+        ont:guideline             "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate        "2 animals at 2mg/kg bw, 6 animals at 5 and 2 animals at 10" ;
@@ -1613,6 +1697,7 @@
         ont:conclusion       "triclosan is not acutely toxic via the oral route of administration, with high oral intubation ld50" ;
         ont:dose_descriptor  "3750 --> 5000" ;
         ont:glp              "no"^^xsd:boolean ;
+        ont:guideline        "non OECD" ;
         ont:oral             "oral gavage" ;
         ont:ref_in_dossier   "1" ;
         ont:species          "rat" ;
@@ -1638,6 +1723,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -1656,6 +1742,7 @@
         a                   ont:Test ;
         ont:compound        <http://toxin.vub.be/resource/compound/hc%20yellow%20n°9> ;
         ont:glp             "yes"^^xsd:boolean ;
+        ont:guideline       "OECD 420" ;
         ont:ref_in_dossier  "500 mg/kg group included the animal from the sighting test." ;
         ont:target_organ    "general malaise" .
 
@@ -1676,6 +1763,7 @@
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "≈ 500" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "154" ;
         ont:species          "cat" .
@@ -1685,6 +1773,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dose_descriptor  ">0.005" ;
         ont:exposure_time    "1" ;
+        ont:guideline        "non OECD" ;
         ont:inhalation       "yes" ;
         ont:ref_in_dossier   "c23" ;
         ont:species          "rat" .
@@ -1702,6 +1791,7 @@
         ont:dose_level_unit     "mg/kg bw" ;
         ont:dose_levels         "200" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 420" ;
         ont:n_animals_dose      "4" ;
         ont:observation_period  "14" ;
         ont:observations        "observation once daily over the observation periof of 14 days, body weights recorded at dat 1 prior to treatment and on days 7 and 14 therefater. in the main experiment, no mortality occurred at 200 mg/kg bw. hypoactivity, dyspnoea and tremors were observed in all animals on day 1. recovery was complete on day 2. no effect on body weight gain and no gross abnormalities were observed. " ;
@@ -1717,6 +1807,7 @@
         ont:additional_info  "ingredient based" ;
         ont:compound         <http://toxin.vub.be/resource/compound/zinc%20pyrithione> ;
         ont:dose_descriptor  "90-266; 160-1000; 600" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "b6, b10, b33, 57, b71, b73" ;
         ont:species          "rat, mouse, dog" .
@@ -1732,6 +1823,7 @@
         ont:dose_levels           "3160, 3830, 4640, 5620, 6810, 8250  " ;
         ont:feed                  "animal fasted 15-20h prior to application" ;
         ont:glp                   "no"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate        "mortality ratios were calculated after 1, 24 and 48 hours and after 7 and 14 days according to the probit analysis of finney (1971). deaths occurred dose-dependently within 7 days after dosing and signs of intoxication were observed in the animals that died or recovered until termination." ;
@@ -1755,6 +1847,7 @@
         ont:dose_level_unit        "mg/kg bw" ;
         ont:dose_levels            "2000" ;
         ont:glp                    "yes"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "there was one death in the male group which was assumed to be treatment-related (time after dosing not specified)." ;
@@ -1797,6 +1890,7 @@
         ont:dose_levels         "2000" ;
         ont:dose_volume         "10" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 423" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "3" ;
@@ -1820,6 +1914,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  "> 5000" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "23" ;
         ont:sex              "f & m" ;
         ont:species          "rabbit" .
@@ -1833,6 +1928,7 @@
         ont:dose_level_unit        "mg/kg bw in males; in females" ;
         ont:dose_levels            "1250, 5000; 1250, 2500, 5000" ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:n_animals_dose         "5" ;
         ont:observation_period     "14" ;
         ont:oral                   "yes, gavage" ;
@@ -1868,6 +1964,7 @@
         ont:dose_levels                 "300, 2000" ;
         ont:dose_volume                 "10" ;
         ont:glp                         "yes"^^xsd:boolean ;
+        ont:guideline                   "OECD TG 423" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose              "3" ;
@@ -1889,6 +1986,7 @@
         ont:conclusion       "nta has a low acute toxicity by dermal route" ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  "> 10" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "1" .
 
 <http://toxin.vub.be/resource/dossier/2%2C6-dihydroxyethylaminotoluene>
@@ -1904,6 +2002,7 @@
         ont:dose_level_unit  "mg/kg" ;
         ont:dose_levels      "10, 20" ;
         ont:glp              "no"^^xsd:boolean ;
+        ont:guideline        "non OECD" ;
         ont:observations     "showed signs of slight cramps, exopthalmos, dyspnoea, and ventral decubitus, with recovery by 24 to 48 h after dosing." ;
         ont:other            "intravenous" ;
         ont:ref_in_dossier   "2" ;
@@ -1933,6 +2032,7 @@
         ont:dose_levels            "2000" ;
         ont:exposure_time          "24" ;
         ont:glp                    "yes"^^xsd:boolean ;
+        ont:guideline              "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose         "10" ;
@@ -1954,6 +2054,7 @@
         ont:concentration    "50" ;
         ont:dose_level_unit  "g/kg bw" ;
         ont:dose_levels      "5" ;
+        ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose   "10" ;
@@ -1968,6 +2069,7 @@
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "2850, 3600" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "98" ;
         ont:sex              "f & m" ;
@@ -1979,6 +2081,7 @@
         ont:compound               <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:concentration          "5" ;
         ont:dose_descriptor        "0.5" ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "deaths were reported within 48 hours of compound administration." ;
@@ -1999,6 +2102,7 @@
         ont:additional_info  "test substance: sodium perborate monohydrate" ;
         ont:compound         <http://toxin.vub.be/resource/compound/sodium%20perborate%20%20and%20perboric%20acid> ;
         ont:dose_descriptor  "1800" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "interox, 1987a" ;
         ont:species          "rat" ;
@@ -2027,6 +2131,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/acid%20orange%207> ;
         ont:conclusion       "the test substance is of very low acute oral toxicity." ;
         ont:dose_descriptor  "> 10.000 (mouse and rat)" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "1" ;
         ont:source           "rat & mouse" ;
@@ -2034,8 +2139,9 @@
         ont:weight           "f (mouse)" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/122>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/2-amino-4-hydroxyethylaminoanisole%20sulfate> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/2-amino-4-hydroxyethylaminoanisole%20sulfate> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/101>
         a                       ont:Test ;
@@ -2049,6 +2155,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -2071,6 +2178,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -2090,6 +2198,7 @@
         ont:additional_info  "test substance: SOPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "1096" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "279" ;
         ont:sex              "f & m" ;
@@ -2099,6 +2208,7 @@
         a                         ont:Test ;
         ont:compound              <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> ;
         ont:dose_descriptor       "3906 (3100-4400)" ;
+        ont:guideline             "non OECD" ;
         ont:oral                  "yes" ;
         ont:ref_in_dossier        "4" ;
         ont:scss_comment_to_test  "nmp has low acute toxicity by oral route" ;
@@ -2112,6 +2222,7 @@
         ont:dose_level_unit       "mg/kg" ;
         ont:dose_levels           "100, 300, 1000 " ;
         ont:glp                   "no"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate        "mortality was obsereved in all rats (10/10) treated at 1000mg/kg at day 1,2or 3 post dosing. one death (1/10) was noted at the mild dose level of 300mg/kg/day at day 14 after dosing . " ;
@@ -2130,6 +2241,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/zinc%20pyrithione> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  " < 2,000  to 10,000" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "b66" ;
         ont:species          "rabbit albino" .
 
@@ -2148,6 +2260,7 @@
         ont:dose_levels           "0.68, 1.19 and 2.25 " ;
         ont:exposure_time         "4" ;
         ont:glp                   "yes"^^xsd:boolean ;
+        ont:guideline             "non OECD" ;
         ont:inhalation            "yes" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
@@ -2179,6 +2292,7 @@
         ont:dose_level_unit        "mg/kg bw rats; mouse" ;
         ont:dose_levels            "6000, 8000;  4200, 6600, 9000, 11400." ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "animals died within 2-24 hours (cf1 mice) and between 3 and 7 days (wistar rats) after substance administration." ;
@@ -2207,6 +2321,7 @@
         ont:dose_levels                 "2000" ;
         ont:exposure_time               "24" ;
         ont:glp                         "yes"^^xsd:boolean ;
+        ont:guideline                   "OECD 402" ;
         ont:n_animals_dose              "10" ;
         ont:observation_period          "14" ;
         ont:observations                "a white coloration of the skin was noted in all animals on day 2. no other cutaneous reactions were recorded during the study." ;
@@ -2232,6 +2347,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "> 36" ;
         ont:exposure_time    "4" ;
+        ont:guideline        "non OECD" ;
         ont:particle_size    "vapour" ;
         ont:ref_in_dossier   "149" ;
         ont:sex              "f & m" ;
@@ -2255,6 +2371,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "10" ;
@@ -2270,8 +2387,9 @@
         ont:year                "1990" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/43>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/methylimidazoliumpropyl%20p-phenylenediamine%20HCl> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/methylimidazoliumpropyl%20p-phenylenediamine%20HCl> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/dossier/4-chlororesorcinol>
         a             ont:Report ;
@@ -2290,6 +2408,7 @@
         ont:dose_levels                 "5000" ;
         ont:feed                        "fastened 16h prior to the administration" ;
         ont:glp                         "no"^^xsd:boolean ;
+        ont:guideline                   "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes, two rats died within the first day after application" ;
         ont:n_animals_dose              "10" ;
@@ -2323,6 +2442,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/triclosan> ;
         ont:dose_descriptor  "1090" ;
         ont:glp              "no"^^xsd:boolean ;
+        ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:observations     "mice in the intraperitoneal studies showed signs of general lethargy, lassitude, close huddling, lack of response to tactile stimuli and no increase in respiration rate and hyperactivity with death occurring between 6 and 72 hours. " ;
@@ -2333,8 +2453,9 @@
         ont:year             "1992" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/117>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%207> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/hc%20yellow%20n°%207> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/compound/2-hydroxyethylamino-5-nitroanisole>
         a               ont:Compound ;
@@ -2342,14 +2463,16 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/2-hydroxyethylamino-5-nitroanisole> .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/93>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/hydroxyethyl-p-phenylenediamine%20sulfate> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/hydroxyethyl-p-phenylenediamine%20sulfate> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/72>
         a                    ont:Test ;
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "≈ 1200, ≈ 1050" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "275" ;
         ont:sex              "f & m" ;
@@ -2370,6 +2493,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  "10000" ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "c23" ;
         ont:species          "rabbit" .
 
@@ -2385,6 +2509,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/sodium%20perborate%20%20and%20perboric%20acid> ;
         ont:dermal           "yes" ;
         ont:dose_descriptor  "2000" ;
+        ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate   "1 male died after 13 days" ;
@@ -2403,14 +2528,16 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/basic%20red%2051> .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/3>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/phenoxyethanol> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/phenoxyethanol> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/146>
         a                    ont:Test ;
         ont:compound         <http://toxin.vub.be/resource/compound/acid%20orange%207> ;
         ont:conclusion       "the test substance is of very low acute oral toxicity." ;
         ont:dose_descriptor  "1" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "5" ;
         ont:source           "dog" ;
@@ -2422,6 +2549,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/2-methoxy-methyl-p-phenylenediamine%20and%20its%20sulfate%20salt> ;
         ont:conclusion       "LD50 rat (oral gavage): 150 – 200 mg/kg bw (free base: 91.5 – 122.0 mg/kg bw)" ;
         ont:dose_level_unit  "mg/kg bw" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes, gavage" ;
         ont:ref_in_dossier   "51, 53, 54" ;
         ont:species          "rat" .
@@ -2446,6 +2574,7 @@
         ont:dose_levels         "2000" ;
         ont:exposure_time       "24" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 402" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "20" ;
@@ -2463,6 +2592,7 @@
         ont:additional_info  "test substance: POPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "2573, 2118" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "14" ;
         ont:sex              "f & m" ;
@@ -2473,6 +2603,7 @@
         ont:compound              <http://toxin.vub.be/resource/compound/n-methyl-2-pyrrolidone%20%28NMP%29> ;
         ont:dose_descriptor       "˃ 5.1" ;
         ont:exposure_time         "4" ;
+        ont:guideline             "non OECD" ;
         ont:inhalation            "yes, head only" ;
         ont:particle_size         "87% of aerosol particles< 8.5 µm" ;
         ont:ref_in_dossier        "IUCLID dataset" ;
@@ -2489,6 +2620,7 @@
         ont:dose_levels         "0.285 (group 1) and 1.838 mg/l air(group 2)" ;
         ont:exposure_time       "4" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 430" ;
         ont:inhalation          "yes, nose-only " ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
@@ -2505,6 +2637,7 @@
 <http://toxin.vub.be/resource/test/acutetoxicity/17>
         a                   ont:Test ;
         ont:compound        <http://toxin.vub.be/resource/compound/zinc%20pyrithione> ;
+        ont:guideline       "non OECD" ;
         ont:observations    "generally, 25 mg/kg of zpt was fatal to both dogs and monkeys within 24 hours and produced cholinergic-like effects prior to death. doses of 15 and 20 mg/kg produced slight cholinergic stimulation in dogs but death did not result. one of two yorkshire pigs died when injected intravenously with 20 mg/kg and 10 mg/kg was a lethal dose for rabbits. intravenous doses of 5 mg/kg or less produced only transient effects. " ;
         ont:other           "intravenous" ;
         ont:ref_in_dossier  "b2, b7, b72" ;
@@ -2534,6 +2667,7 @@
         ont:concentration         "30" ;
         ont:dose_level_unit       "g/kg bw" ;
         ont:dose_levels           "3.1, 10, 15, 16, 18" ;
+        ont:guideline             "non OECD" ;
         ont:n_animals_dose        "10" ;
         ont:observations          "clinical signs noted 1 h after dosing, were piloerection, diarrhoea, prone/lateral position." ;
         ont:oral                  "oral, gavage" ;
@@ -2544,8 +2678,9 @@
         ont:year                  "1974" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/112>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/2%2C4-diaminophenoxyethanol%20dihydrochloride%20and%20sulfate> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/compound/polysilicone-15>
         a               ont:Compound ;
@@ -2570,6 +2705,7 @@
         ont:compound               <http://toxin.vub.be/resource/compound/o-aminophenol> ;
         ont:concentration          "5" ;
         ont:dose_descriptor        "1.3" ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:observations           "methaemoglobin concentration was less than 10% of all haemoglobin. death occurred within 1 to 48 hours of dosing and calculation gave a median lethal dose of 1,300 mg/kg bw." ;
@@ -2583,6 +2719,7 @@
         ont:additional_info  "test substance: OPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "2980" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "150" ;
         ont:sex              "m" ;
@@ -2598,6 +2735,7 @@
         a                    ont:Test ;
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dose_descriptor  "1550" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "c43" ;
         ont:species          "mice" ;
@@ -2618,6 +2756,7 @@
         ont:dose_level_unit        "mg/kg bw" ;
         ont:dose_levels            "0, 64, 100, 160, 250 " ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "lethality rate at dose 0, 0 in both sexes, at 64 mg/kg bw 3/5 in males and 0/5 in females; at 100, 4/5 in  males and 3/5 in females; at 160 0 in male and 5/5 in females and at the highest dose of 250, 5/5 in male and 4/5 in female" ;
@@ -2644,13 +2783,15 @@
         ont:dermal           "dermal" ;
         ont:dose_descriptor  "> 9300" ;
         ont:glp              "no"^^xsd:boolean ;
+        ont:guideline        "non OECD" ;
         ont:ref_in_dossier   "1" ;
         ont:species          "rabbit" ;
         ont:year             "1989" .
 
 <http://toxin.vub.be/resource/test/acutetoxicity/120>
-        a             ont:Test ;
-        ont:compound  <http://toxin.vub.be/resource/compound/2%2C6-dihydroxyethylaminotoluene> .
+        a              ont:Test ;
+        ont:compound   <http://toxin.vub.be/resource/compound/2%2C6-dihydroxyethylaminotoluene> ;
+        ont:guideline  "OECD 401" .
 
 <http://toxin.vub.be/resource/dossier/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate>
         a             ont:Report ;
@@ -2671,6 +2812,7 @@
         ont:dose_level_unit        "mg/kg bw" ;
         ont:dose_levels            "625, 1250, 2500" ;
         ont:glp                    "no"^^xsd:boolean ;
+        ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "at the mid dose 3/5 females dies within 8h after dosing and all animal died at high dose" ;
@@ -2694,6 +2836,7 @@
         ont:additional_info  "test substance: SOPP" ;
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:dose_descriptor  "1250" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "85" ;
         ont:species          "rat" .
@@ -2709,6 +2852,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/p-aminophenol> ;
         ont:dose_descriptor  " >5.91,  >3.42" ;
         ont:exposure_time    "1.3,  4 " ;
+        ont:guideline        "non OECD" ;
         ont:inhalation       "yes" ;
         ont:ref_in_dossier   "a2" ;
         ont:species          "rat" .
@@ -2723,6 +2867,7 @@
         ont:dose_level_unit     "mg/kg bw" ;
         ont:dose_levels         "2000" ;
         ont:glp                 "yes"^^xsd:boolean ;
+        ont:guideline           "OECD 423" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:n_animals_dose      "6" ;
@@ -2739,6 +2884,7 @@
         ont:compound         <http://toxin.vub.be/resource/compound/zinc%20pyrithione> ;
         ont:conclusion       "LD50 in rat for a cream shampoo formulation: 2.5 g/kg; for a lotion shampoo: 3.0 ml/kg" ;
         ont:dose_descriptor  "2.5; 3.0" ;
+        ont:guideline        "non OECD" ;
         ont:oral             "yes" ;
         ont:ref_in_dossier   "b61" ;
         ont:species          "rat" .

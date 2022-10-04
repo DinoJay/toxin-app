@@ -24,6 +24,11 @@
         rr:objectMap [ rr:column "DOSSIER" ; ] ;
     ] ;
 
+    #  rr:predicateObjectMap [
+    #     rr:predicate ont:guideline ;
+    #     rr:objectMap [ rr:column "\"GUIDELINE\"" ; ] ;
+    # ] ; 
+
     rr:predicateObjectMap [
         rr:predicate rdfs:seeAlso ;
         rr:objectMap [ rr:column "\"PDF link\"" ; rr:termType rr:IRI ; ] ;
@@ -57,6 +62,10 @@
 
     rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM ACUTETOXICITY" ] ;
   
+     rr:predicateObjectMap [
+        rr:predicate ont:guideline ;
+        rr:objectMap [ rr:column "\"GUIDELINE\"" ; ] ;
+    ] ; 
 
     rr:subjectMap [
         rr:template "http://toxin.vub.be/resource/test/acutetoxicity/{ID}" ;

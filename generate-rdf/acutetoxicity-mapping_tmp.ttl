@@ -29,6 +29,11 @@
         rr:predicate rdfs:seeAlso ;
         rr:objectMap [ rr:column "\"PDF link\"" ; rr:termType rr:IRI ; ] ;
     ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ont:guideline ;
+        rr:objectMap [ rr:column "guideline" ; ] ;
+    ] ; 
 .
 
 <#CompountTriplesMap>
