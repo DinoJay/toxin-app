@@ -7,7 +7,7 @@
 	let open = false;
 </script>
 
-<div class="bg-whitesmoke p-3 mb-2">
+<div class="bg-whitesmoke p-3 mb-2 {!value ? 'text-red-600' : ''}">
 	<button type="button">{key}</button>
 	<div class="ml-8  ">{value}</div>
 </div>

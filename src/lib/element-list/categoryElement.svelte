@@ -3,13 +3,18 @@
 	import StringElement from './stringElement.svelte';
 	import { fade, slide } from 'svelte/transition';
 	// import { v4 as uuidv4 } from 'uuid';
+	import { getAttrs } from '$lib/guidelineAttrs';
 
 	export let categories;
 	export let open;
-	// console.log('categories', categories);
+	// console.log('categories', guidelineAttrs('non OECD', categories));
+	const cs = getAttrs('non OECD', categories);
 
-	const cats = Object.entries(categories).map(([key, values]) => ({ key, values }));
-	// console.log('cats', cats);
+	const cats = Object.entries(cs).map(([key, values]) => ({
+		key,
+		values
+	}));
+	console.log('cats', cats);
 	// console.log('key', key);
 	// let open = false;
 </script>

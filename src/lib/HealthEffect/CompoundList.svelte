@@ -13,7 +13,6 @@
 	import uniqBy from '$lib/uniqBy';
 	import getParentCategories from '$lib/getTestParentCategories';
 	import { groups } from '$lib/group';
-	import { prevent_default } from 'svelte/internal';
 
 	const { bindings } = results;
 	const preData = bindings.map(transformObject);
@@ -36,6 +35,8 @@
 		preresults.map((d) => ({ ...d, categories: getParentCategories(endpoint)(d) })),
 		(d) => d.id
 	).sort((a, b) => Object.values(b.categories).length - Object.values(a.categories).length);
+
+	console.log('reportData', reportData);
 
 	const compoundData = [...groups(reportData, (d) => d.compoundLabel)]
 		.map(([key, values]) => ({

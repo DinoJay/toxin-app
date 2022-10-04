@@ -25,7 +25,7 @@
 				#{++i} Report
 				{v[attr]}
 			</div>
-			<CategoryElement open={openCategory[i]} categories={v.categories} key={v.id} {i} />
+			<CategoryElement open={openCategory[i]} categories={v.categories} />
 		</div>
 	{/each}
 {/if}
