@@ -14,7 +14,7 @@
 </div>
 {#if open}
 	{#each datum.values as v, i}
-		<div transition:fly>
+		<div>
 			<div
 				role="button"
 				class="ml-6 bg-lightblue p-3 my-2"

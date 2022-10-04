@@ -4,30 +4,20 @@
 
 	import VerticalList from './verticalList.svelte';
 
-	export let data;
-	export let groupBy;
 	export let secLabel;
+	export let grData;
 
-	const groupData = (data, attr) => {
-		const groupedData = [...group(data, (d) => d[attr])].map(([key, values]) => ({
-			id: uuidv4(),
-			key,
-			values
-		}));
-
-		return groupedData;
-	};
-	let grData = groupData(data, groupBy);
+	//= groupData(data, groupBy);
 	let offset = 10;
 	let numPages = Math.ceil(grData.length / offset);
 	let curPage = 0;
 	let numPagesArray = Array.from(Array(numPages));
-	$: {
-		grData = groupData(data, groupBy).sort((a, b) => b.values.length - a.values.length);
-		numPages = Math.ceil(grData.length / offset);
-		curPage = 0;
-		numPagesArray = Array.from(Array(numPages));
-	}
+	// $: {
+	// 	grData = grData.sort((a, b) => b.values.length - a.values.length);
+	// 	numPages = Math.ceil(grData.length / offset);
+	// 	curPage = 0;
+	// 	numPagesArray = Array.from(Array(numPages));
+	// }
 </script>
 
 <div class=" flex flex-col">

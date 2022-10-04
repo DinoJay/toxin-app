@@ -12,19 +12,44 @@
 	import transformObject from '$lib/transformObject';
 	import uniqBy from '$lib/uniqBy';
 	import getParentCategories from '$lib/getTestParentCategories';
+	import { groups } from '$lib/group';
+	import { prevent_default } from 'svelte/internal';
 
 	const { bindings } = results;
-	console.log('$$props compoundlist', $$props);
-	const data = uniqBy(
-		bindings
-			.map(transformObject)
-			.map((d) => ({ ...d, id: d.test, categories: getParentCategories(endpoint)(d) })),
+	const preData = bindings.map(transformObject);
+	const preresults = groups(preData, (d) => d.test)
+		.map(([key, values]) => ({ key, values }))
+		.map((d) => {
+			const obj = {};
+			d.values.forEach((e) => {
+				const attr = e.pred.substring(e.pred.lastIndexOf('#') + 1);
+				obj[attr] = e.value;
+				obj.compoundLabel = e.compoundLabel;
+			});
+			obj.id = d.key;
+			// obj.test = d.key;
+			// d.key = undefined;
+			d.values = undefined;
+			return obj;
+		});
+	const reportData = uniqBy(
+		preresults.map((d) => ({ ...d, categories: getParentCategories(endpoint)(d) })),
 		(d) => d.id
-	);
+	).sort((a, b) => Object.values(b.categories).length - Object.values(a.categories).length);
 
-	$: filteredData = data.sort((a, b) => Object.values(b).length - Object.values(a).length);
+	const compoundData = [...groups(reportData, (d) => d.compoundLabel)]
+		.map(([key, values]) => ({
+			id: key,
+			key,
+			values
+		}))
+		.sort((a, b) => b.values.length - a.values.length);
 
-	$: console.log('filteredData', filteredData, 'oecd', oecd, 'nonOecd', nonOecd);
+	let selected = 'compound';
+	const selectedClass = 'bg-blue-400';
+	// $: data = selected === 'compound' ? compoundData : reportData;
+	$: reportSelected = selected === 'report';
+	$: compoundSelected = selected === 'compound';
 
 	const testTypeDict = {
 		invivo: ['Test_Repeated_Toxicity_in_vivo_Non_OECD'],
@@ -32,11 +57,25 @@
 		insilico: [],
 		inchemico: []
 	};
+	console.log('data', reportData);
+	// 	numPages = Math.ceil(grData.length / offset);
+	// 	curPage = 0;
+	// 	numPagesArray = Array.from(Array(numPages));
+	// }
 </script>
 
-<h2>Compounds by Health Effect</h2>
+<div>
+	<button
+		class="m-1 p-1 border-2 {compoundSelected && selectedClass}"
+		on:click={() => (selected = 'compound')}>Compound View</button
+	>
+	<button
+		class="m-1 p-1 border-2 {reportSelected && selectedClass}"
+		on:click={() => (selected = 'report')}>Report View</button
+	>
+</div>
 <div class=" mt-3 flex flex-col ">
-	<ElementList data={filteredData} groupBy="compoundLabel" secLabel={'test'} />
+	<ElementList grData={selected === 'report' ? reportData : compoundData} secLabel={'id'} />
 </div>
 
 <style>

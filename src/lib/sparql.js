@@ -57,7 +57,7 @@ export const repeatedDoseToxicityQuery = `
 			?test ont:compound ?compound .
 			?compound rdfs:label ?compoundLabel .
 			?test rdf:type ?type .
-			?test ont:oecd_test_nr ?guideline .
+			?test ont:guideline ?guideline .
 
 		# 	const test_endpoints_keys = [
 		#     'target_organ',
@@ -267,18 +267,34 @@ const skinsensitisationUnmergedQuery = `
 		}
 `
 
+const actuteToxicityQuery = `
+		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		PREFIX ont: <http://ontologies.vub.be/oecd#>
+
+		SELECT DISTINCT *
+		WHERE {
+			?test a ont:Test .
+			?test ont:compound ?compound .
+			?compound rdfs:label ?compoundLabel .
+			?test rdf:type ?type .
+			?test ?pred ?value.
+		}
+`
+
+
 export const getSparqlQueryString = ({ endpoint, smiles = null, cas = null, inci = null }) => {
 	if (endpoint === REPEATED_DOSE_TOXICITY)
 		return repeatedDoseToxicityQuery
 
 	if (endpoint === ACUTE_TOXICITY)
-		return repeatedDoseToxicityQuery
+		return actuteToxicityQuery
 	if (endpoint === MUTAGENICITY)
-		return mutagenicityQuery
+		return actuteToxicityQuery
 	if (endpoint === CHEMICAL_IDENTITY)
 		return chemicalIdentityQuery({ smiles, cas, inci })
 	if (endpoint === SKIN_SENSITISATION_UNMERGED)
-		return skinsensitisationUnmergedQuery
+		return actuteToxicityQuery
 	if (endpoint === CARCINOGENICIY)
 		return carcinogenicityQuery
 }

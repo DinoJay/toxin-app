@@ -7,7 +7,7 @@
 	let open = false;
 </script>
 
-<div transition:fly class="bg-whitesmoke p-3 mb-2">
+<div class="bg-whitesmoke p-3 mb-2">
 	<button type="button">{key}</button>
 	<div class="ml-8  ">{value}</div>
 </div>

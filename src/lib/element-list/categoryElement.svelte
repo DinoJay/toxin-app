@@ -5,9 +5,7 @@
 	// import { v4 as uuidv4 } from 'uuid';
 
 	export let categories;
-	export let key;
 	export let open;
-	export let i;
 	// console.log('categories', categories);
 
 	const cats = Object.entries(categories).map(([key, values]) => ({ key, values }));
