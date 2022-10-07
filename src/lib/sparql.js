@@ -235,39 +235,7 @@ const chemicalIdentityQuery = ({ smiles, cas, inci }) => {
 // ont:vehicle                 "dmso" ;
 // ont:year                    "2005" .
 
-const skinsensitisationUnmergedQuery = `
-		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		PREFIX ont: <http://ontologies.vub.be/oecd#>
-
-		SELECT DISTINCT *
-		WHERE {
-			?test a ont:Test .
-			?test ont:compound ?compound .
-			?compound rdfs:label ?compoundLabel .
-			?test ont:oecd_test_nr ?guideline .
-
-			OPTIONAL { ?test ont:additional_info ?additional_info .  }
-			OPTIONAL { ?test ont:administration_scheme ?administration_scheme .  }
-			OPTIONAL { ?test ont:chemical_batch_nr ?chemical_batch_nr .  }
-			OPTIONAL { ?test ont:dose_levels ?dose_levels .  }
-			OPTIONAL { ?test ont:glp ?glp .}
-			OPTIONAL { ?test ont:n_animals_group ?n_animals_group .  }
-			OPTIONAL { ?test ont:observations_and_recording_of_toxicity ?observations_and_recording_of_toxicity .  }
-			OPTIONAL { ?test ont:oecd_test_nr ?oecd_test_nr .  }
-
-			OPTIONAL { ?test ont:purity ?purity .  }
-			OPTIONAL { ?test ont:ref_in_dossier ?ref_in_dossier .  }
-			OPTIONAL { ?test ont:sccs_comment_to_test ?sccs_comment_to_test .  }
-			OPTIONAL { ?test ont:sex ?sex .  }
-			OPTIONAL { ?test ont:species_strain ?species_strain .  }
-			OPTIONAL { ?test ont:stimulation_index ?stimulation_index .  }
-			OPTIONAL { ?test ont:vehicle ?vehicle .  }
-			OPTIONAL { ?test ont:year ?year .  }
-		}
-`
-
-const actuteToxicityQuery = `
+const sparqlQuery = `
 		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 		PREFIX ont: <http://ontologies.vub.be/oecd#>
@@ -288,15 +256,15 @@ export const getSparqlQueryString = ({ endpoint, smiles = null, cas = null, inci
 		return repeatedDoseToxicityQuery
 
 	if (endpoint === ACUTE_TOXICITY)
-		return actuteToxicityQuery
+		return sparqlQuery
 	if (endpoint === MUTAGENICITY)
-		return actuteToxicityQuery
+		return sparqlQuery
 	if (endpoint === CHEMICAL_IDENTITY)
 		return chemicalIdentityQuery({ smiles, cas, inci })
 	if (endpoint === SKIN_SENSITISATION_UNMERGED)
-		return actuteToxicityQuery
+		return sparqlQuery
 	if (endpoint === CARCINOGENICIY)
-		return carcinogenicityQuery
+		return sparqlQuery
 }
 
 // # ont:chemical_batch_nr      "110889" ;
