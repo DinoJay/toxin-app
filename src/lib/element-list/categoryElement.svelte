@@ -14,7 +14,6 @@
 		key,
 		values
 	}));
-	console.log('cats', cats);
 	// console.log('key', key);
 	// let open = false;
 </script>

@@ -1,180 +1,8 @@
 import { ACUTE_TOXICITY, MUTAGENICITY, REPEATED_DOSE_TOXICITY, CHEMICAL_IDENTITY, SKIN_SENSITISATION_UNMERGED, CARCINOGENICIY } from "./endpoint_constants"
-
-// ont:administration_scheme  
-// ont:chemical_batch_nr      
-// ont:conclusion             
-// ont:glp                    
-// ont:n_animals_group        
-// ont:observation_period     
-// ont:observations           
-// ont:oral                   
-// ont:purity                 
-// ont:ref_in_dossier         
-// ont:species_strain        
-// ont:study_duration        
-// ont:type                  
-// ont:vehicle               
-// ont:year                  
-
-const carcinogenicityQuery = `
-		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		PREFIX ont: <http://ontologies.vub.be/oecd#>
-
-		SELECT DISTINCT *
-		WHERE {
-			?test a ont:Test .
-			?test ont:compound ?compound .
-			?compound rdfs:label ?compoundLabel .
-			#// ?test ont:oecd_test_nr ?guideline .
-
-			OPTIONAL { ?test ont:chemical_batch_nr ?chemical_batch_nr .  }
-			OPTIONAL { ?test ont:chemical_batch_nr ?chemical_batch_nr .  }
-			OPTIONAL { ?test ont:conclusion ?conclusion .  }
-			OPTIONAL { ?test ont:glp ?glp .}
-			OPTIONAL { ?test ont:n_animals_group ?n_animals_group .  }
-			OPTIONAL { ?test ont:oecd ?observation_period .  }
-			OPTIONAL { ?test ont:observations ?observations .  }
-			OPTIONAL { ?test ont:oral ?oral .  }
-			OPTIONAL { ?test ont:purity ?purity .  }
-			OPTIONAL { ?test ont:ref_in_dossier ?ref_in_dossier .  }
-			OPTIONAL { ?test ont:species_strain ?species_strain .  }
-			OPTIONAL { ?test ont:study_duration ?study_duration .  }
-			OPTIONAL { ?test ont:type ?type .  }
-			OPTIONAL { ?test ont:vehicle ?vehicle .  }
-			OPTIONAL { ?test ont:year ?year .  }
-		}
-`
-
-export const repeatedDoseToxicityQuery = ` 
-		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-		PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-		PREFIX ont: <http://ontologies.vub.be/oecd#>
-
-		SELECT DISTINCT *
-		WHERE {
-			?test a ont:Test .
-			?test ont:compound ?compound .
-			?compound rdfs:label ?compoundLabel .
-			?test rdf:type ?type .
-			?test ont:guideline ?guideline .
-
-		# 	const test_endpoints_keys = [
-		#     'target_organ',
-		#     'observations',
-		#     'dose_descriptor',
-		#     'moribund_or_dead_animals_prior_to_study_termination',
-		#     'mortality_rate',
-		#     'conclusion'
-		# ];
-
-			OPTIONAL { ?test ont:target_organ ?target_organ .  }
-			OPTIONAL { ?test ont:observations ?observations .  }
-			OPTIONAL { ?test ont:dose_descriptor ?dose_descriptor .  }
-			OPTIONAL { ?test ont:moribound_or_dead_animals_prior_to_study_termination ?moribound_or_dead_animals_prior_to_study_termination .  }
-			OPTIONAL { ?test ont:mortality_rate ?mortality_rate .  }
-			OPTIONAL { ?test ont:conclusion ?conclusion .  }
-
-		# const test_conditions_keys = [
-		#     'dose_levels',
-		#     'dose_level_unit',
-		#     'dose_volume',
-		#     'rinsing_procedure',
-		#     'vehicle_concentration',
-		#     'exposure_time',
-		#     'observation_period'
-		# ]
-
-			OPTIONAL { ?test ont:dose_levels ?dose_levels .  }
-			OPTIONAL { ?test ont:dose_level_unit ?dose_level_unit .  }
-			OPTIONAL { ?test ont:dose_volume ?dose_volume .  }
-			OPTIONAL { ?test ont:rinsing_procedure ?rinsing_procedure .  }
-			OPTIONAL { ?test ont:vehicle_concentration ?vehicle_concentration .  }
-			OPTIONAL { ?test ont:exposure_time ?exposure_time .  }
-			OPTIONAL { ?test ont:observation_period ?observation_period .  }
-
-		# const test_substance_keys = [
-		#     'homogeneity_and_stability',
-		#     'treatment_prior_to_application',
-		#     'physical_form',
-		#     'concentration',
-		#     'composition',
-		#     'purity',
-		#     'solubility_in_vehicle',
-		#     'chemical_batch_nr',
-		#     'particle_size',
-		#     'additional_info'
-		# ];
-
-			OPTIONAL { ?test ont:homogeneity_and_stability ?homogeneity_and_stability .  }
-			OPTIONAL { ?test ont:treatment_prior_to_application ?treatment_prior_to_application .  }
-			OPTIONAL { ?test ont:physical_form ?physical_form .  }
-			OPTIONAL { ?test ont:concentration ?concentration .  }
-			OPTIONAL { ?test ont:composition ?composition .  }
-			OPTIONAL { ?test ont:purity ?purity .  }
-			OPTIONAL { ?test ont:solubility_in_vehicle ?solubility_in_vehicle .  }
-			OPTIONAL { ?test ont:chemical_batch_nr ?chemical_batch_nr .  }
-			OPTIONAL { ?test ont:particle_size ?particle_size .  }
-			OPTIONAL { ?test ont:additional_info ?additional_info .  }
-
-		# const route_of_exposure_keys = [
-		#     'oral',
-		#     'dermal',
-		#     'body_surface',
-		#     'patching_technique',
-		#     'skin_condition',
-		#     'inhalation',
-		#     'other'
-		# ];
-
-			OPTIONAL { ?test ont:oral ?oral .  }
-			OPTIONAL { ?test ont:dermal ?dermal .  }
-			OPTIONAL { ?test ont:body_surface ?body_surface .  }
-			OPTIONAL { ?test ont:patching_technique ?patching_technique .  }
-			OPTIONAL { ?test ont:skin_condition ?skin_condition .  }
-			OPTIONAL { ?test ont:inhalation ?inhalation .  }
-			OPTIONAL { ?test ont:other ?other .  }
-
-		# const test_species_keys = [
-		#     'species',
-		#     'source',
-		#     'age_at_start_of_experiment',
-		#     'age_measuring_unit',
-		#     'sex',
-		#     'weight',
-		#     'weight_measuring_unit',
-		#     'feed',
-		#     'n_animals_dose',
-		# ];
-
-			OPTIONAL { ?test ont:species ?species.  }
-			OPTIONAL { ?test ont:source ?source .  }
-			OPTIONAL { ?test ont:age_at_start_of_experiment ?age_at_start_of_experiment .  }
-			OPTIONAL { ?test ont:age_measuring_unit ?age_measuring_unit .  }
-			OPTIONAL { ?test ont:sex ?sex .  }
-			OPTIONAL { ?test ont:weight ?weight .  }
-			OPTIONAL { ?test ont:weight_measuring_unit ?weight_measuring_unit .  }
-			OPTIONAL { ?test ont:feed ?feed .  }
-			OPTIONAL { ?test ont:n_animals_dose ?n_animals_dose .  }
-
-		# const reliability_of_test_keys = [
-		#     'scss_comment_to_test',
-		#     'year',
-		#     'control_groups',
-		#     'glp',
-		#     'klimisch_score',
-		#     'Ref_in_dossier'
-		# ];
-
-			OPTIONAL { ?test ont:scss_comment_to_test ?scss_comment_to_test .  }
-			OPTIONAL { ?test ont:year ?year .  }
-			OPTIONAL { ?test ont:control_groups ?control_groups .  }
-			OPTIONAL { ?test ont:glp ?glp .  }
-			OPTIONAL { ?test ont:klimisch_score ?klimisch_score .  }
-			OPTIONAL { ?test ont:ref_in_dossier ?ref_in_dossier .  }
-		}	
-    `
-
+import transformObject from "./transformObject";
+import { groups } from "./group";
+import uniqBy from "./uniqBy";
+import getParentCategories from "./getTestParentCategories";
 
 const chemicalIdentityQuery = ({ smiles, cas, inci }) => {
 	const smilesStr = smiles
@@ -201,6 +29,7 @@ const chemicalIdentityQuery = ({ smiles, cas, inci }) => {
 				?compound ont:CAS_number ?cas_number .
 				${inciStr}
 				?compound ont:INCI ?inci .
+				?compound ?pred ?value .
 				OPTIONAL { ?compound ont:EC_number ?ec_number .  }
 				OPTIONAL { ?compound ont:additional_info ?additional_info .  }
 				OPTIONAL { ?compound ont:empirical_formula ?empirical_formula .  }
@@ -253,7 +82,7 @@ const sparqlQuery = `
 
 export const getSparqlQueryString = ({ endpoint, smiles = null, cas = null, inci = null }) => {
 	if (endpoint === REPEATED_DOSE_TOXICITY)
-		return repeatedDoseToxicityQuery
+		return sparqlQuery
 
 	if (endpoint === ACUTE_TOXICITY)
 		return sparqlQuery
@@ -325,3 +154,38 @@ export const endpointMaker = (n) => `https://wise.vub.ac.be/fuseki/${n}/sparql`;
 // export const endpointMaker = (n) => `http://localhost:3030/${n}/sparql`;
 export const constructQuery = ({ endpoint, cas = null, inci = null, smiles = null }) => `${endpointMaker(endpoint)}?query=${encodeURIComponent(getSparqlQueryString({ endpoint, cas, inci, smiles }))}&format=json`;
 
+
+export const transformBindings = (bindings, endpoint = null) => {
+	const preData = bindings.map(transformObject);
+	const preresults = groups(preData, (d) => d.test)
+		.map(([key, values]) => ({ key, values }))
+		.map((d) => {
+			const obj = {};
+			d.values.forEach((e) => {
+				const attr = e.pred.substring(e.pred.lastIndexOf('#') + 1);
+				obj[attr] = e.value;
+				obj.compoundLabel = e.compoundLabel;
+			});
+			obj.id = d.key;
+			// obj.test = d.key;
+			// d.key = undefined;
+			d.values = undefined;
+			return obj;
+		});
+	const reportData = uniqBy(
+		preresults.map((d) => ({ ...d, categories: getParentCategories(endpoint)(d) })),
+		(d) => d.id
+	).sort((a, b) => Object.values(b.categories).length - Object.values(a.categories).length);
+
+	console.log('reportData', reportData);
+
+	const compoundData = [...groups(reportData, (d) => d.compoundLabel)]
+		.map(([key, values]) => ({
+			id: key,
+			key,
+			values
+		}))
+		.sort((a, b) => b.values.length - a.values.length);
+
+	return { reportData, compoundData };
+};

@@ -348,6 +348,40 @@
         ont:study_duration        "90 days" ;
         ont:target_organ          "liver, kidney, brain, lungs, testes" .
 
+<http://toxin.vub.be/resource/dossier/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine>
+        a             ont:Report ;
+        rdfs:label    "2,6-diamino-3-((pyridin-3-yl)azo)pyridine" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_065.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/154> .
+
+<http://toxin.vub.be/resource/dossier/toluene-2%2C5-diamine%20and%20its%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "toluene-2,5-diamine and its sulfate" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_052.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/49> , <http://toxin.vub.be/resource/test/repeatedtoxicity/48> , <http://toxin.vub.be/resource/test/repeatedtoxicity/47> .
+
+<http://toxin.vub.be/resource/test/repeatedtoxicity/52>
+        a                       ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
+        rdfs:label              "sodium perborate (tetrahydrate) Test (52)" ;
+        ont:additional_info     "the reporting of the results of the available studies (procter & gamble, 1965, 1966a,b) is limited. however all relevant organs have been examined by histopathology and also haematological parameters have been investigated which have shown changes in the oral studies. therefore the studies are considered as sufficient for the risk assessment. in comparison with the results from the oral studies and as it can be assumed that sodium perborate is not taken up by the skin very efficiently the noael of this study of 200 mg/kg bw/d, which was the highest dose tested, may be too low. (conclusion by ECB, 2007)" , "test substance: sodium perborate tetrahydrate" ;
+        ont:composition         "aqueous solution" ;
+        ont:compound            <http://toxin.vub.be/resource/compound/sodium%20perborate%20%28tetrahydrate%29> ;
+        ont:concentration       "10" ;
+        ont:dermal              true ;
+        ont:dose_level_unit     "mg/kg bw/d" ;
+        ont:dose_levels         "200" ;
+        ont:exposure_time       "21" ;
+        ont:observation_period  "<90 days" ;
+        ont:observations        "there were no statistically significant differences compared to controls in growth, organ/body weight ratios (liver, kidney), blood parameters (all relevant parameters investigated, figures included in the report), gross pathology, or histopathology (organs required in current guidelines investigated). during the application of the 10 % solution to the abraded skin, some animals showed mild irritative effects." ;
+        ont:skin_condition      "damaged skin" ;
+        ont:species             "rabbits/new zealand white" ;
+        ont:species             <http://toxin.vub.be/resource/species/rabbits%2Fnew%20zealand%20white> ;
+        ont:year                "1965 1966a"^^xsd:integer .
+
+<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%207>
+        a           ont:Compound ;
+        rdfs:label  "hc yellow n° 7" .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/1>
         a                          ont:Test , ont:OECD408 ;
         rdfs:label                 "1,2,4-trihydroxybenzene Test (1)" ;
@@ -378,45 +412,34 @@
         ont:species                "rat/han wistar" ;
         ont:species                <http://toxin.vub.be/resource/species/rat%2Fhan%20wistar> .
 
-<http://toxin.vub.be/resource/dossier/toluene-2%2C5-diamine%20and%20its%20sulfate>
-        a             ont:Report ;
-        rdfs:label    "toluene-2,5-diamine and its sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_052.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/49> , <http://toxin.vub.be/resource/test/repeatedtoxicity/48> , <http://toxin.vub.be/resource/test/repeatedtoxicity/47> .
-
-<http://toxin.vub.be/resource/test/repeatedtoxicity/52>
-        a                       ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
-        rdfs:label              "sodium perborate (tetrahydrate) Test (52)" ;
-        ont:additional_info     "the reporting of the results of the available studies (procter & gamble, 1965, 1966a,b) is limited. however all relevant organs have been examined by histopathology and also haematological parameters have been investigated which have shown changes in the oral studies. therefore the studies are considered as sufficient for the risk assessment. in comparison with the results from the oral studies and as it can be assumed that sodium perborate is not taken up by the skin very efficiently the noael of this study of 200 mg/kg bw/d, which was the highest dose tested, may be too low. (conclusion by ECB, 2007)" , "test substance: sodium perborate tetrahydrate" ;
-        ont:composition         "aqueous solution" ;
-        ont:compound            <http://toxin.vub.be/resource/compound/sodium%20perborate%20%28tetrahydrate%29> ;
-        ont:concentration       "10" ;
-        ont:dermal              true ;
-        ont:dose_level_unit     "mg/kg bw/d" ;
-        ont:dose_levels         "200" ;
-        ont:exposure_time       "21" ;
-        ont:observation_period  "<90 days" ;
-        ont:observations        "there were no statistically significant differences compared to controls in growth, organ/body weight ratios (liver, kidney), blood parameters (all relevant parameters investigated, figures included in the report), gross pathology, or histopathology (organs required in current guidelines investigated). during the application of the 10 % solution to the abraded skin, some animals showed mild irritative effects." ;
-        ont:skin_condition      "damaged skin" ;
-        ont:species             "rabbits/new zealand white" ;
-        ont:species             <http://toxin.vub.be/resource/species/rabbits%2Fnew%20zealand%20white> ;
-        ont:year                "1965 1966a"^^xsd:integer .
-
-<http://toxin.vub.be/resource/compound/hc%20yellow%20n°%207>
-        a           ont:Compound ;
-        rdfs:label  "hc yellow n° 7" .
-
-<http://toxin.vub.be/resource/dossier/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine>
-        a             ont:Report ;
-        rdfs:label    "2,6-diamino-3-((pyridin-3-yl)azo)pyridine" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_065.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/154> .
-
 <http://toxin.vub.be/resource/dossier/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate>
         a             ont:Report ;
         rdfs:label    "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate" ;
         rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_177.pdf> ;
         ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/107> , <http://toxin.vub.be/resource/test/repeatedtoxicity/99> , <http://toxin.vub.be/resource/test/repeatedtoxicity/110> , <http://toxin.vub.be/resource/test/repeatedtoxicity/109> , <http://toxin.vub.be/resource/test/repeatedtoxicity/105> , <http://toxin.vub.be/resource/test/repeatedtoxicity/111> , <http://toxin.vub.be/resource/test/repeatedtoxicity/94> , <http://toxin.vub.be/resource/test/repeatedtoxicity/112> , <http://toxin.vub.be/resource/test/repeatedtoxicity/100> , <http://toxin.vub.be/resource/test/repeatedtoxicity/106> , <http://toxin.vub.be/resource/test/repeatedtoxicity/113> , <http://toxin.vub.be/resource/test/repeatedtoxicity/95> , <http://toxin.vub.be/resource/test/repeatedtoxicity/101> , <http://toxin.vub.be/resource/test/repeatedtoxicity/96> , <http://toxin.vub.be/resource/test/repeatedtoxicity/114> , <http://toxin.vub.be/resource/test/repeatedtoxicity/102> , <http://toxin.vub.be/resource/test/repeatedtoxicity/115> , <http://toxin.vub.be/resource/test/repeatedtoxicity/98> , <http://toxin.vub.be/resource/test/repeatedtoxicity/97> , <http://toxin.vub.be/resource/test/repeatedtoxicity/103> , <http://toxin.vub.be/resource/test/repeatedtoxicity/108> , <http://toxin.vub.be/resource/test/repeatedtoxicity/104> .
+
+<http://toxin.vub.be/resource/species/rat%2Fsprague-dawley%20%28tac%3An%28sd%29fbr%29>
+        a           ont:Species ;
+        rdfs:label  "rat/sprague-dawley (tac:n(sd)fbr)" .
+
+<http://toxin.vub.be/resource/test/repeatedtoxicity/22>
+        a                         ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
+        rdfs:label                "zinc pyrithione Test (22)" ;
+        ont:additional_info       "test substance: sodium pyrithione" ;
+        ont:compound              <http://toxin.vub.be/resource/compound/zinc%20pyrithione> ;
+        ont:dermal                false ;
+        ont:description_of_pod    "noel, mg/kg/d" ;
+        ont:glp                   false ;
+        ont:klimisch_score        "3" ;
+        ont:observation_period    "90 days" ;
+        ont:observations          "hind limb muscle atrophy (neurotoxic effect)" ;
+        ont:oral                  "yes" ;
+        ont:pod                   "0.5" ;
+        ont:ref_in_dossier        "hse 2003" ;
+        ont:scss_comment_to_test  "this study is not available for evaluation by the sccs. a read across from sodium pyrithione to zpt is considered appropriate based on the following reasoning: data on metabolism of zpt demonstrate that Zn is cleaved from the molecule after uptake and that ADME of the metal ion and the pyrithione moiety is different. studies performed in pigs using NaPT and zpt pointed to a common metabolic pathway (references b.68, b69, b.70). further, both Zn2+ and Na+ ions are not considered to be neurotoxic. thus, it can be assumed that neurotoxic effects observed after zpt exposure are due to the pyrithione moiety. it can thus be concluded that results from other pyrithione-liberating salts might support the findings obtained with zpt." ;
+        ont:species               "rat/sprague-dawley" ;
+        ont:species               <http://toxin.vub.be/resource/species/rat%2Fsprague-dawley> ;
+        ont:year                  1988 .
 
 <http://toxin.vub.be/resource/test/repeatedtoxicity/155>
         a                          ont:Test , ont:Test_Repeated_Toxicity_in_vivo_Non_OECD ;
@@ -449,29 +472,6 @@
                 "freshly dissolved in disilled water" ;
         ont:vehicle_concentration  "0.5" ;
         ont:vehicle_name           "aqueous cmc" .
-
-<http://toxin.vub.be/resource/species/rat%2Fsprague-dawley%20%28tac%3An%28sd%29fbr%29>
-        a           ont:Species ;
-        rdfs:label  "rat/sprague-dawley (tac:n(sd)fbr)" .
-
-<http://toxin.vub.be/resource/test/repeatedtoxicity/22>
-        a                         ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
-        rdfs:label                "zinc pyrithione Test (22)" ;
-        ont:additional_info       "test substance: sodium pyrithione" ;
-        ont:compound              <http://toxin.vub.be/resource/compound/zinc%20pyrithione> ;
-        ont:dermal                false ;
-        ont:description_of_pod    "noel, mg/kg/d" ;
-        ont:glp                   false ;
-        ont:klimisch_score        "3" ;
-        ont:observation_period    "90 days" ;
-        ont:observations          "hind limb muscle atrophy (neurotoxic effect)" ;
-        ont:oral                  "yes" ;
-        ont:pod                   "0.5" ;
-        ont:ref_in_dossier        "hse 2003" ;
-        ont:scss_comment_to_test  "this study is not available for evaluation by the sccs. a read across from sodium pyrithione to zpt is considered appropriate based on the following reasoning: data on metabolism of zpt demonstrate that Zn is cleaved from the molecule after uptake and that ADME of the metal ion and the pyrithione moiety is different. studies performed in pigs using NaPT and zpt pointed to a common metabolic pathway (references b.68, b69, b.70). further, both Zn2+ and Na+ ions are not considered to be neurotoxic. thus, it can be assumed that neurotoxic effects observed after zpt exposure are due to the pyrithione moiety. it can thus be concluded that results from other pyrithione-liberating salts might support the findings obtained with zpt." ;
-        ont:species               "rat/sprague-dawley" ;
-        ont:species               <http://toxin.vub.be/resource/species/rat%2Fsprague-dawley> ;
-        ont:year                  1988 .
 
 <http://toxin.vub.be/resource/compound/polysilicone-15>
         a           ont:Compound ;
@@ -735,40 +735,6 @@
         a           ont:Species ;
         rdfs:label  "rat /wistar" .
 
-<http://toxin.vub.be/resource/test/repeatedtoxicity/149>
-        a                               ont:OECD407 , ont:Test ;
-        rdfs:label                      "2,5,6-triamino-4-pyrimidinol sulfate Test (149)" ;
-        ont:additional_info             "test substance: 4-OH-2,5,6-triamino-pyrimidine sulphate homogenized in corn oil" , "guideline: oecd 407 and EEC 84/449/EEC part b.7" ;
-        ont:administration_scheme       "once daily, 7 days per week" ;
-        ont:age_at_start_of_experiment  "f & m" ;
-        ont:chemical_batch_nr           "815 7329" ;
-        ont:compound                    <http://toxin.vub.be/resource/compound/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate> ;
-        ont:control_groups              "the control group received the vehicle (corn oil) only" ;
-        ont:critical_effect             "clinical sign ( sedation, ruffled fur and body weight loss), tubular basophilia" ;
-        ont:dermal                      false ;
-        ont:description_of_pod          "noael mg/kg bw/day" ;
-        ont:dose_level_unit             "mg/kg bw/day" ;
-        ont:dose_levels                 "0, 50, 200, 1000" ;
-        ont:dose_volume                 "10" ;
-        ont:exposure_time               "28" ;
-        ont:feed                        "10" ;
-        ont:glp                         true ;
-        ont:moribound_or_dead_animals_prior_to_study_termination
-                false ;
-        ont:observation_period          "< 90 days" ;
-        ont:observations                "all animals were observed daily for clinical signs and mortality. bodyweights, food and water consumption were recorded individually in weekly intervals. ophthalmoscopic examination was performed at week 4 on all animals. at week 4, blood and urine samples were taken of all animals for haematological (17 parameters), clinical chemistry (22 parameters) investigations as well for urinalysis (13 parameters). all animals were sacrificed at the end of the study. organ weights were recorded. macroscopy and histopathology were performed on all animals. no animal died during the study. one female of the 1000 mg/kg bw/day group showed clinical signs (sedation, ruffled fur and body weight loss). no changes in food consumption or bodyweight gain were observed related to the test substance. no abnormal findings were noted at ophthalmoscopy. no relevant changes were found in haematology, clinical biochemistry, absolute and relative organ weights. a discoloration of the urine was observed in the dose groups 200 mg/kg bw/day (deep-yellow) and 1000 mg/kg bw/day (deepbrown). discoloration or discoloured foci were observed in some organs in all test substance treated groups. 2 females of the 1000 mg/kg bw/day group had abnormalities of the kidneys: tubular basophilia and brownish pigment intratubular or in the pelvis." ;
-        ont:oecd_test_nr                "407" ;
-        ont:oral                        "yes, gavage" ;
-        ont:pod                         "200" ;
-        ont:purity                      "97" ;
-        ont:ref_in_dossier              "7 (submission 1)" ;
-        ont:species                     "rat/hanIbm: wist" ;
-        ont:species                     <http://toxin.vub.be/resource/species/rat%2Fsprague-dawley%20%5Bcrl%3Acd%20%28sd%29> , <http://toxin.vub.be/resource/species/spf%5D> ;
-        ont:target_organ                "kidney" ;
-        ont:vehicle_name                "corn oil" ;
-        ont:weight                      "145.0-156.0; 145.7-158.2" ;
-        ont:weight_measuring_unit       "gram male; female" .
-
 <http://toxin.vub.be/resource/test/repeatedtoxicity/16>
         a                          ont:OECD411 , ont:Test ;
         rdfs:label                 "?-arbutin Test (16)" ;
@@ -803,6 +769,40 @@
         ont:vehicle_concentration  "50" ;
         ont:vehicle_name           "water/ethanol solution" ;
         ont:year                   1986 .
+
+<http://toxin.vub.be/resource/test/repeatedtoxicity/149>
+        a                               ont:OECD407 , ont:Test ;
+        rdfs:label                      "2,5,6-triamino-4-pyrimidinol sulfate Test (149)" ;
+        ont:additional_info             "test substance: 4-OH-2,5,6-triamino-pyrimidine sulphate homogenized in corn oil" , "guideline: oecd 407 and EEC 84/449/EEC part b.7" ;
+        ont:administration_scheme       "once daily, 7 days per week" ;
+        ont:age_at_start_of_experiment  "f & m" ;
+        ont:chemical_batch_nr           "815 7329" ;
+        ont:compound                    <http://toxin.vub.be/resource/compound/2%2C5%2C6-triamino-4-pyrimidinol%20sulfate> ;
+        ont:control_groups              "the control group received the vehicle (corn oil) only" ;
+        ont:critical_effect             "clinical sign ( sedation, ruffled fur and body weight loss), tubular basophilia" ;
+        ont:dermal                      false ;
+        ont:description_of_pod          "noael mg/kg bw/day" ;
+        ont:dose_level_unit             "mg/kg bw/day" ;
+        ont:dose_levels                 "0, 50, 200, 1000" ;
+        ont:dose_volume                 "10" ;
+        ont:exposure_time               "28" ;
+        ont:feed                        "10" ;
+        ont:glp                         true ;
+        ont:moribound_or_dead_animals_prior_to_study_termination
+                false ;
+        ont:observation_period          "< 90 days" ;
+        ont:observations                "all animals were observed daily for clinical signs and mortality. bodyweights, food and water consumption were recorded individually in weekly intervals. ophthalmoscopic examination was performed at week 4 on all animals. at week 4, blood and urine samples were taken of all animals for haematological (17 parameters), clinical chemistry (22 parameters) investigations as well for urinalysis (13 parameters). all animals were sacrificed at the end of the study. organ weights were recorded. macroscopy and histopathology were performed on all animals. no animal died during the study. one female of the 1000 mg/kg bw/day group showed clinical signs (sedation, ruffled fur and body weight loss). no changes in food consumption or bodyweight gain were observed related to the test substance. no abnormal findings were noted at ophthalmoscopy. no relevant changes were found in haematology, clinical biochemistry, absolute and relative organ weights. a discoloration of the urine was observed in the dose groups 200 mg/kg bw/day (deep-yellow) and 1000 mg/kg bw/day (deepbrown). discoloration or discoloured foci were observed in some organs in all test substance treated groups. 2 females of the 1000 mg/kg bw/day group had abnormalities of the kidneys: tubular basophilia and brownish pigment intratubular or in the pelvis." ;
+        ont:oecd_test_nr                "407" ;
+        ont:oral                        "yes, gavage" ;
+        ont:pod                         "200" ;
+        ont:purity                      "97" ;
+        ont:ref_in_dossier              "7 (submission 1)" ;
+        ont:species                     "rat/hanIbm: wist" ;
+        ont:species                     <http://toxin.vub.be/resource/species/rat%2Fsprague-dawley%20%5Bcrl%3Acd%20%28sd%29> , <http://toxin.vub.be/resource/species/spf%5D> ;
+        ont:target_organ                "kidney" ;
+        ont:vehicle_name                "corn oil" ;
+        ont:weight                      "145.0-156.0; 145.7-158.2" ;
+        ont:weight_measuring_unit       "gram male; female" .
 
 <http://toxin.vub.be/resource/test/repeatedtoxicity/119>
         a                          ont:Test , ont:Test_Repeated_Toxicity_in_vivo_Non_OECD ;
@@ -1027,15 +1027,15 @@
         rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_033.pdf> ;
         ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/142> .
 
-<http://toxin.vub.be/resource/species/rat%2Fsprague%20dawley%20ofa>
-        a           ont:Species ;
-        rdfs:label  "rat/sprague dawley ofa" .
-
 <http://toxin.vub.be/resource/dossier/n%2Cn’-bis-%282-hydroxyethyl%29-2-nitro-p-phenylenediamine>
         a             ont:Report ;
         rdfs:label    "n,n’-bis-(2-hydroxyethyl)-2-nitro-p-phenylenediamine" ;
         rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_196.pdf> ;
         ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/121> , <http://toxin.vub.be/resource/test/repeatedtoxicity/120> .
+
+<http://toxin.vub.be/resource/species/rat%2Fsprague%20dawley%20ofa>
+        a           ont:Species ;
+        rdfs:label  "rat/sprague dawley ofa" .
 
 <http://toxin.vub.be/resource/species/rat%2Fcolworth%20wistar>
         a           ont:Species ;
@@ -1170,6 +1170,27 @@
         a           ont:Species ;
         rdfs:label  "mouse/swiss webster" .
 
+<http://toxin.vub.be/resource/test/repeatedtoxicity/11>
+        a                          ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
+        rdfs:label                 "vitamin a Test (11)" ;
+        ont:administration_scheme  "continuous daily" ;
+        ont:composition            "retinol and retinyl esters" ;
+        ont:compound               <http://toxin.vub.be/resource/compound/vitamin%20a> ;
+        ont:conclusion             "cases of hepatotoxicity have not been reported below 7500 mg retinol equivalence/day, and it can be hypothesised that this value might be the upper threshold of the storage capabilities of the liver." ;
+        ont:dermal                 false ;
+        ont:exposure_time          "2190" ;
+        ont:klimisch_score         "3" ;
+        ont:moribound_or_dead_animals_prior_to_study_termination
+                true ;
+        ont:mortality_rate         "death of one patient due to progressive liver failure, cirrhosis" ;
+        ont:observation_period     "> 90days" ;
+        ont:observations           "hepatotoxicity, changes in lipid metabolism and in bone density, and teratogenicity" ;
+        ont:oral                   "yes" ;
+        ont:ref_in_dossier         "scf" ;
+        ont:species                "human" ;
+        ont:species                <http://toxin.vub.be/resource/species/human> ;
+        ont:year                   2002 .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/144>
         a                               ont:Test , ont:OECD422 ;
         rdfs:label                      "1,3,5-triazine, 2,4,6-tris(1,1'-biphenyl)-4-yl- Test (144)" ;
@@ -1198,27 +1219,6 @@
         ont:species                     "rat/ sprague dawley, crl cd (sd) igs br" ;
         ont:species                     <http://toxin.vub.be/resource/species/rat%2Fsprague-dawley> , <http://toxin.vub.be/resource/species/crl%20cd%20%28sd%29%20igs%20br> ;
         ont:vehicle_name                "purified water" .
-
-<http://toxin.vub.be/resource/test/repeatedtoxicity/11>
-        a                          ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
-        rdfs:label                 "vitamin a Test (11)" ;
-        ont:administration_scheme  "continuous daily" ;
-        ont:composition            "retinol and retinyl esters" ;
-        ont:compound               <http://toxin.vub.be/resource/compound/vitamin%20a> ;
-        ont:conclusion             "cases of hepatotoxicity have not been reported below 7500 mg retinol equivalence/day, and it can be hypothesised that this value might be the upper threshold of the storage capabilities of the liver." ;
-        ont:dermal                 false ;
-        ont:exposure_time          "2190" ;
-        ont:klimisch_score         "3" ;
-        ont:moribound_or_dead_animals_prior_to_study_termination
-                true ;
-        ont:mortality_rate         "death of one patient due to progressive liver failure, cirrhosis" ;
-        ont:observation_period     "> 90days" ;
-        ont:observations           "hepatotoxicity, changes in lipid metabolism and in bone density, and teratogenicity" ;
-        ont:oral                   "yes" ;
-        ont:ref_in_dossier         "scf" ;
-        ont:species                "human" ;
-        ont:species                <http://toxin.vub.be/resource/species/human> ;
-        ont:year                   2002 .
 
 <http://toxin.vub.be/resource/compound/zinc%20pyrithione>
         a           ont:Compound ;
@@ -2137,6 +2137,12 @@
         ont:species                     "human" ;
         ont:species                     <http://toxin.vub.be/resource/species/human> .
 
+<http://toxin.vub.be/resource/dossier/hydroxyethyl-2-nitro-p-toluidine>
+        a             ont:Report ;
+        rdfs:label    "hydroxyethyl-2-nitro-p-toluidine" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_061.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/87> , <http://toxin.vub.be/resource/test/repeatedtoxicity/86> .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/115>
         a                         ont:Test , ont:Test_Repeated_Toxicity_in_vivo_Non_OECD ;
         rdfs:label                "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate Test (115)" ;
@@ -2161,12 +2167,6 @@
         ont:sex                   "f & m" ;
         ont:species               "mouse/b6c3f1" ;
         ont:species               <http://toxin.vub.be/resource/species/rat%2Fsprague-dawley%20crl%3Acd%28sd%29br%20%28vaf%20plus%29> .
-
-<http://toxin.vub.be/resource/dossier/hydroxyethyl-2-nitro-p-toluidine>
-        a             ont:Report ;
-        rdfs:label    "hydroxyethyl-2-nitro-p-toluidine" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_061.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/87> , <http://toxin.vub.be/resource/test/repeatedtoxicity/86> .
 
 <http://toxin.vub.be/resource/test/repeatedtoxicity/84>
         a                         ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
@@ -2285,6 +2285,12 @@
         ont:species                "rabbit" ;
         ont:species                <http://toxin.vub.be/resource/species/rabbit> .
 
+<http://toxin.vub.be/resource/dossier/2%2C6-dihydroxyethylaminotoluene>
+        a             ont:Report ;
+        rdfs:label    "2,6-dihydroxyethylaminotoluene" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_188.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/156> , <http://toxin.vub.be/resource/test/repeatedtoxicity/155> .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/127>
         a                              ont:OECD408 , ont:Test ;
         rdfs:label                     "hydroxyethoxyphenyl butanone Test (127)" ;
@@ -2321,12 +2327,6 @@
         ont:vehicle_concentration      "0.5 + 2.0" ;
         ont:vehicle_name               "cmc (w/v) in water + tween® 80 (v/v)" ;
         ont:year                       2012 .
-
-<http://toxin.vub.be/resource/dossier/2%2C6-dihydroxyethylaminotoluene>
-        a             ont:Report ;
-        rdfs:label    "2,6-dihydroxyethylaminotoluene" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_188.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/156> , <http://toxin.vub.be/resource/test/repeatedtoxicity/155> .
 
 <http://toxin.vub.be/resource/test/repeatedtoxicity/96>
         a                         ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
@@ -2411,6 +2411,16 @@
         ont:species                <http://toxin.vub.be/resource/species/mouse%20%2F%20crl%3Acd-1%20%28icr%29%20br%20%28vaf%20plus%29> ;
         ont:year                   1991 .
 
+<http://toxin.vub.be/resource/dossier/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl>
+        a             ont:Report ;
+        rdfs:label    "hydroxypropyl bis(n-hydroxyethyl-p-phenylenediamine) HCl" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_011.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/137> .
+
+<http://toxin.vub.be/resource/compound/phenoxyethanol>
+        a           ont:Compound ;
+        rdfs:label  "phenoxyethanol" .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/139>
         a                          ont:OECD402 , ont:Test ;
         rdfs:label                 "basic red 51 Test (139)" ;
@@ -2440,16 +2450,6 @@
         ont:species                "guinea pig/albino Ibm: gohi, spf" ;
         ont:species                <http://toxin.vub.be/resource/species/rat%2F%20wistar%20spf-bred> ;
         ont:vehicle_name           "doubledistilled water" .
-
-<http://toxin.vub.be/resource/dossier/hydroxypropyl%20bis%28n-hydroxyethyl-p-phenylenediamine%29%20HCl>
-        a             ont:Report ;
-        rdfs:label    "hydroxypropyl bis(n-hydroxyethyl-p-phenylenediamine) HCl" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_011.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/137> .
-
-<http://toxin.vub.be/resource/compound/phenoxyethanol>
-        a           ont:Compound ;
-        rdfs:label  "phenoxyethanol" .
 
 <http://toxin.vub.be/resource/dossier/1-hydroxyethyl-4%2C5-diamino%20pyrazole%20sulfate>
         a             ont:Report ;
@@ -3466,9 +3466,11 @@
         ont:vehicle_name               "reverse osmosis deionized water, pH 5.0 + 0.3" ;
         ont:year                       2010 .
 
-<http://toxin.vub.be/resource/compound/1%2C5-naphthalenediol>
-        a           ont:Compound ;
-        rdfs:label  "1,5-naphthalenediol" .
+<http://toxin.vub.be/resource/dossier/n-methyl-2-pyrrolidone%20%28NMP%29>
+        a             ont:Report ;
+        rdfs:label    "n-methyl-2-pyrrolidone (NMP)" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/85> , <http://toxin.vub.be/resource/test/repeatedtoxicity/79> , <http://toxin.vub.be/resource/test/repeatedtoxicity/78> , <http://toxin.vub.be/resource/test/repeatedtoxicity/82> , <http://toxin.vub.be/resource/test/repeatedtoxicity/80> , <http://toxin.vub.be/resource/test/repeatedtoxicity/83> , <http://toxin.vub.be/resource/test/repeatedtoxicity/81> , <http://toxin.vub.be/resource/test/repeatedtoxicity/84> .
 
 <http://toxin.vub.be/resource/test/repeatedtoxicity/111>
         a                          ont:Test , ont:Test_Repeated_Toxicity_in_vivo_Non_OECD ;
@@ -3505,11 +3507,9 @@
         ont:species          "rat, rabbit, monkey, dog" ;
         ont:species          <http://toxin.vub.be/resource/species/rabbit> , <http://toxin.vub.be/resource/species/rat> , <http://toxin.vub.be/resource/species/monkey> , <http://toxin.vub.be/resource/species/dog> .
 
-<http://toxin.vub.be/resource/dossier/n-methyl-2-pyrrolidone%20%28NMP%29>
-        a             ont:Report ;
-        rdfs:label    "n-methyl-2-pyrrolidone (NMP)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/85> , <http://toxin.vub.be/resource/test/repeatedtoxicity/79> , <http://toxin.vub.be/resource/test/repeatedtoxicity/78> , <http://toxin.vub.be/resource/test/repeatedtoxicity/82> , <http://toxin.vub.be/resource/test/repeatedtoxicity/80> , <http://toxin.vub.be/resource/test/repeatedtoxicity/83> , <http://toxin.vub.be/resource/test/repeatedtoxicity/81> , <http://toxin.vub.be/resource/test/repeatedtoxicity/84> .
+<http://toxin.vub.be/resource/compound/1%2C5-naphthalenediol>
+        a           ont:Compound ;
+        rdfs:label  "1,5-naphthalenediol" .
 
 <http://toxin.vub.be/resource/test/repeatedtoxicity/80>
         a                          ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
@@ -3967,6 +3967,27 @@
         rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_015.pdf> ;
         ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/58> , <http://toxin.vub.be/resource/test/repeatedtoxicity/57> , <http://toxin.vub.be/resource/test/repeatedtoxicity/56> .
 
+<http://toxin.vub.be/resource/test/repeatedtoxicity/14>
+        a                    ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
+        rdfs:label           "vitamin a Test (14)" ;
+        ont:additional_info  "the origin of the vitamin a intake (supplement or food) was available for all subjects" ;
+        ont:compound         <http://toxin.vub.be/resource/compound/vitamin%20a> ;
+        ont:conclusion       "the authors fitted a regression curve to their data, which indicated a rise in the ratio of prevalence of birth defects associated to the cranial-neural crest at doses greater than 3000 mg re/day of vitamin a (food and supplement). the conclusions of the study remained the same when several potential confounding factors were considered. the quantitative conclusion from this study was that 3000 mg re/day of supplemental vitamin a can be considered as a threshold for teratogenicity, which would be associated with a low or negligible risk of teratogenicity" ;
+        ont:dermal           false ;
+        ont:feed             "22748" ;
+        ont:klimisch_score   "2" ;
+        ont:observations     "women taking more than 4500 mg re of total vitamin a (from food and supplement) daily had a 3.5 times higher risk of giving birth to a child with cranial-neural-crest defects, than mothers ingesting less than 1500 mg re/day. when the analysis was restricted to the supplemental intake of vitamin a only, the relative risk for mothers ingesting more than 3000 mg re/day was 4.8 higher than those ingesting 1500 mg re/day." ;
+        ont:oral             "yes" ;
+        ont:ref_in_dossier   "scf" ;
+        ont:sex              "f" ;
+        ont:species          "human /pregnant" ;
+        ont:species          <http://toxin.vub.be/resource/species/human%20%2Fpregnant> ;
+        ont:year             2002 .
+
+<http://toxin.vub.be/resource/species/rat%2Fwistar%20hannover%20%28hsdbrlhan%3Awist%29>
+        a           ont:Species ;
+        rdfs:label  "rat/wistar hannover (hsdbrlhan:wist)" .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/147>
         a                               ont:OECD408 , ont:Test ;
         rdfs:label                      "1-hydroxyethyl-4,5-diamino pyrazole sulfate Test (147)" ;
@@ -4000,27 +4021,6 @@
         ont:species                     <http://toxin.vub.be/resource/species/rat%2FhanIbm%3A%20wist> ;
         ont:target_organ                "spleen" ;
         ont:vehicle_name                "distilled water" .
-
-<http://toxin.vub.be/resource/test/repeatedtoxicity/14>
-        a                    ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
-        rdfs:label           "vitamin a Test (14)" ;
-        ont:additional_info  "the origin of the vitamin a intake (supplement or food) was available for all subjects" ;
-        ont:compound         <http://toxin.vub.be/resource/compound/vitamin%20a> ;
-        ont:conclusion       "the authors fitted a regression curve to their data, which indicated a rise in the ratio of prevalence of birth defects associated to the cranial-neural crest at doses greater than 3000 mg re/day of vitamin a (food and supplement). the conclusions of the study remained the same when several potential confounding factors were considered. the quantitative conclusion from this study was that 3000 mg re/day of supplemental vitamin a can be considered as a threshold for teratogenicity, which would be associated with a low or negligible risk of teratogenicity" ;
-        ont:dermal           false ;
-        ont:feed             "22748" ;
-        ont:klimisch_score   "2" ;
-        ont:observations     "women taking more than 4500 mg re of total vitamin a (from food and supplement) daily had a 3.5 times higher risk of giving birth to a child with cranial-neural-crest defects, than mothers ingesting less than 1500 mg re/day. when the analysis was restricted to the supplemental intake of vitamin a only, the relative risk for mothers ingesting more than 3000 mg re/day was 4.8 higher than those ingesting 1500 mg re/day." ;
-        ont:oral             "yes" ;
-        ont:ref_in_dossier   "scf" ;
-        ont:sex              "f" ;
-        ont:species          "human /pregnant" ;
-        ont:species          <http://toxin.vub.be/resource/species/human%20%2Fpregnant> ;
-        ont:year             2002 .
-
-<http://toxin.vub.be/resource/species/rat%2Fwistar%20hannover%20%28hsdbrlhan%3Awist%29>
-        a           ont:Species ;
-        rdfs:label  "rat/wistar hannover (hsdbrlhan:wist)" .
 
 <http://toxin.vub.be/resource/test/repeatedtoxicity/117>
         a                               ont:OECD407 , ont:Test ;
@@ -4230,6 +4230,16 @@
         ont:species                "rat/ sprague dawley crl:cd(sd) br" ;
         ont:species                <http://toxin.vub.be/resource/species/rat%2Fsprague-dawley> , <http://toxin.vub.be/resource/species/crl%3Acd®%28sd%29igs%20br> .
 
+<http://toxin.vub.be/resource/dossier/%3F-arbutin>
+        a             ont:Report ;
+        rdfs:label    "?-arbutin" ;
+        rdfs:seeAlso  <http://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_169.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/16> , <http://toxin.vub.be/resource/test/repeatedtoxicity/15> .
+
+<http://toxin.vub.be/resource/species/guinea%20pig%2Falbino%20Ibm%3A%20gohi>
+        a           ont:Species ;
+        rdfs:label  "guinea pig/albino Ibm: gohi" .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/98>
         a                         ont:Test , ont:Test_Repeated_Toxicity_in_vivo_Non_OECD ;
         rdfs:label                "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate Test (98)" ;
@@ -4248,31 +4258,21 @@
         ont:species               "rat/f344" ;
         ont:species               <http://toxin.vub.be/resource/species/mouse%2Fb6c3f1> .
 
-<http://toxin.vub.be/resource/species/guinea%20pig%2Falbino%20Ibm%3A%20gohi>
-        a           ont:Species ;
-        rdfs:label  "guinea pig/albino Ibm: gohi" .
-
-<http://toxin.vub.be/resource/dossier/%3F-arbutin>
-        a             ont:Report ;
-        rdfs:label    "?-arbutin" ;
-        rdfs:seeAlso  <http://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_169.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/16> , <http://toxin.vub.be/resource/test/repeatedtoxicity/15> .
-
 <http://toxin.vub.be/resource/dossier/quinolinium%2C%204-formyl-1-methyl-%2C%20salt%20with%204-methylbenzene%20sulfonic%20acid%20%281%3A1%29>
         a             ont:Report ;
         rdfs:label    "quinolinium, 4-formyl-1-methyl-, salt with 4-methylbenzene sulfonic acid (1:1)" ;
         rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_080.pdf> ;
         ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/55> , <http://toxin.vub.be/resource/test/repeatedtoxicity/54> .
 
-<http://toxin.vub.be/resource/species/rat%2F%20sprague-dawley>
-        a           ont:Species ;
-        rdfs:label  "rat/ sprague-dawley" .
-
 <http://toxin.vub.be/resource/dossier/picramic%20acid%20and%20sodium%20picramate>
         a             ont:Report ;
         rdfs:label    "picramic acid and sodium picramate" ;
         rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_042.pdf> ;
         ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/63> , <http://toxin.vub.be/resource/test/repeatedtoxicity/62> .
+
+<http://toxin.vub.be/resource/species/rat%2F%20sprague-dawley>
+        a           ont:Species ;
+        rdfs:label  "rat/ sprague-dawley" .
 
 <http://toxin.vub.be/resource/dossier/zinc%20pyrithione>
         a             ont:Report ;
@@ -4569,38 +4569,6 @@
         a           ont:Compound ;
         rdfs:label  "trisodium nitrilotriacetate" .
 
-<http://toxin.vub.be/resource/test/repeatedtoxicity/154>
-        a                          ont:OECD408 , ont:Test ;
-        rdfs:label                 "2,6-diamino-3-((pyridin-3-yl)azo)pyridine Test (154)" ;
-        ont:additional_info        "test substance: da100491" ;
-        ont:administration_scheme  "daily 7 days/week" ;
-        ont:chemical_batch_nr      "gst 4-11029" ;
-        ont:compound               <http://toxin.vub.be/resource/compound/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine> ;
-        ont:conclusion             "the NOAEL for 2,6-diamino-3-((pyridine-3-yl)azo)pyridine in this 90 day study was 3 mg/kg bw/d." ;
-        ont:control_groups         "recovery group: 10 per sex, control and high dose, after the 90-day period, a recovery group (high dose and controls) of 10 animals per sex were kept for further 4 weeks untreated to check for reversibility of possible test substance related effects." ;
-        ont:dermal                 false ;
-        ont:description_of_pod     "noael mg/kg bw/d" ;
-        ont:dose_level_unit        "mg/kg bw/day" ;
-        ont:dose_levels            "3, 12, 45" ;
-        ont:dose_volume            "10" ;
-        ont:exposure_time          "91 + 28" ;
-        ont:feed                   "30" ;
-        ont:glp                    true ;
-        ont:observation_period     "> 90 days" ;
-        ont:observations           "clinical observations and mortality were assessed daily. body weight, food consumption were recorded weekly. initially, followed by monthly checks of ophthalmic condition, blood biochemistry and haematology were performed. at 90 days, scheduled animals were killed and organ weights were determined. organs and tissues from all animals in each group were preserved and the majority were examined histopathologically. all animals survived until the end of the study. staining of bedding and discoloured urine were seen in all dosed groups. initially, some animals from all dose groups showed diarrhoea. no other substance-related effects were observed in the low dose group. at the higher doses, some alterations in group mean values for haematological and blood biochemical parameters were observed (e.g. percentage of neutrophils, lymphocytes, erythrocytes, levels of cholesterol, bilirubin). all parameters returned to normal values in the recovery period. dark colouration and enlargement of the thyroid glands were observed in the mid and/or high dose group. these alterations persisted until the end of the recovery period in the high dose group. histological alterations were detected in the thyroid glands (cytoplasmatic pigment deposits in F-cells, proliferation) and spleens (haematopoiesis, pigment deposits). pigment deposits in thyroid F-cells and spleen were still found at the end of the recovery period. these pigment deposits were considered to indicate only the presence of either the test substance or a metabolite and not a pathological finding. the relative organ weights of kidney and liver increased in the mid and high dose groups, and absolute kidney and liver weights increased in males of the high dose group. after recovery, the relative liver weights in high dose females remained increased. in high dose males, lowered absolute and relative testis weights were observed. since these observed haematological, blood biochemical, histopathological and organ weight changes did not have a consistent pattern, the study authors interpreted them as adaptive or reactive changes to test substance exposure at 3 mg/kg bw/d. however, they considered the changes adverse effects when dosed at 12 and 45 mg/kg bw/d" ;
-        ont:oecd_test_nr           "408" ;
-        ont:oral                   "yes, gavage" ;
-        ont:pod                    "3" ;
-        ont:preliminary_test       "in a preliminary range finding, a noel of 15 mg/kg bw/day was found. the dose range was selected as a result of this study." ;
-        ont:purity                 ">99" ;
-        ont:ref_in_dossier         "23" ;
-        ont:sex                    "f & m" ;
-        ont:species                "rat/wistar crl strain:(wi) br, spf" ;
-        ont:species                <http://toxin.vub.be/resource/species/rat%2Fwistar%20crl%3A%28wi%29%20br> , <http://toxin.vub.be/resource/species/spf> ;
-        ont:study_duration         "21 september 1994 – 18 january 1995" ;
-        ont:vehicle_name           "distilled water" ;
-        ont:year                   1995 .
-
 <http://toxin.vub.be/resource/test/repeatedtoxicity/21>
         a                              ont:Test_Repeated_Toxicity_in_vivo_Non_OECD , ont:Test ;
         rdfs:label                     "zinc pyrithione Test (21)" ;
@@ -4637,6 +4605,38 @@
         ont:species                    <http://toxin.vub.be/resource/species/monkey%2F%20cynomolgus> ;
         ont:target_organ               "haematopoietic system" ;
         ont:year                       1992 .
+
+<http://toxin.vub.be/resource/test/repeatedtoxicity/154>
+        a                          ont:OECD408 , ont:Test ;
+        rdfs:label                 "2,6-diamino-3-((pyridin-3-yl)azo)pyridine Test (154)" ;
+        ont:additional_info        "test substance: da100491" ;
+        ont:administration_scheme  "daily 7 days/week" ;
+        ont:chemical_batch_nr      "gst 4-11029" ;
+        ont:compound               <http://toxin.vub.be/resource/compound/2%2C6-diamino-3-%28%28pyridin-3-yl%29azo%29pyridine> ;
+        ont:conclusion             "the NOAEL for 2,6-diamino-3-((pyridine-3-yl)azo)pyridine in this 90 day study was 3 mg/kg bw/d." ;
+        ont:control_groups         "recovery group: 10 per sex, control and high dose, after the 90-day period, a recovery group (high dose and controls) of 10 animals per sex were kept for further 4 weeks untreated to check for reversibility of possible test substance related effects." ;
+        ont:dermal                 false ;
+        ont:description_of_pod     "noael mg/kg bw/d" ;
+        ont:dose_level_unit        "mg/kg bw/day" ;
+        ont:dose_levels            "3, 12, 45" ;
+        ont:dose_volume            "10" ;
+        ont:exposure_time          "91 + 28" ;
+        ont:feed                   "30" ;
+        ont:glp                    true ;
+        ont:observation_period     "> 90 days" ;
+        ont:observations           "clinical observations and mortality were assessed daily. body weight, food consumption were recorded weekly. initially, followed by monthly checks of ophthalmic condition, blood biochemistry and haematology were performed. at 90 days, scheduled animals were killed and organ weights were determined. organs and tissues from all animals in each group were preserved and the majority were examined histopathologically. all animals survived until the end of the study. staining of bedding and discoloured urine were seen in all dosed groups. initially, some animals from all dose groups showed diarrhoea. no other substance-related effects were observed in the low dose group. at the higher doses, some alterations in group mean values for haematological and blood biochemical parameters were observed (e.g. percentage of neutrophils, lymphocytes, erythrocytes, levels of cholesterol, bilirubin). all parameters returned to normal values in the recovery period. dark colouration and enlargement of the thyroid glands were observed in the mid and/or high dose group. these alterations persisted until the end of the recovery period in the high dose group. histological alterations were detected in the thyroid glands (cytoplasmatic pigment deposits in F-cells, proliferation) and spleens (haematopoiesis, pigment deposits). pigment deposits in thyroid F-cells and spleen were still found at the end of the recovery period. these pigment deposits were considered to indicate only the presence of either the test substance or a metabolite and not a pathological finding. the relative organ weights of kidney and liver increased in the mid and high dose groups, and absolute kidney and liver weights increased in males of the high dose group. after recovery, the relative liver weights in high dose females remained increased. in high dose males, lowered absolute and relative testis weights were observed. since these observed haematological, blood biochemical, histopathological and organ weight changes did not have a consistent pattern, the study authors interpreted them as adaptive or reactive changes to test substance exposure at 3 mg/kg bw/d. however, they considered the changes adverse effects when dosed at 12 and 45 mg/kg bw/d" ;
+        ont:oecd_test_nr           "408" ;
+        ont:oral                   "yes, gavage" ;
+        ont:pod                    "3" ;
+        ont:preliminary_test       "in a preliminary range finding, a noel of 15 mg/kg bw/day was found. the dose range was selected as a result of this study." ;
+        ont:purity                 ">99" ;
+        ont:ref_in_dossier         "23" ;
+        ont:sex                    "f & m" ;
+        ont:species                "rat/wistar crl strain:(wi) br, spf" ;
+        ont:species                <http://toxin.vub.be/resource/species/rat%2Fwistar%20crl%3A%28wi%29%20br> , <http://toxin.vub.be/resource/species/spf> ;
+        ont:study_duration         "21 september 1994 – 18 january 1995" ;
+        ont:vehicle_name           "distilled water" ;
+        ont:year                   1995 .
 
 <http://toxin.vub.be/resource/dossier/sodium%20perborate>
         a             ont:Report ;
@@ -4913,6 +4913,12 @@
         ont:study_duration         "10 weeks" ;
         ont:vehicle_name           "deionized drinkingwater" .
 
+<http://toxin.vub.be/resource/dossier/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate>
+        a             ont:Report ;
+        rdfs:label    "1-hexyl 4,5-diamino pyrazole sulfate" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_181.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/143> .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/148>
         a                          ont:Test , ont:OECD408 ;
         rdfs:label                 "2,4-diaminophenoxyethanol dihydrochloride and sulfate Test (148)" ;
@@ -4944,12 +4950,6 @@
         ont:species                <http://toxin.vub.be/resource/species/rat%2FhanIbm%3A%20wist> ;
         ont:target_organ           "spleen, thyroid" ;
         ont:vehicle_name           "purified water" .
-
-<http://toxin.vub.be/resource/dossier/1-hexyl%204%2C5-diamino%20pyrazole%20sulfate>
-        a             ont:Report ;
-        rdfs:label    "1-hexyl 4,5-diamino pyrazole sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_181.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/143> .
 
 <http://toxin.vub.be/resource/test/repeatedtoxicity/15>
         a                          ont:Test , ont:Test_Repeated_Toxicity_in_vivo_Non_OECD ;
@@ -5002,6 +5002,12 @@
         rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_026.pdf> ;
         ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/129> , <http://toxin.vub.be/resource/test/repeatedtoxicity/128> .
 
+<http://toxin.vub.be/resource/dossier/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl>
+        a             ont:Report ;
+        rdfs:label    "hydroxyethyl-3,4-methylenedioxyaniline HCl" ;
+        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_006.pdf> ;
+        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/152> .
+
 <http://toxin.vub.be/resource/test/repeatedtoxicity/118>
         a                         ont:Test , ont:Test_Repeated_Toxicity_in_vivo_Non_OECD ;
         rdfs:label                "o-aminophenol Test (118)" ;
@@ -5027,12 +5033,6 @@
         ont:species               <http://toxin.vub.be/resource/species/rat%2Fspf-bred%20wistar> ;
         ont:study_duration        "3 months" ;
         ont:vehicle_name          "propylene glycol" .
-
-<http://toxin.vub.be/resource/dossier/hydroxyethyl-3%2C4-methylenedioxyaniline%20HCl>
-        a             ont:Report ;
-        rdfs:label    "hydroxyethyl-3,4-methylenedioxyaniline HCl" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_006.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeatedtoxicity/152> .
 
 <http://toxin.vub.be/resource/species/rat%2Fsprague%20dawley>
         a           ont:Species ;
