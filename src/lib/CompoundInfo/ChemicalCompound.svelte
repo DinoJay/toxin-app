@@ -3,7 +3,6 @@
 	export let promise;
 	export let openId;
 	export let onClick;
-	import { wikiDataQuery } from '$lib/compound-api.js';
 	import { constructQuery, getSparqlQueryString } from '$lib/sparql';
 	import Expandable from '$lib/Expandable.svelte';
 	import { casRegex, smilesRegex } from '$lib/chemRegexes';
@@ -24,30 +23,26 @@
 		class=""
 		on:submit={(e) => {
 			e.preventDefault();
-			promise = wikiDataQuery(inputVal).then((e) => {
-				console.log('e', e);
-				const trimmed = inputVal.trim();
-				const smilesMatch = !!trimmed.match(smilesRegex);
-				const casMatch = !!trimmed.match(casRegex);
-				let sparqlQueryArg = null;
+			const trimmed = inputVal.trim();
+			const smilesMatch = !!trimmed.match(smilesRegex);
+			const casMatch = !!trimmed.match(casRegex);
+			let sparqlQueryArg = null;
+			if (casMatch) sparqlQueryArg = { cas: trimmed };
+			else if (smilesMatch) sparqlQueryArg = { smiles: trimmed };
+			else sparqlQueryArg = { inci: trimmed };
 
-				if (casMatch) sparqlQueryArg = { cas: trimmed };
-				else if (smilesMatch) sparqlQueryArg = { smiles: trimmed };
-				else sparqlQueryArg = { inci: trimmed };
-
-				const q = constructQuery({ endpoint: CHEMICAL_IDENTITY, ...sparqlQueryArg });
-				console.log('q', q);
-				return fetch(q)
-					.then((res) => res.json())
-					.then((res) => {
-						console.log('res', res);
-						return {
-							...res,
-							imgSrc: e,
-							type: 'compound'
-						};
-					});
-			});
+			const q = constructQuery({ endpoint: CHEMICAL_IDENTITY, ...sparqlQueryArg });
+			console.log('q', q);
+			promise = fetch(q)
+				.then((res) => res.json())
+				.then((res) => {
+					console.log('res', res);
+					return {
+						...res,
+						imgSrc: e,
+						type: 'compound'
+					};
+				});
 		}}
 	>
 		<div class="text-lg ">

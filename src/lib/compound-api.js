@@ -94,28 +94,47 @@ function searchBySMILES(smiles = "C1=CC(=C(C=C1O)O)O", onError = d => console.lo
 }
 
 export const wikiDataQuery = (q) => {
-    const trimmedQ = q.trim();//.toLowerCase()
-    const casedQ = !!trimmedQ.match(smilesRegex) ? trimmedQ.toUpperCase() : trimmedQ.toLowerCase();
-    const engAffix = !casedQ.match(casRegex) && !casedQ.match(smilesRegex) ? '@en' : ''
+    const trimmedP = q.trim();//.toLowerCase()
 
-    const sparqlQuery = `SELECT * WHERE {
-        ?subject ?predicate "${casedQ}"${engAffix} .
-        ?subject wdt:P117 ?object .   
-  
-    }`;
-    const endpointUrl = 'https://query.wikidata.org/sparql';
-    const fullUrl = endpointUrl + '?query=' + encodeURIComponent(sparqlQuery);
-    const headers = { 'Accept': 'application/sparql-results+json' };
+    const url = `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/${trimmedP}/PNG`
 
-    return fetch(fullUrl, { headers }).then(body => body.json()).then(r => {
-        const res = r.results?.bindings;
-        if (res) {
-            if (res.length > 0)
-                return res[0].object?.value
-            return null
-        }
-        return null
+    return fetch(url).then(r => {
+        console.log('R', r)
+        // const res = r.results?.bindings;
+        // console.log('res', res);
+        // if (res) {
+        //     if (res.length > 0)
+        //         return res[0].object?.value
+        //     return null
+        // }
+        // return null
 
     });
 }
+
+// export const wikiDataQuery = (q) => {
+//     const trimmedQ = q.trim();//.toLowerCase()
+//     const casedQ = !!trimmedQ.match(smilesRegex) ? trimmedQ.toUpperCase() : trimmedQ.toLowerCase();
+//     const engAffix = !casedQ.match(casRegex) && !casedQ.match(smilesRegex) ? '@en' : ''
+
+//     const sparqlQuery = `SELECT * WHERE {
+//         ?subject ?predicate "${casedQ}"${engAffix} .
+//         ?subject wdt:P117 ?object .   
+//     }`;
+//     const endpointUrl = 'https://query.wikidata.org/sparql';
+//     const fullUrl = endpointUrl + '?query=' + encodeURIComponent(sparqlQuery);
+//     const headers = { 'Accept': 'application/sparql-results+json' };
+
+//     return fetch(fullUrl, { headers }).then(body => body.json()).then(r => {
+//         const res = r.results?.bindings;
+//         console.log('res', res);
+//         if (res) {
+//             if (res.length > 0)
+//                 return res[0].object?.value
+//             return null
+//         }
+//         return null
+
+//     });
+// }
 

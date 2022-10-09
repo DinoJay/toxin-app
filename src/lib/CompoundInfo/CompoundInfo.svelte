@@ -8,6 +8,7 @@
 	export let empirical_formula;
 	export let function_and_uses;
 	export let see_also;
+	export let smiles;
 </script>
 
 <div class="">
@@ -21,7 +22,7 @@
 			class="border object-contain"
 			height="200"
 			width="200"
-			src={imgSrc}
+			src={`https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/smiles/${smiles}/PNG`}
 			alt="chemical compound"
 		/>
 	</div>
