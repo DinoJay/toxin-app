@@ -46,28 +46,7 @@
 .
 
 <#TestTriplesMap>
-    # todo: \"type of study ( in vivo, in vitro, in silico, in chemico\" -> camelcase
-    rr:logicalTable [ rr:sqlQuery """
-        SELECT 
-            ROWNUM() AS ID, 
-            COALESCE('OECD' || \"OECD test nr\", 'Test_Repeated_Toxicity_' || REPLACE(\"type of study ( in vivo, in vitro, in silico, in chemico\", ' ', '_') || '_Non_OECD') AS TYPE,
-            CASE
-                WHEN \"moribound or dead animals prior to study termination\" = 'yes' THEN 1
-                WHEN \"moribound or dead animals prior to study termination\" = 'no' THEN 0
-                ELSE NULL
-            END AS DEADORMORIBOUND,
-            CASE
-                WHEN LOWER(GLP) = 'yes' THEN 1
-                WHEN LOWER(GLP) = 'no' THEN 0
-                ELSE NULL
-            END AS ISGLP,
-            CASE
-                WHEN LOWER(DERMAL) LIKE '%yes%' THEN 1
-                ELSE 0
-            END AS ISDERMAL,
-            * 
-        FROM REPEATEDTOXICITY
-    """ ] ;
+   rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM REPEATEDTOXICITY" ] ;
 
     ### BEGIN LINK WITH COMPOUND
     rr:predicateObjectMap [
@@ -91,7 +70,7 @@
 
     rr:predicateObjectMap [
         rr:predicate rdf:type ;
-        rr:objectMap [ rr:template "http://ontologies.vub.be/oecd#{TYPE}" ; ] ;
+        rr:objectMap [ rr:template "http://ontologies.vub.be/oecd#{type of study ( in vivo, in vitro, in silico, in chemico)}" ; ] ;
     ] ;
 
     rr:predicateObjectMap [
@@ -135,7 +114,7 @@
 
     rr:predicateObjectMap [
         rr:predicate ont:moribound_or_dead_animals_prior_to_study_termination ;
-        rr:objectMap [ rr:column "DEADORMORIBOUND" ; rr:datatype xsd:boolean ; ] ;
+        rr:objectMap [ rr:column "moribound or dead animals prior to study termination" ; rr:datatype xsd:boolean ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
@@ -294,7 +273,7 @@
     rr:predicateObjectMap [
         # TODO: CLEANUP
         rr:predicate ont:dermal ;
-        rr:objectMap [ rr:column "ISDERMAL" ; rr:datatype xsd:boolean ; ] ;
+        rr:objectMap [ rr:column "DERMAL" ; rr:datatype xsd:boolean ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
@@ -380,7 +359,7 @@
 
     rr:predicateObjectMap [
         rr:predicate ont:glp ;
-        rr:objectMap [ rr:column "ISGLP" ; rr:datatype xsd:boolean ; ] ;
+        rr:objectMap [ rr:column "GLP" ; rr:datatype xsd:boolean ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
@@ -410,7 +389,7 @@
     rr:predicateObjectMap [
         # TODO: CLEANUP
         rr:predicate ont:klimisch_score ;
-        rr:objectMap [ rr:column "\"klimisch score evaluated by toxrtool\"" ; ] ;
+        rr:objectMap [ rr:column "\"klimisch score\"" ; ] ;
     ] ; 
 
     rr:predicateObjectMap [
