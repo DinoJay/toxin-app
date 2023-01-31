@@ -1,18 +1,26 @@
 <script>
-	export let acuteToxicityCsv = [];
-	export let irritationCorosivityCsv = [];
-	export let repeatedToxicityCsv = [];
-	export let typeOfStudy;
-	export let guideline;
-	export let results;
-	export let oecd;
-	export let nonOecd;
-	export let endpoint;
 	import ElementList from '$lib/element-list/index.svelte';
 	import transformObject from '$lib/transformObject';
 	import uniqBy from '$lib/uniqBy';
 	import getParentCategories from '$lib/getTestParentCategories';
 	import { groups } from '$lib/group';
+
+	const NON_OECD = 'non OECD';
+	const IN_VIVO = 'in vivo';
+	const IN_VITRO = 'in vitro';
+
+	// export let typeOfStudy;
+	// export let guideline;
+	export let results;
+
+	export let endpoint;
+
+	export let oecd;
+	export let nonOecd;
+	export let invivo;
+	export let invitro;
+
+	$: console.log('oecd', oecd, 'non-oecd', nonOecd, 'invivo', invivo, 'invitro', invitro);
 
 	const { bindings } = results;
 	const preData = bindings.map(transformObject);
@@ -30,7 +38,24 @@
 			// d.key = undefined;
 			d.values = undefined;
 			return obj;
+		})
+		.filter((d) => {
+			const isInVivo = invivo && d.type === IN_VIVO;
+			const isInVitro = invitro && d.type === IN_VITRO;
+			const isNonOecd = nonOecd && d.guideline === NON_OECD;
+			const isOECD = oecd && d.guideline !== NON_OECD;
+
+			const oecdBool = isOECD || isNonOecd;
+			const typeBool = isInVivo || isInVitro;
+
+			// console.log('oecd', oecd && d.guideline !== NON_OECD, 'res', bool1, bool2);
+
+			// return (isInVivo || isInVitro) && (isOECD || isNonOecd);
+			return typeBool && oecdBool;
 		});
+
+	console.log('preresults', preresults);
+
 	const reportData = uniqBy(
 		preresults.map((d) => ({ ...d, categories: getParentCategories(endpoint)(d) })),
 		(d) => d.id

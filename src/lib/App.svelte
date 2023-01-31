@@ -33,12 +33,6 @@
 				onClick={clickWrapper('HealthEffect')}
 			/>
 		</div>
-		<div class="p-2 border-2 cont mr-1 mb-1 flex-grow">
-			<TestSpecies {...$$props} bind:promise {openId} onClick={clickWrapper('TestSpecies')} />
-		</div>
-		<div class="p-2 border-2 cont mb-1 flex-grow">
-			<TestConditions {...$$props} bind:promise {openId} onClick={clickWrapper('TestConditions')} />
-		</div>
 	</div>
 
 	<div class="border mt-3 p-3">

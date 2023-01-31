@@ -10,7 +10,7 @@
 	import AttrElement from '$lib/element-list/attrElement.svelte';
 	import { CHEMICAL_IDENTITY } from '$lib/endpoint_constants';
 
-	let inputVal = 'C1=CC(=C(C=C1O)O)O';
+	let inputVal = 'C1=CC=C(C(=C1)NCCO)[N+](=O)[O-]';
 	// let imgPromise = null;
 	let compound = null;
 	// const defaultComp = chemicalIdentity.find((d) => d.smiles.toLowerCase() === q.toLowerCase());

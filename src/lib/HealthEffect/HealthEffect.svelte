@@ -75,14 +75,14 @@
 					<input type="checkbox" id="in-vitro" name="in-vitro" bind:checked={invitro} />
 					<label for="in-vitro">In vitro</label>
 				</div>
-				<div>
+				<!-- <div>
 					<input type="checkbox" id="in-silico" name="in-silico" bind:checked={insilico} />
 					<label for="in-silico">In silico</label>
 				</div>
 				<div>
 					<input type="checkbox" id="in-chemico" name="in-chemico" bind:checked={inchemico} />
 					<label for="in-chemico">In chemico</label>
-				</div>
+				</div> -->
 			</div>
 
 			<div>
