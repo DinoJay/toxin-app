@@ -29,10 +29,6 @@
         rr:objectMap [ rr:column "\"GUIDELINE\"" ; ] ;
     ] ; 
 
-     rr:predicateObjectMap [
-        rr:predicate ont:guideline ;
-        rr:objectMap [ rr:column "\"TYPE\"" ; ] ;
-    ] ; 
 
     rr:predicateObjectMap [
         rr:predicate rdfs:seeAlso ;
@@ -76,6 +72,11 @@
         rr:template "http://toxin.vub.be/resource/test/repeated-dose-toxicity/{ID}" ;
         rr:class ont:Test ;
     ] ;
+
+     rr:predicateObjectMap [
+        rr:predicate ont:type ;
+        rr:objectMap [ rr:column "\"TYPE\"" ; ] ;
+    ] ; 
 
     ### BEGIN LINK WITH COMPOUND
     rr:predicateObjectMap [

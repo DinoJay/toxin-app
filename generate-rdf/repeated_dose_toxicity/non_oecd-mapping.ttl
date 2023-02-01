@@ -16,7 +16,7 @@
                     FROM (  SELECT
                                 ROWNUM() AS ID,
                                 \"PDF link\" AS PDFLINKFIRST
-                            FROM SKINSENSITISATION_UNMERGED WHERE \"PDF link\" IS NOT NULL
+                            FROM NON_OECD WHERE \"PDF link\" IS NOT NULL
                     )
                                     UNION ALL
                                     SELECT
@@ -58,10 +58,6 @@
         rr:objectMap [ rr:column "\"GUIDELINE\"" ; ] ;
     ] ; 
 
-     rr:predicateObjectMap [
-        rr:predicate ont:type ;
-        rr:objectMap [ rr:column "\"type\"" ; ] ;
-    ] ; 
 
     # rr:predicateObjectMap [
     #     rr:predicate rdfs:seeAlso ;
@@ -113,6 +109,10 @@
         rr:class ont:Test ;
     ] ;
 
+     rr:predicateObjectMap [
+        rr:predicate ont:type ;
+        rr:objectMap [ rr:column "\"TYPE\"" ; ] ;
+    ] ; 
     ### BEGIN LINK WITH COMPOUND
     rr:predicateObjectMap [
         rr:predicate ont:compound ;

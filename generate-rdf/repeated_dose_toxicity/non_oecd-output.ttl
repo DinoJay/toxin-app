@@ -18,13 +18,15 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:species_strain         "mouse/ eppley swiss" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "differences between treated and control groups in haematological and urinary values were not considered to be indicative of toxicological effects." .
 
 <http://toxin.vub.be/resource/dossier/β-arbutin>
-        a             ont:Report ;
-        rdfs:label    "β-arbutin" ;
-        rdfs:seeAlso  <http://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_169.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/30> .
+        a              ont:Report ;
+        rdfs:label     "β-arbutin" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/30> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/http%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_169.pdf> .
 
 <http://toxin.vub.be/resource/compound/phenylene%20bis-diphenyltriazine>
         a               ont:Compound ;
@@ -36,7 +38,8 @@
         ont:compound         <http://toxin.vub.be/resource/compound/decamethylcyclopentasiloxane> ;
         ont:gross_pathology  "pathology results were evaluated by 3 laboratories. in the nasal cavity there was a significant increase in the incidence and severity of goblet cell proliferation in males and females in the high dose group. the incidence of focal macrophage accumulation and interstitial inflammation of the lung was significantly increased in males and females in the high dose group. at this concentration, approximately 40% of the test atmosphere was expected to be a liquid aerosol which may be impacting the response in the lung. one laboratory reported a significantly increased incidence of hepatocellular hypertrophy in female in the high dose group whereas histopathological changes in the liver were not reported by the 2 others." ;
         ont:guideline        "non OECD" ;
-        ont:species_strain   "rat" .
+        ont:species_strain   "rat" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/84>
         a                    ont:Test ;
@@ -48,7 +51,8 @@
         ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "rabbit" .
+        ont:species_strain   "rabbit" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/119>
         a                          ont:Test ;
@@ -61,7 +65,8 @@
         ont:guideline              "non OECD" ;
         ont:histopathology         "systemically, slightly increased incidences of dilatation of the kidney tubules compared to acetone controls were observed in OPP treated animals. in males, a greater incidence of focal necrosis of the liver (of mild degree) was observed. after initiation with DMBA, which was also part of the study, OPP was revealed not to be a promoter." ;
         ont:purity                 "99" ;
-        ont:species_strain         "mouse/Swiss CD-1" .
+        ont:species_strain         "mouse/Swiss CD-1" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/63>
         a                           ont:Test ;
@@ -77,7 +82,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:pH_adjustment           "2.5" ;
-        ont:species_strain          "rabbits/new zealand white" .
+        ont:species_strain          "rabbits/new zealand white" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/42>
         a                          ont:Test ;
@@ -86,7 +92,8 @@
         ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "rat/sprague-dawley" .
+        ont:species_strain         "rat/sprague-dawley" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/21>
         a                          ont:Test ;
@@ -103,7 +110,8 @@
                 "yes" ;
         ont:mortality_rate         "2 control group animals died during the study" ;
         ont:point_of_departure     "10" ;
-        ont:species_strain         "rabbit/new zealand albino" .
+        ont:species_strain         "rabbit/new zealand albino" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/compound/vitamin%20a>
         a               ont:Compound ;
@@ -125,6 +133,7 @@
         ont:point_of_departure       "3000" ;
         ont:purity                   "99.9" ;
         ont:species_strain           "rat/crl:cd" ;
+        ont:type                     "in vivo" ;
         ont:urinalysis               "nmp had no effect on urinary parameters in males or females, at any concentration" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/127>
@@ -141,6 +150,7 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:species_strain          "rat/wistar" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "no test item-related changes in any of the parameters evaluated in urine" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/71>
@@ -152,7 +162,8 @@
         ont:histopathology         "a diffuse degeneration of the seminiferous tubules combined with a moderate oligospermia and a moderate mixed inflammation in the epididymides was observed in 1/5 animals of the low dose group (30 mg/kg bw/day). in the mid-dose group, reduced testes and epididymides sizes with severe diffuse degeneration of seminiferous tubules and severe atrophy plus aspermia in the left epididymides was observed in 1/5 animals. a dose response relationship could not be observed. " ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "rabbit/ himalayan" .
+        ont:species_strain         "rabbit/ himalayan" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/106>
         a                    ont:Test ;
@@ -160,7 +171,8 @@
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:guideline        "non OECD" ;
         ont:histopathology   "only bladder examined (once per week by TTEM). after 4 weeks an increase in dark-stained cells and a few mitoses were observed. the authors suggest that these changes are the prodromal stage of the tumours induced by SOPP after longer treatment periods." ;
-        ont:species_strain   "rat/f344" .
+        ont:species_strain   "rat/f344" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/50>
         a                       ont:Test ;
@@ -172,7 +184,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:point_of_departure  "92" ;
-        ont:species_strain      "rat/sprague-dawley" .
+        ont:species_strain      "rat/sprague-dawley" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/29>
         a                       ont:Test ;
@@ -184,7 +197,8 @@
         ont:other_observations  "women taking more than 4500 mg re of total vitamin a (from food and supplement) daily had a 3.5 times higher risk of giving birth to a child with cranial-neural-crest defects, than mothers ingesting less than 1500 mg re/day. when the analysis was restricted to the supplemental intake of vitamin a only, the relative risk for mothers ingesting more than 3000 mg re/day was 4.8 higher than those ingesting 1500 mg re/day. " ;
         ont:particle_size_and_procedure
                 "the origin of the vitamin a intake (supplement or food) was available for all subjects" ;
-        ont:species_strain      "human /pregnant" .
+        ont:species_strain      "human /pregnant" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/compound/sodium%20perborate%20%28tetrahydrate%29>
         a               ont:Compound ;
@@ -202,7 +216,8 @@
         ont:guideline               "non OECD" ;
         ont:haematology             "mild anaemia, red blood cell and haemoglobin values showed variations between animals, but was not considered treatment-related. these changes were attributed to frequent sampling." ;
         ont:histopathology          "histopathologic evaluation revealed similar findings of focal adrenal mineralisation, pulmonary infiltration, and low-grade pneumonia in both treated and control animals. hepatocellular vacuolar changes and hepatic extramedullary haematopoiesis were observed in both treatment and control animals. no histological changes were observed in skin sections taken for examination. " ;
-        ont:species_strain          "monkey/Rhesus" .
+        ont:species_strain          "monkey/Rhesus" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/compound/p-aminophenol>
         a               ont:Compound ;
@@ -226,6 +241,7 @@
                 "no" ;
         ont:purity                  "99.9" ;
         ont:species_strain          "rat/wistar" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "No treatment-related alterations were observed in clinical chemistry parameters of R0027494A treated groups when compared with the control group" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/114>
@@ -240,7 +256,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "in the exposed as well as the control groups, only 22-32 % of the animals were alive at the end of 24 months." ;
-        ont:species_strain         "rat/Wistar" .
+        ont:species_strain         "rat/Wistar" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/6>
         a                           ont:Test ;
@@ -252,7 +269,8 @@
         ont:guideline               "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain          "human" .
+        ont:species_strain          "human" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/58>
         a                          ont:Test ;
@@ -272,6 +290,7 @@
         ont:purity                 "92.2" ;
         ont:species_strain         "rat/sprague-dawley" ;
         ont:target_organ           "kidney & urinary tract" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "a statistically significant increase in urinary zinc was intermittently noted in some rat groups receiving diets containing 0.15% and 0.5% nta." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/37>
@@ -282,7 +301,8 @@
         ont:histopathology         "histopathological observation after autopsy of severely paralysed rabbits revealed no significant structural alterations in the brains, spinal cords, peripheral nerves, muscles, and abdominal or thoracic viscera in 8 of 12 rabbits. in the other four rabbits  various alterations in cns tissue were seen that the author associated with a protozoan infection. " ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "rabbit" .
+        ont:species_strain         "rabbit" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/16>
         a                           ont:Test ;
@@ -299,19 +319,22 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:purity                  "90" ;
-        ont:species_strain          "rat / hanibm:wist spf" .
+        ont:species_strain          "rat / hanibm:wist spf" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/vitamin%20a>
-        a             ont:Report ;
-        rdfs:label    "vitamin a" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_199.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/29> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/28> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/27> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/26> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/25> .
+        a              ont:Report ;
+        rdfs:label     "vitamin a" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/29> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/28> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/27> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/26> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/25> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_199.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hydroxypropyl%20p-phenylenediamine%20and%20its%20dihydrochloride%20salt>
-        a             ont:Report ;
-        rdfs:label    "hydroxypropyl p-phenylenediamine and its dihydrochloride salt" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_230.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/2> .
+        a              ont:Report ;
+        rdfs:label     "hydroxypropyl p-phenylenediamine and its dihydrochloride salt" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/2> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_230.pdf> .
 
 <http://toxin.vub.be/resource/compound/acid%20orange%207>
         a               ont:Compound ;
@@ -319,10 +342,11 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/acid%20orange%207> .
 
 <http://toxin.vub.be/resource/dossier/o-aminophenol>
-        a             ont:Report ;
-        rdfs:label    "o-aminophenol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_025.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/125> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/124> .
+        a              ont:Report ;
+        rdfs:label     "o-aminophenol" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/125> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/124> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_025.pdf> .
 
 <http://toxin.vub.be/resource/compound/HC%20Yellow%20n°%202>
         a               ont:Compound ;
@@ -340,7 +364,8 @@
         ont:clinical_observations  "at necropsy, the heart, lungs, liver, kidneys, spleen, testes, epididymides, ovaries, and urinary bladder were weighed and preserved. no clinical signs of toxicity were observed. there was no effect on body weight, no mortality, no effect on organ weights, and no treatment related gross pathology findings. no signs of skin irritation were observed. " ;
         ont:compound               <http://toxin.vub.be/resource/compound/decamethylcyclopentasiloxane> ;
         ont:guideline              "non OECD" ;
-        ont:species_strain         "rabbit/new zealand white" .
+        ont:species_strain         "rabbit/new zealand white" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/122>
         a                    ont:Test ;
@@ -349,7 +374,8 @@
         ont:compound         <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:conclusion       "tumours mainly occurred at doses from 15000 ppm with transitional cell carcinoma being the major histological type of tumour. the study revealed time- and concentration dependency of SOPP-induced urinary bladder tumour formation in male f344 rats." ;
         ont:guideline        "non OECD" ;
-        ont:species_strain   "rat/F344" .
+        ont:species_strain   "rat/F344" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/87>
         a                    ont:Test ;
@@ -359,7 +385,8 @@
         ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "rat/charles river cd" .
+        ont:species_strain   "rat/charles river cd" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/66>
         a                       ont:Test ;
@@ -370,7 +397,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:point_of_departure  "0.63; 115" ;
-        ont:species_strain      "rat" .
+        ont:species_strain      "rat" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate>
         a               ont:Compound ;
@@ -393,7 +421,8 @@
         ont:gross_pathology        "a significant increase in the relative weight of the liver was observed in rats from all treated groups. a significant decrease in the absolute and relative testes weight was observed in the high dose treated rats." ;
         ont:guideline              "non OECD" ;
         ont:purity                 "≈98.9" ;
-        ont:species_strain         "rat/sprague-dawley (tac:n(sd)fbr)" .
+        ont:species_strain         "rat/sprague-dawley (tac:n(sd)fbr)" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/45>
         a                          ont:Test ;
@@ -413,7 +442,8 @@
         ont:point_of_departure     "0.5; 1.5" ;
         ont:purity                 "98.3" ;
         ont:species_strain         "rat / sprague-dawley (crl:cd)" ;
-        ont:target_organ           "lung, thymus, lymph nodes, " .
+        ont:target_organ           "lung, thymus, lymph nodes, " ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/24>
         a                          ont:Test ;
@@ -433,7 +463,8 @@
         ont:physical_form          "translucent colourless liquid" ;
         ont:point_of_departure     "80" ;
         ont:species_strain         "rat/sprague dawley cd" ;
-        ont:target_organ           "kidney" .
+        ont:target_organ           "kidney" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/compound/triclosan>
         a               ont:Compound ;
@@ -459,6 +490,7 @@
                 "the generated NMP atmospheres consisted of a large proportion (82–92%) of respirable aerosol particles (MMAD 2.1–3.5 µm; relative humidity 52–61%)." ;
         ont:point_of_departure       "500" ;
         ont:species_strain           "rat" ;
+        ont:type                     "in vivo" ;
         ont:urinalysis               "dark yellow discoloration of the urine was found at all levels," .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/130>
@@ -475,6 +507,7 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:species_strain          "dog/purebred beagle" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "urine analyses showed no remarkable findings at any examination period. colour was normal in the urines collected following overnight fasting and was probably an indication of clearance" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/74>
@@ -487,7 +520,8 @@
         ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "monkey rhesus / macaca mulatta" .
+        ont:species_strain         "monkey rhesus / macaca mulatta" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/1>
         a                          ont:Test ;
@@ -504,6 +538,7 @@
         ont:mortality_rate         "during the 10-day treatment period, deaths occurred in all dose groups above 100 mg/kg bw/day or animals were sacrificed moribund." ;
         ont:point_of_departure     "100" ;
         ont:species_strain         "rabbit/new zealand white" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "urine samples collected from rabbits in the 1000, 600 and 300 mg/kg/day dose groups exhibited decreased pH in combination with elevated levels of protein, bilirubin, urobilirubin and haemoglobin. decreases in urinary pH and increases in urinary bilirubin and rbc were observed in at least one rabbit in the 100 mg/kg/day dose group." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/109>
@@ -517,6 +552,7 @@
         ont:haematology             "no other toxic effects based on remaining haematology" ;
         ont:histopathology          "no other toxic effects based on  full routine histopathology. no abnormal findings in the bladder epithelium of the 2% group at 4, 8, and 13 weeks based on LM and SEM." ;
         ont:species_strain          "mouse/b6c3f1" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "increased urinary pH value and decreased urine density at 4% in both sexes. no other toxic effects based on remaining urinary parameters," .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/53>
@@ -533,7 +569,8 @@
                 "no" ;
         ont:physical_form          "liquid" ;
         ont:point_of_departure     "2.5" ;
-        ont:species_strain         "rabbit/new zealand" .
+        ont:species_strain         "rabbit/new zealand" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/32>
         a                          ont:Test ;
@@ -544,7 +581,8 @@
         ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "rat; rabbit; monkey; dog" .
+        ont:species_strain         "rat; rabbit; monkey; dog" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/11>
         a                          ont:Test ;
@@ -561,6 +599,7 @@
         ont:point_of_departure     "1000; 500" ;
         ont:purity                 "97" ;
         ont:species_strain         "rat / f344/n; mouse / b6c3f1" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "rat & mouse: the urine of all dosed animals was maroon to orange throughout the studies." .
 
 <http://toxin.vub.be/resource/compound/disperse%20violet%201>
@@ -574,16 +613,18 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%204> .
 
 <http://toxin.vub.be/resource/dossier/disperse%20violet%201>
-        a             ont:Report ;
-        rdfs:label    "disperse violet 1" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_028.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/23> .
+        a              ont:Report ;
+        rdfs:label     "disperse violet 1" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/23> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_028.pdf> .
 
 <http://toxin.vub.be/resource/dossier/acid%20orange%207>
-        a             ont:Report ;
-        rdfs:label    "acid orange 7" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_158.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/18> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/17> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/16> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/15> .
+        a              ont:Report ;
+        rdfs:label     "acid orange 7" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/18> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/17> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/16> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/15> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_158.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/138>
         a                    ont:Test ;
@@ -592,7 +633,8 @@
         ont:conclusion       "statistical comparison of mean body weight and food consumption data indicated no treatment-related effects between the control and the test groups. a statistically significant increase in absolute liver weight was observed in female rats treated with 1500 mg D5/kg bw/day (23% compared to the control group)." ;
         ont:gross_pathology  "no gross pathological changes were observed in any of the organs or tissues of male and female rats in the control and test groups." ;
         ont:guideline        "non OECD" ;
-        ont:species_strain   "rat/sprague-dawley" .
+        ont:species_strain   "rat/sprague-dawley" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/82>
         a                          ont:Test ;
@@ -605,7 +647,8 @@
         ont:histopathology         "nephrosis was observed in all groups, including controls, but the incidence and severity of this change increased in a dose-dependent fashion" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "rat/sprague-dawley" .
+        ont:species_strain         "rat/sprague-dawley" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/117>
         a                          ont:Test ;
@@ -624,7 +667,8 @@
         ont:point_of_departure     "250" ;
         ont:purity                 "99.88" ;
         ont:species_strain         "mouse/ B6C3F1" ;
-        ont:target_organ           "kideny, liver" .
+        ont:target_organ           "kideny, liver" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/9>
         a                   ont:Test ;
@@ -634,7 +678,8 @@
         ont:guideline       "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain  "human" .
+        ont:species_strain  "human" ;
+        ont:type            "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/61>
         a                    ont:Test ;
@@ -646,7 +691,8 @@
         ont:haematology      "no changes in blood cell parameters were observed during the study but haemoglobin and haematocrit were increased up to 15 days after the end of the application. this was explained by depression of haematopoiesis during the study and overregulation at the termination of the application." ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "rats" .
+        ont:species_strain   "rats" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/40>
         a                          ont:Test ;
@@ -658,7 +704,8 @@
         ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "mouse" .
+        ont:species_strain         "mouse" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/19>
         a                          ont:Test ;
@@ -673,13 +720,15 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:purity                 "94-99.5" ;
-        ont:species_strain         "rat/ hanbrl : wist (spf)" .
+        ont:species_strain         "rat/ hanbrl : wist (spf)" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/Hydroxyethoxyphenyl%20Butanone>
-        a             ont:Report ;
-        rdfs:label    "Hydroxyethoxyphenyl Butanone" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_225.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/127> .
+        a              ont:Report ;
+        rdfs:label     "Hydroxyethoxyphenyl Butanone" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/127> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_225.pdf> .
 
 <http://toxin.vub.be/resource/compound/β-arbutin>
         a               ont:Compound ;
@@ -687,22 +736,25 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/β-arbutin> .
 
 <http://toxin.vub.be/resource/dossier/sodium%20perborate%20%28tetrahydrate%29>
-        a             ont:Report ;
-        rdfs:label    "sodium perborate (tetrahydrate)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_031.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/63> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/62> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/60> .
+        a              ont:Report ;
+        rdfs:label     "sodium perborate (tetrahydrate)" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/63> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/62> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/60> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_031.pdf> .
 
 <http://toxin.vub.be/resource/dossier/resorcinol>
-        a             ont:Report ;
-        rdfs:label    "resorcinol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_015.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/65> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/64> .
+        a              ont:Report ;
+        rdfs:label     "resorcinol" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/65> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/64> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_015.pdf> .
 
 <http://toxin.vub.be/resource/dossier/HC%20Yellow%20n°%202>
-        a             ont:Report ;
-        rdfs:label    "HC Yellow n° 2" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_038.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/130> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/129> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/128> .
+        a              ont:Report ;
+        rdfs:label     "HC Yellow n° 2" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/130> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/129> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/128> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_038.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/90>
         a                           ont:Test ;
@@ -719,7 +771,8 @@
         ont:point_of_departure      "720; 2970" ;
         ont:purity                  "99.9" ;
         ont:species_strain          "mouse/b6c3f1/crlbr" ;
-        ont:target_organ            "kidney" .
+        ont:target_organ            "kidney" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/125>
         a                    ont:Test ;
@@ -729,7 +782,8 @@
         ont:concentration    "0.3" ;
         ont:conclusion       "no evidence of toxicity was seen and no effect on body weight and urinalysis was observed. scattered statistically significant differences in clinical chemistry and haematological values were seen which were considered of no toxicological significance." ;
         ont:guideline        "non OECD" ;
-        ont:species_strain   "rabbit/new zealand white" .
+        ont:species_strain   "rabbit/new zealand white" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/compound/phenoxyethanol>
         a               ont:Compound ;
@@ -749,7 +803,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:point_of_departure     "25" ;
-        ont:species_strain         "rat" .
+        ont:species_strain         "rat" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/104>
         a                    ont:Test ;
@@ -759,7 +814,8 @@
         ont:guideline        "non OECD" ;
         ont:histopathology   "10 animals from each group killed in weeks 4, 8, 12, 24 and 36 and subjected to bladder histopathology and SEM; remaining rats kept until week 104 and subjected to histopathology. hyperplasia of bladder starting in 2% animals after 4 weeks, increasing severity until week 104; at 36 weeks hyperplasia also in other groups. for 2% animals: no development of papilloma until week 36; papilloma in 2 of 5 rats killed in week 104. no development of carcinoma until week 36; carcinoma in 2 of 5 rats killed in week 104. for 1% animals: no development of PN hyperplasia, papilloma or carcinoma until week 104; simple hyperplasia from week 36. no findings at lower doses." ;
         ont:purity           "97" ;
-        ont:species_strain   "rat/f344" .
+        ont:species_strain   "rat/f344" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/48>
         a                          ont:Test ;
@@ -780,13 +836,15 @@
         ont:mortality_rate         "28 male and 44 female animals died or were killed in extremis. deaths were considered not treatment-related." ;
         ont:point_of_departure     "5" ;
         ont:purity                 "41.2" ;
-        ont:species_strain         "mouse / crl:cd-1 (icr) br (vaf plus)" .
+        ont:species_strain         "mouse / crl:cd-1 (icr) br (vaf plus)" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/acid%20red%2092>
-        a             ont:Report ;
-        rdfs:label    "acid red 92" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_087.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/19> .
+        a              ont:Report ;
+        rdfs:label     "acid red 92" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/19> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_087.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/27>
         a                           ont:Test ;
@@ -798,7 +856,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:point_of_departure      "7500" ;
-        ont:species_strain          "human" .
+        ont:species_strain          "human" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/98>
         a                          ont:Test ;
@@ -817,7 +876,8 @@
         ont:mortality_rate         "mice: 8 males and 7 females in the 80000 ppm dose groups died; 9 of these deaths occurred during week 1, 5 occurred during week 2 and 1 occurred during week 11. one male that received 40000 ppm died during week 7." ;
         ont:point_of_departure     "5000, 10000; 5000" ;
         ont:purity                 "> 93" ;
-        ont:species_strain         "rat/f344/n;  mice/b6c3f1" .
+        ont:species_strain         "rat/f344/n;  mice/b6c3f1" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/133>
         a                           ont:Test ;
@@ -832,7 +892,8 @@
                 "yes" ;
         ont:mortality_rate          "although there were 12 unscheduled deaths related to high-dose level exposure, 11 of the 12 rats died during day 1 as a result\nof the very high initial doses. necropsy revealed congestion, inflammatory changes in mucous membranes and nasal cavity." ;
         ont:point_of_departure      "50" ;
-        ont:species_strain          "rat" .
+        ont:species_strain          "rat" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/4>
         a                           ont:Test ;
@@ -848,7 +909,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:other_observations      "no treatment-related toxicities were observed." ;
-        ont:species_strain          "monkey/rhesus" .
+        ont:species_strain          "monkey/rhesus" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/77>
         a                           ont:Test ;
@@ -858,7 +920,8 @@
         ont:compound                <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
         ont:guideline               "non OECD" ;
         ont:histopathology          "Histological examinations showed multifocal inflammation in the liver and mild atrophy in seminiferous tubules (necrosis of germ cells, multinucleated giant cells in tubular lumen)." ;
-        ont:species_strain          "dogs" .
+        ont:species_strain          "dogs" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/112>
         a                          ont:Test ;
@@ -869,7 +932,8 @@
         ont:guideline              "non OECD" ;
         ont:histopathology         "exp 1: occasional slight inflammation and epithelial hyperplasia with SOPP and PHQ; inflammation and hyperplasia of bladder mucosa, papillary or nodular hyperplasia after PBQ treatment. exp 2: BBN group:2 bladder papilloma, 9 pn hyperplasia, 11 simple hyperplasia. SOPP and PHQ: no hyperplastic changes. PHQ: pn and/or simple hyperplasia in 9 animals." ;
         ont:pH_adjustment          "11.1" ;
-        ont:species_strain         "rat/f344" .
+        ont:species_strain         "rat/f344" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/56>
         a                           ont:Test ;
@@ -887,6 +951,7 @@
         ont:mortality_rate          "there was one early death in the mid dose group and a high mortality rate in the high dose group. six animals died within four weeks, and remaining animals appeared moribund and were killed. " ;
         ont:point_of_departure      "92" ;
         ont:species_strain          "rat/sprague-dawley" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "urine volume of any of the nta test groups did not differ from controls, but glycosuria was present in 5/7 of rats receiving 1% nta." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/35>
@@ -899,7 +964,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:point_of_departure  "0.5" ;
-        ont:species_strain      "rat/sprague-dawley" .
+        ont:species_strain      "rat/sprague-dawley" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/14>
         a                          ont:Test ;
@@ -915,6 +981,7 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:species_strain         "dog/ beagle" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "all dogs in the two test groups excreted urine of a bluebrown colour on a daily basis. however urine analysis showed no remarkable findings. colour was normal in urine collected after overnight fasting." .
 
 <http://toxin.vub.be/resource/compound/o-aminophenol>
@@ -931,7 +998,8 @@
         ont:gross_pathology        "absolute and relative liver weights were increased 12, 11 and 6% (absolute) and 10, 8 and 7% (relative) compared to control after 1, 2 and 4 five day exposure periods, respectively. thyroid weights were not affected by treatment." ;
         ont:guideline              "non OECD" ;
         ont:histopathology         "a statistically significant increase in the incidence of hepatocellular hyperplasia was reported after the first and fourth 5-day exposure period, which returned to near control levels after 2 and 4- five days exposure periods. a slight but significant increase (< 2 fold) in the incidence of thyroid hyperplasia was reported following the 2nd and 4th five-day exposure period. " ;
-        ont:species_strain         "rat/Fischer 344" .
+        ont:species_strain         "rat/Fischer 344" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/85>
         a                    ont:Test ;
@@ -942,7 +1010,8 @@
         ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "rat/sprague-dawley" .
+        ont:species_strain   "rat/sprague-dawley" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/120>
         a                      ont:Test ;
@@ -958,6 +1027,7 @@
         ont:mortality_rate     "survival was 90 %, 90 %, 95%, 90 %, 90 %, 57 % and 70 % in rats fed 0, 62, 125, 250, 500, 1000 and 2000 mg/kg bw/d." ;
         ont:purity             "≥ 95" ;
         ont:species_strain     "rat/ F344/Du" ;
+        ont:type               "in vivo" ;
         ont:urinalysis         "hematuria was observed at all dose levels from week 45." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/64>
@@ -973,7 +1043,8 @@
                 "no; yes" ;
         ont:mortality_rate         "rat: 0; mice: all females and four males receiving 600 mg/kg bw/day and one male receiving 300 mg/kg bw/d died as a result of the resorcinol administration" ;
         ont:point_of_departure     "27.5; 75" ;
-        ont:species_strain         "rat/ f344/n; mice/b6c3f1" .
+        ont:species_strain         "rat/ f344/n; mice/b6c3f1" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/43>
         a                           ont:Test ;
@@ -986,7 +1057,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:point_of_departure      "25; 50" ;
-        ont:species_strain          "rat/sprague-dawley" .
+        ont:species_strain          "rat/sprague-dawley" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/compound/toluene-2%2C5-diamine%20and%20its%20sulfate>
         a               ont:Compound ;
@@ -1009,6 +1081,7 @@
         ont:other_observations      "no compound related changes were observed in haematological" ;
         ont:point_of_departure      "10" ;
         ont:species_strain          "rat/sprague dawley" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "no compound related changes were observed in clinical laboratory analyses of urine." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/93>
@@ -1024,7 +1097,8 @@
         ont:point_of_departure      "277" ;
         ont:purity                  "99.9" ;
         ont:species_strain          "mouse/b6c3f1" ;
-        ont:target_organ            "liver" .
+        ont:target_organ            "liver" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/128>
         a                           ont:Test ;
@@ -1040,7 +1114,8 @@
                 "yes" ;
         ont:mortality_rate          "there were no treatment-related mortalities noted during this study. one control male was found dead on study day 2. however, gross necropsy revealed that this death was due to mechanical injury. all remaining animals survived to scheduled euthanasia. " ;
         ont:purity                  "99.9" ;
-        ont:species_strain          "rat/Sprague-Dawley, Crl:CD®(SD)IGS BR" .
+        ont:species_strain          "rat/Sprague-Dawley, Crl:CD®(SD)IGS BR" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/72>
         a                          ont:Test ;
@@ -1054,7 +1129,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:purity                 "99.1" ;
-        ont:species_strain         "dog /beagle" .
+        ont:species_strain         "dog /beagle" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/107>
         a                          ont:Test ;
@@ -1064,7 +1140,8 @@
         ont:compound               <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:guideline              "non OECD" ;
         ont:histopathology         "increased rate of mitosis in the bladder epithelium from day 3 (although declining over time, the rate was still elevated at the end of the study). increased thickness of the bladder epithelium from day 14 until end of study (classified as hyperplasia with accompanying increased frequency of cell infiltration). no tumours of urinary bladder." ;
-        ont:species_strain         "rat/f344" .
+        ont:species_strain         "rat/f344" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/51>
         a                           ont:Test ;
@@ -1084,6 +1161,7 @@
         ont:purity                  "92.4" ;
         ont:species_strain          "rat/wistar" ;
         ont:target_organ            "kidneys, ureters and urinary bladder" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "at 20000ppm group, all animals had red-brown discoloured urine from day 9 to the end of the study. quantitative measurements in the urine revealed increased activities of ldh on day 2,4 and 8 of the study. at day 8, ϒ-ggt and creatinine concentrations were reduced. increased concentrations of zinc were excreted with the urine at the end of the study, but calcium and iron excretion remained unaffected. standard urinalysis revealed macrohematuria on day 8, increased blood and in the sediment elevated number of erythrocytes on day 4,8 and 29. the urine specimens were discoloured from dark yellow to light brown and appeared cloudy on days 2, 4 and 8. decreased amounts of urinary crystals were found on day 2,4 and 8 and increased numbers of transitional epithelial were found on day 4 and 8 of the treatment." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/30>
@@ -1103,6 +1181,7 @@
         ont:point_of_departure      "1000" ;
         ont:purity                  "99.7" ;
         ont:species_strain          "rat/spraque dawley (spf crj:cd)" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "some slight changes in urine parameters were observed, though no dose-dependency could be observed and the observed changes were small and reported to be within the normal ranges for the tested species. " .
 
 <http://toxin.vub.be/resource/compound/boron%20compounds>
@@ -1116,10 +1195,11 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/Methoxypropylamino%20Cyclohexenylidene%20Ethoxyethylcyanoacetate%20%28S87%29> .
 
 <http://toxin.vub.be/resource/dossier/n-methyl-2-pyrrolidone%20%28NMP%29>
-        a             ont:Report ;
-        rdfs:label    "n-methyl-2-pyrrolidone (NMP)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/95> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/89> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/94> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/90> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/91> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/88> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/92> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/93> .
+        a              ont:Report ;
+        rdfs:label     "n-methyl-2-pyrrolidone (NMP)" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/95> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/89> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/94> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/90> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/91> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/88> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/92> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/93> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_050.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/136>
         a                          ont:Test ;
@@ -1134,7 +1214,8 @@
         ont:histopathology         "microscopic examination of the tissue revealed atrophied seminiferous epithelium and decreased tubular size in the testes. no effects were observed in the control and low dose groups." ;
         ont:point_of_departure     "17.5" ;
         ont:species_strain         "rat / Sprague-dawley" ;
-        ont:target_organ           "haematopoietic system" .
+        ont:target_organ           "haematopoietic system" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/80>
         a                    ont:Test ;
@@ -1144,7 +1225,8 @@
         ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "rat/wistar" .
+        ont:species_strain   "rat/wistar" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/115>
         a                          ont:Test ;
@@ -1162,6 +1244,7 @@
         ont:mortality_rate         "survival was 100 %, 71 % (p < 0.05) and 65 % (p < 0.05) at 269, 531 and 1140 mg/kg bw/d, respectively. " ;
         ont:purity                 "> 98" ;
         ont:species_strain         "rat/ F344/DuCrj" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "hematuria at 531 and 1140 mg/kg bw/d," .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/7>
@@ -1175,7 +1258,8 @@
         ont:haematology             "the data showed increases in white blood cells and lymphocytes throughout the study, with decreases in mean corpuscular haemoglobin/concentration" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain          "human" .
+        ont:species_strain          "human" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/59>
         a                           ont:Test ;
@@ -1197,7 +1281,8 @@
         ont:point_of_departure      "15" ;
         ont:purity                  "99.7" ;
         ont:species_strain          "rat/sprague-dawley crl:cd(sd)br" ;
-        ont:target_organ            "heart, skeletal muscle, tongue and diaphragm" .
+        ont:target_organ            "heart, skeletal muscle, tongue and diaphragm" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/38>
         a                          ont:Test ;
@@ -1210,7 +1295,8 @@
         ont:histopathology         "histopathologic study of the brains of both groups revealed changes frequently seen in laboratory rabbits that are thought to be associated with the protozoan organism encephalitozoon cuniculi. this condition is spontaneous, is seen with great frequency, and is mild chronic in nature. there were no compound-related lesions" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "rabbit" .
+        ont:species_strain         "rabbit" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/17>
         a                          ont:Test ;
@@ -1225,13 +1311,15 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:species_strain         "rabbit" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "urinary components were normal" .
 
 <http://toxin.vub.be/resource/dossier/alkyl%20%28C16%2C%20C18%2C%20C22%29%20trimethylammonium%20chloride>
-        a             ont:Report ;
-        rdfs:label    "alkyl (C16, C18, C22) trimethylammonium chloride" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_012.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/22> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/21> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/20> .
+        a              ont:Report ;
+        rdfs:label     "alkyl (C16, C18, C22) trimethylammonium chloride" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/22> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/21> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/20> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_012.pdf> .
 
 <http://toxin.vub.be/resource/compound/2%2C7-naphthalenediol>
         a               ont:Compound ;
@@ -1257,7 +1345,8 @@
                 "no" ;
         ont:point_of_departure      "514" ;
         ont:species_strain          "rat" ;
-        ont:target_organ            "general toxicity, testes, liver, kidney, " .
+        ont:target_organ            "general toxicity, testes, liver, kidney, " ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/123>
         a                           ont:Test ;
@@ -1274,7 +1363,8 @@
                 "yes" ;
         ont:mortality_rate          "survival rate of rats fed 0, 0.5, 1.0 and 2.0 % SOPP was 70, 66, 68 and 54 % for males and 78, 68, 78 and 82 % for females, respectively. " ;
         ont:purity                  "97" ;
-        ont:species_strain          "mouse/B6C3F1" .
+        ont:species_strain          "mouse/B6C3F1" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/compound/Hydroxyethoxyphenyl%20Butanone>
         a               ont:Compound ;
@@ -1296,7 +1386,8 @@
         ont:other_observations  "the other doses (20 and 60 mg/kg bw/day) did not show clinical, biochemical and pathological-anatomical signs of a systemic cumulative toxicity." ;
         ont:physical_form       "liquid" ;
         ont:point_of_departure  "60" ;
-        ont:species_strain      "rat/wistar (mu ra han 67 spf)" .
+        ont:species_strain      "rat/wistar (mu ra han 67 spf)" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/102>
         a                          ont:Test ;
@@ -1318,6 +1409,7 @@
         ont:purity                 ">95" ;
         ont:species_strain         "rat/f344" ;
         ont:target_organ           "kidney, liver, urinary bladder" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "urinary pH (at week 13) tended to be alkaline with increasing dietary concentration." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/46>
@@ -1334,7 +1426,8 @@
                 "yes" ;
         ont:mortality_rate         "none of the females on the 50 ppm diet lived beyond 80 weeks. death was commonly preceded by paralysis. mortality was also increased at 25 ppm, and paralysis occurred in some animals prior to death." ;
         ont:point_of_departure     "0.5" ;
-        ont:species_strain         "rat/wistar" .
+        ont:species_strain         "rat/wistar" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/25>
         a                       ont:Test ;
@@ -1344,25 +1437,29 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:other_observations  "teratogenic potential, effects on bone" ;
-        ont:species_strain      "mouse, rats, rabbits, dogs, guinea pigs, cattle, chicken, pigs, ducks, hamsters, monkeys, sheep, cats" .
+        ont:species_strain      "mouse, rats, rabbits, dogs, guinea pigs, cattle, chicken, pigs, ducks, hamsters, monkeys, sheep, cats" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/2%2C7-naphthalenediol>
-        a             ont:Report ;
-        rdfs:label    "2,7-naphthalenediol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_034.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/67> .
+        a              ont:Report ;
+        rdfs:label     "2,7-naphthalenediol" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/67> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_034.pdf> .
 
 <http://toxin.vub.be/resource/dossier/phenoxyethanol>
-        a             ont:Report ;
-        rdfs:label    "phenoxyethanol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_195.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/24> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/1> .
+        a              ont:Report ;
+        rdfs:label     "phenoxyethanol" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/24> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/1> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_195.pdf> .
 
 <http://toxin.vub.be/resource/dossier/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate>
-        a             ont:Report ;
-        rdfs:label    "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_177.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/106> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/119> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/107> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/108> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/122> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/110> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/109> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/123> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/112> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/115> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/111> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/116> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/113> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/104> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/114> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/117> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/105> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/118> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/102> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/120> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/103> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/121> .
+        a              ont:Report ;
+        rdfs:label     "o-phenylphenol, sodium o-phenylphenate and potassium o-phenylphenate" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/106> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/119> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/107> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/108> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/122> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/110> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/109> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/123> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/112> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/115> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/111> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/116> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/113> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/104> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/114> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/117> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/105> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/120> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/118> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/102> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/103> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/121> ;
+        ont:guideline  "OECD TG 453" , "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_177.pdf> .
 
 <http://toxin.vub.be/resource/compound/zinc%20pyrithione>
         a               ont:Compound ;
@@ -1370,10 +1467,11 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/zinc%20pyrithione> .
 
 <http://toxin.vub.be/resource/dossier/boron%20compounds>
-        a             ont:Report ;
-        rdfs:label    "boron compounds" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/136> .
+        a              ont:Report ;
+        rdfs:label     "boron compounds" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/136> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_027.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/96>
         a                          ont:Test ;
@@ -1387,7 +1485,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:purity                 "> 93" ;
-        ont:species_strain         "rat/f344/n; mouse/b6c3f1" .
+        ont:species_strain         "rat/f344/n; mouse/b6c3f1" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/131>
         a                          ont:Test ;
@@ -1401,7 +1500,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:physical_form          "liquid" ;
-        ont:species_strain         "rat/Wistar" .
+        ont:species_strain         "rat/Wistar" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/75>
         a                          ont:Test ;
@@ -1413,7 +1513,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:purity                 "99.1" ;
-        ont:species_strain         "rat" .
+        ont:species_strain         "rat" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/110>
         a                          ont:Test ;
@@ -1422,7 +1523,8 @@
         ont:compound               <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:guideline              "non OECD" ;
         ont:histopathology         "rats: simple epithelial and pleomorphic microvilli at each time point, pn ( papillary or nodular) hyperplasia in weeks 36 and 48; slightly increased urinary pH values and crystal formation after 12 and 48 weeks.guinea pig: slight crystal formation after 12 and 48 weeks; no bladder changes. mouse: no effects on urinary parameters or bladder." ;
-        ont:species_strain         "rat/f344; mouse/b6c3f1; hamster/syrian golden; guinea pig/hartley" .
+        ont:species_strain         "rat/f344; mouse/b6c3f1; hamster/syrian golden; guinea pig/hartley" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/2>
         a                           ont:Test ;
@@ -1443,6 +1545,7 @@
         ont:purity                  "98.6" ;
         ont:species_strain          "rat /wistar" ;
         ont:target_organ            "liver, haematopoietic system, kidney" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "yellow to yellowish brown colored urine was also observed, confirming the systemic exposure to hydroxypropyl p-phenylenediamine HCl. " .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/54>
@@ -1460,7 +1563,8 @@
                 "no" ;
         ont:physical_form       "liquid" ;
         ont:point_of_departure  "2.5" ;
-        ont:species_strain      "rabbit/albino" .
+        ont:species_strain      "rabbit/albino" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/33>
         a                           ont:Test ;
@@ -1480,6 +1584,7 @@
         ont:physical_form           "liquid" ;
         ont:point_of_departure      "2, 0.5" ;
         ont:species_strain          "monkey/ rhesus" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "no toxicologically significant findings were noted following urinalysis" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/12>
@@ -1500,6 +1605,7 @@
         ont:point_of_departure     "250; 125" ;
         ont:purity                 "97" ;
         ont:species_strain         "rat / f344/n; mouse / b6c3f1" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "rat: the urine of all dosed animals was orange to purple throughout the studies; mouse: the urine of all dosed animals was red throughout the studies." .
 
 <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29>
@@ -1513,10 +1619,11 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/n-methyl-2-pyrrolidone%20%28NMP%29> .
 
 <http://toxin.vub.be/resource/dossier/toluene-2%2C5-diamine%20and%20its%20sulfate>
-        a             ont:Report ;
-        rdfs:label    "toluene-2,5-diamine and its sulfate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_052.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/59> .
+        a              ont:Report ;
+        rdfs:label     "toluene-2,5-diamine and its sulfate" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/59> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_052.pdf> .
 
 <http://toxin.vub.be/resource/compound/Acid%20black%201>
         a               ont:Compound ;
@@ -1536,7 +1643,8 @@
         ont:gross_pathology  "a significant increase in mean lung weight (15%) and alveolar macrophage accumulation was observed in the 160-ppm group. treatment-related morphological alterations (goblet cell proliferation) were also noted in the nasal cavity of both sexes at concentration of 10 ppm of d5 or greater. these changes were reversible following a two-week recovery period. males (75 ppm) and females (160 ppm) were noted as having increased incidence and severity of submucosal inflammation in the lung, which were reversible after the recovery period. the mean (absolute and relative) liver weights in the 160 ppm group, especially the females, were increased at the week 4 primary necropsy." ;
         ont:guideline        "non OECD" ;
         ont:histopathology   "no histopathological changes were noted" ;
-        ont:species_strain   "rat/fischer 344" .
+        ont:species_strain   "rat/fischer 344" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/83>
         a                          ont:Test ;
@@ -1549,7 +1657,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:other_observations     "there were no significant clinical pathology changes." ;
-        ont:species_strain         "rat/sprague-dawley" .
+        ont:species_strain         "rat/sprague-dawley" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/118>
         a                          ont:Test ;
@@ -1561,7 +1670,8 @@
         ont:guideline              "non OECD" ;
         ont:point_of_departure     "> 300" ;
         ont:purity                 "99.77" ;
-        ont:species_strain         "dog/Beagle" .
+        ont:species_strain         "dog/Beagle" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/62>
         a                           ont:Test ;
@@ -1578,13 +1688,15 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:pH_adjustment           "10" ;
-        ont:species_strain          "rabbits/new zealand white" .
+        ont:species_strain          "rabbits/new zealand white" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/2%2C6-dihydroxyethylaminotoluene>
-        a             ont:Report ;
-        rdfs:label    "2,6-dihydroxyethylaminotoluene" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_188.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/131> .
+        a              ont:Report ;
+        rdfs:label     "2,6-dihydroxyethylaminotoluene" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/131> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_188.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/41>
         a                           ont:Test ;
@@ -1605,13 +1717,15 @@
                 "no" ;
         ont:point_of_departure      "100" ;
         ont:purity                  "52.2" ;
-        ont:species_strain          "rat/sprague-dawley" .
+        ont:species_strain          "rat/sprague-dawley" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/hc%20red%20n°%203>
-        a             ont:Report ;
-        rdfs:label    "hc red n° 3" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_043.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/14> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/13> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/12> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/11> .
+        a              ont:Report ;
+        rdfs:label     "hc red n° 3" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/14> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/13> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/12> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/11> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_043.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/20>
         a                           ont:Test ;
@@ -1632,13 +1746,15 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:point_of_departure      "100" ;
-        ont:species_strain          "rat/sprague dawley" .
+        ont:species_strain          "rat/sprague dawley" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/trisodium%20nitrilotriacetate>
-        a             ont:Report ;
-        rdfs:label    "trisodium nitrilotriacetate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_046.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/56> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/51> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/53> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/49> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/57> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/54> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/50> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/52> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/58> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/55> .
+        a              ont:Report ;
+        rdfs:label     "trisodium nitrilotriacetate" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/56> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/51> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/53> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/49> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/57> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/54> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/50> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/52> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/58> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/55> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_046.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/91>
         a                           ont:Test ;
@@ -1654,7 +1770,8 @@
         ont:particle_size_and_procedure
                 "> 95 % of the droplets below 10 µm in diameter" ;
         ont:purity                  "100" ;
-        ont:species_strain          "rat/crl:cd" .
+        ont:species_strain          "rat/crl:cd" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/126>
         a                           ont:Test ;
@@ -1675,6 +1792,7 @@
         ont:point_of_departure      "300" ;
         ont:purity                  "98.8" ;
         ont:species_strain          "rat/Grl:Wi (Han)" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "no toxicologically relevant test item-related changes in urinalysis parameters was observed." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/70>
@@ -1685,7 +1803,8 @@
         ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "mouse" .
+        ont:species_strain   "mouse" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/105>
         a                          ont:Test ;
@@ -1695,7 +1814,8 @@
         ont:concentration          "2" ;
         ont:guideline              "non OECD" ;
         ont:histopathology         "findings in urinary bladder: papillary/nodular hyperplasia in 86% treated rats vs 0% in controls (p≤0.01); papilloma in 54% treated rats vs 0% in controls (p≤0.01); carcinoma in 39% treated rats vs 0% in controls (p≤0.05)." ;
-        ont:species_strain         "rat/f344" .
+        ont:species_strain         "rat/f344" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/49>
         a                           ont:Test ;
@@ -1712,19 +1832,22 @@
         ont:point_of_departure      "92" ;
         ont:purity                  "98-99" ;
         ont:species_strain          "rat/wistar" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "urinalysis revealed non-significantly lower pH values in males in a dose-related manner and in high dose females. increased blood and erythrocytes were detected in the urine specimens of high dose males, whereas increased renal tubular and transitional epithelial cells and granular casts were observed in the urine of the high dose females. " .
 
 <http://toxin.vub.be/resource/dossier/butylphenyl%20methylpropional%20%28p-bmhca%29>
-        a             ont:Report ;
-        rdfs:label    "butylphenyl methylpropional (p-bmhca)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_213.pdf> , <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_189.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/76> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/70> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/72> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/78> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/75> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/71> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/68> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/77> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/73> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/69> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/74> .
+        a              ont:Report ;
+        rdfs:label     "butylphenyl methylpropional (p-bmhca)" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/76> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/70> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/72> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/78> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/75> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/71> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/68> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/77> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/73> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/69> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/74> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_213.pdf> , <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_189.pdf> .
 
 <http://toxin.vub.be/resource/dossier/zinc%20pyrithione>
-        a             ont:Report ;
-        rdfs:label    "zinc pyrithione" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_133.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/41> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/38> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/35> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/42> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/39> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/36> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/43> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/37> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/44> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/40> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/45> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/46> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/47> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/31> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/48> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/32> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/33> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/34> .
+        a              ont:Report ;
+        rdfs:label     "zinc pyrithione" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/41> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/38> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/35> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/42> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/39> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/36> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/43> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/37> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/44> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/40> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/45> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/46> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/47> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/31> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/48> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/32> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/33> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/34> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_133.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/28>
         a                       ont:Test ;
@@ -1734,7 +1857,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:other_observations  "reduced bone density and increased rates of fracture" ;
-        ont:species_strain      "human" .
+        ont:species_strain      "human" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/compound/acid%20red%2092>
         a               ont:Compound ;
@@ -1742,10 +1866,11 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/acid%20red%2092> .
 
 <http://toxin.vub.be/resource/dossier/sodium%20perborate>
-        a             ont:Report ;
-        rdfs:label    "sodium perborate" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_031.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/61> .
+        a              ont:Report ;
+        rdfs:label     "sodium perborate" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/61> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_031.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/99>
         a                           ont:Test ;
@@ -1760,6 +1885,7 @@
         ont:haematology             "a statisically significant increase in white blood cells in males and in blood urea nitrogen in males and females was reported." ;
         ont:histopathology          "microscopic examinations of 25 tissues from each animal gave no indication of histomorphologic evidence of toxicity" ;
         ont:species_strain          "rabbit/new zealand white" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "no dye discoloration of the urine was seen during the test." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/134>
@@ -1772,7 +1898,8 @@
         ont:guideline               "non OECD" ;
         ont:haematology             "there were no treatment-related  haematological changes." ;
         ont:histopathology          "microscopic examination revealed no histomorphology changes in the skin." ;
-        ont:species_strain          "dog/Beagle weanling" .
+        ont:species_strain          "dog/Beagle weanling" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/5>
         a                           ont:Test ;
@@ -1789,14 +1916,16 @@
                 "yes" ;
         ont:mortality_rate          "although there were 12 unscheduled deaths related to high-dose level exposure, 11 of the 12 rats died during day 1 as a result of the very high initial doses. necropsy revealed congestion, inflammatory changes in mucous membranes and nasal cavity." ;
         ont:point_of_departure      "50" ;
-        ont:species_strain          "rat" .
+        ont:species_strain          "rat" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/78>
         a                   ont:Test ;
         ont:compound        <http://toxin.vub.be/resource/compound/butylphenyl%20methylpropional%20%28p-bmhca%29> ;
         ont:conclusion      "confirmed the known potential of p-bmhca" ;
         ont:guideline       "non OECD" ;
-        ont:species_strain  "rat" .
+        ont:species_strain  "rat" ;
+        ont:type            "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/113>
         a                          ont:Test ;
@@ -1817,6 +1946,7 @@
         ont:purity                 "99.5 – 100" ;
         ont:species_strain         "rat/CDF[F-344]/BR" ;
         ont:target_organ           "kidney, urinary bladder, eyes, heart " ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "clinical observations at 4000 ppm and above included abnormal urine colour and various stains. urinalyses showed an increased incidence of blood in high-dose males." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/57>
@@ -1833,7 +1963,8 @@
                 "yes" ;
         ont:mortality_rate          "in the 0.1% nta group two rats died before the end of the ten-week period." ;
         ont:point_of_departure      "92" ;
-        ont:species_strain          "rat/charles river cd sprague-dawley derived" .
+        ont:species_strain          "rat/charles river cd sprague-dawley derived" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/36>
         a                   ont:Test ;
@@ -1847,7 +1978,8 @@
                 "yes" ;
         ont:mortality_rate  "none of the rabbits receiving 1000 or 2000 mg/kg survived the 90-day test period, the longest survival being 21 days + 8 of the lower dose groups" ;
         ont:physical_form   "solid" ;
-        ont:species_strain  "rabbit/albino" .
+        ont:species_strain  "rabbit/albino" ;
+        ont:type            "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/15>
         a                          ont:Test ;
@@ -1863,13 +1995,15 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:purity                 "90" ;
-        ont:species_strain         "rat / hanibm:wist spf" .
+        ont:species_strain         "rat / hanibm:wist spf" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/methylimidazoliumpropyl%20p-phenylenediamine%20HCl>
-        a             ont:Report ;
-        rdfs:label    "methylimidazoliumpropyl p-phenylenediamine HCl" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_231.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/79> .
+        a              ont:Report ;
+        rdfs:label     "methylimidazoliumpropyl p-phenylenediamine HCl" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/79> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_231.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/142>
         a                          ont:Test ;
@@ -1882,7 +2016,8 @@
         ont:guideline              "non OECD" ;
         ont:haematology            "at 0.432 mg D5/l (28 ppm) and above, there was an increase in white blood cell and neutrophil counts (males only), a decreased number of red blood cells and mean corpuscular haemoglobin concentration. " ;
         ont:point_of_departure     "0.081" ;
-        ont:species_strain         "rat/Wistar" .
+        ont:species_strain         "rat/Wistar" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/86>
         a                    ont:Test ;
@@ -1892,7 +2027,8 @@
         ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "mouse/swiss webster" .
+        ont:species_strain   "mouse/swiss webster" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/121>
         a                          ont:Test ;
@@ -1907,13 +2043,15 @@
         ont:mortality_rate         "in the 2-week recovery study, survivals in the control, low-dose, and high-dose groups at 104 weeks were 70 %, 88 %, and 20 % (p<0.01) in males and 84 %, 82 %, and 86 % in females." ;
         ont:point_of_departure     "5000" ;
         ont:purity                 "95.5" ;
-        ont:species_strain         "rat/F344" .
+        ont:species_strain         "rat/F344" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/Methoxypropylamino%20Cyclohexenylidene%20Ethoxyethylcyanoacetate%20%28S87%29>
-        a             ont:Report ;
-        rdfs:label    "Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate (S87)" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_227.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/126> .
+        a              ont:Report ;
+        rdfs:label     "Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate (S87)" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/126> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_227.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/65>
         a                           ont:Test ;
@@ -1931,7 +2069,8 @@
                 "yes; yes" ;
         ont:mortality_rate          "rat: all female and 8 male rats from the high-dose group died from resorcinol-related toxicity during the first four weeks of the study. on day 2 of the study, rats from the 260 mg/kg bw/d group were given 520 mg/kg bw/d by mistake. within 5 days, two males and four females in this group died. these deaths were attributed to incorrect dosing because no further deaths occurred among rats receiving the correct dose during the study. mice: in the high-dose group seven mice of each sex died during the first week of the study, another male died during week 4 and another female died during week 12. authors of the study attributed these deaths to resorcinol-related toxicity. one male died in the 112 mg/kg bw group due to improper gavage technique" ;
         ont:point_of_departure      "130; 225" ;
-        ont:species_strain          "rat /f344/n; mice/ b6c3f1" .
+        ont:species_strain          "rat /f344/n; mice/ b6c3f1" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/100>
         a                            ont:Test ;
@@ -1950,7 +2089,8 @@
                 "yes" ;
         ont:mortality_rate           "during the first week of the study, one female from the 1% dose group was found dead and was therefore replaced. during the rest of the 13-week study, one female from the control group and one female from the 0.1% dose group died. these deaths were not considered related to the test material." ;
         ont:purity                   "99.65" ;
-        ont:species_strain           "rat/sprague-dawley (tac:n(sd)fbr)" .
+        ont:species_strain           "rat/sprague-dawley (tac:n(sd)fbr)" ;
+        ont:type                     "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/44>
         a                            ont:Test ;
@@ -1974,7 +2114,8 @@
         ont:point_of_departure       "2" ;
         ont:purity                   "98.3" ;
         ont:species_strain           "rat/sprague-dawley" ;
-        ont:target_organ             "lung, thymus, lymph nodes" .
+        ont:target_organ             "lung, thymus, lymph nodes" ;
+        ont:type                     "in vivo" .
 
 <http://toxin.vub.be/resource/compound/decamethylcyclopentasiloxane>
         a               ont:Compound ;
@@ -1991,13 +2132,15 @@
         ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "mouse/ hairless" .
+        ont:species_strain   "mouse/ hairless" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/phenylene%20bis-diphenyltriazine>
-        a             ont:Report ;
-        rdfs:label    "phenylene bis-diphenyltriazine" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/sites/health/files/scientific_committees/consumer_safety/docs/sccs_o_215.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/66> .
+        a              ont:Report ;
+        rdfs:label     "phenylene bis-diphenyltriazine" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/66> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fsites%2Fhealth%2Ffiles%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_215.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/94>
         a                           ont:Test ;
@@ -2010,7 +2153,8 @@
         ont:haematology             "an increase in platelet count and megakaryocytes within a normal range were observed. the authors mentioned several findings considered incidental or of doubtful significance: trend towards a slight increase in platelet count with increased megakaryocytes" ;
         ont:point_of_departure      "250" ;
         ont:purity                  "99.9" ;
-        ont:species_strain          "dog/beagle" .
+        ont:species_strain          "dog/beagle" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/compound/2%2C6-dihydroxyethylaminotoluene>
         a               ont:Compound ;
@@ -2030,6 +2174,7 @@
                 "no" ;
         ont:physical_form          "liquid" ;
         ont:species_strain         "mouse/Eppley Swiss" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "no observations in the urinary values indicated a toxic effect due to the hair dye" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/73>
@@ -2044,7 +2189,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:species_strain          "dog / beagle" ;
-        ont:target_organ            "male reproductive organs:" .
+        ont:target_organ            "male reproductive organs:" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/108>
         a                          ont:Test ;
@@ -2052,7 +2198,8 @@
         ont:clinical_observations  "investigation of the urinary bladder by LM and SEM at several time points did not reveal any effects." ;
         ont:compound               <http://toxin.vub.be/resource/compound/o-phenylphenol%2C%20sodium%20o-phenylphenate%20and%20potassium%20o-phenylphenate> ;
         ont:guideline              "non OECD" ;
-        ont:species_strain         "mouse/b6c3f1" .
+        ont:species_strain         "mouse/b6c3f1" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/52>
         a                          ont:Test ;
@@ -2067,6 +2214,7 @@
                 "no" ;
         ont:point_of_departure     "92" ;
         ont:species_strain         "rat/sprague-dawley" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "the effects on growth, urine pH and urine volume were measured. the urines from the animals consuming both forms of 525 mg/kg bw/day nta contain insoluble material and haematuria was observed in the urines of rats at 1050 mg/kg bw/day nta.H2O. x-ray analyses showed that the insoluble material contained crystalline calcium chelate of nta (CaNaNTA, not quantified). all doses of nta.H2O increased urine pH above the controls. urine volume was reduced at 350 mg/kg bw/day but higher doses increased the volume dose-dependently. lower urine volume was measured at 350 mg/kg bw/day H3NTA and higher, but decrease did not show dose-relationship. decreased urine pH-values was seen at 525 mg/kg bw/day and above. " .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/31>
@@ -2081,7 +2229,8 @@
                 "yes" ;
         ont:mortality_rate         "at levels of 1000 ppm or greater, the animals usually died without developing paralysis" ;
         ont:point_of_departure     "0.5" ;
-        ont:species_strain         "rat; rabbit" .
+        ont:species_strain         "rat; rabbit" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/10>
         a                           ont:Test ;
@@ -2092,7 +2241,8 @@
         ont:guideline               "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain          "human" .
+        ont:species_strain          "human" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/compound/alkyl%20%28C16%2C%20C18%2C%20C22%29%20trimethylammonium%20chloride>
         a               ont:Compound ;
@@ -2100,10 +2250,11 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/alkyl%20%28C16%2C%20C18%2C%20C22%29%20trimethylammonium%20chloride> .
 
 <http://toxin.vub.be/resource/dossier/Acid%20black%201>
-        a             ont:Report ;
-        rdfs:label    "Acid black 1" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_018.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/132> .
+        a              ont:Report ;
+        rdfs:label     "Acid black 1" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/132> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_018.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/137>
         a                          ont:Test ;
@@ -2115,7 +2266,8 @@
         ont:description_pod        "mg/kg bw/d LOAEL & NOAEL" ;
         ont:guideline              "non OECD" ;
         ont:point_of_departure     "100 & 25" ;
-        ont:species_strain         "rat/sprague-dawley" .
+        ont:species_strain         "rat/sprague-dawley" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/81>
         a                    ont:Test ;
@@ -2125,7 +2277,8 @@
         ont:guideline        "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain   "rat/wistar" .
+        ont:species_strain   "rat/wistar" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/116>
         a                          ont:Test ;
@@ -2141,7 +2294,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate         "one death occurred at the highest dose level." ;
-        ont:species_strain         "mouse/ Crj:B6C3F1" .
+        ont:species_strain         "mouse/ Crj:B6C3F1" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/8>
         a                           ont:Test ;
@@ -2154,7 +2308,8 @@
         ont:haematology             "standard haematology results showed some statistically significant changes periodically (compared to baseline values), but no pattern to the changes. some significant correlations were found between parameters and triclosan blood levels, but these were inconsistent over the course of the study in terms of time or sex of subject." ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain          "human" .
+        ont:species_strain          "human" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/60>
         a                       ont:Test ;
@@ -2171,13 +2326,15 @@
                 "no" ;
         ont:point_of_departure  "1000" ;
         ont:species_strain      "rats" ;
-        ont:target_organ        "stomach, haematological system and possibly the testes" .
+        ont:target_organ        "stomach, haematological system and possibly the testes" ;
+        ont:type                "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/p-aminophenol>
-        a             ont:Report ;
-        rdfs:label    "p-aminophenol" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_078.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/85> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/80> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/86> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/83> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/84> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/87> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/81> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/82> .
+        a              ont:Report ;
+        rdfs:label     "p-aminophenol" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/85> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/80> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/86> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/83> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/84> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/87> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/81> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/82> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_078.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/39>
         a                    ont:Test ;
@@ -2190,7 +2347,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:pH_adjustment    "test materials were zpt at 0.08, 0.4 and 2.0% in a 1 % surfactant (triethanolamine lauryl sulfate)/ 0.5% thickener (methocel) aqueous slurry, these levels correspond to 0.28, 1.4, and 7.0 mg/kg/day" ;
-        ont:species_strain   "mouse" .
+        ont:species_strain   "mouse" ;
+        ont:type             "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/18>
         a                      ont:Test ;
@@ -2202,7 +2360,8 @@
         ont:guideline          "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain     "mouse/swiss webster" .
+        ont:species_strain     "mouse/swiss webster" ;
+        ont:type               "in vivo" .
 
 <http://toxin.vub.be/resource/compound/methylimidazoliumpropyl%20p-phenylenediamine%20HCl>
         a               ont:Compound ;
@@ -2210,16 +2369,18 @@
         ont:compoundOf  <http://toxin.vub.be/resource/dossier/methylimidazoliumpropyl%20p-phenylenediamine%20HCl> .
 
 <http://toxin.vub.be/resource/dossier/triclosan>
-        a             ont:Report ;
-        rdfs:label    "triclosan" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_166.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/133> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/10> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/6> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/5> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/135> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/134> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/8> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/4> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/7> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/3> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/9> .
+        a              ont:Report ;
+        rdfs:label     "triclosan" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/133> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/10> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/6> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/5> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/135> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/134> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/8> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/4> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/7> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/3> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/9> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fph_risk%2Fcommittees%2F04_sccp%2Fdocs%2Fsccp_o_166.pdf> .
 
 <http://toxin.vub.be/resource/dossier/hc%20yellow%20n°%204>
-        a             ont:Report ;
-        rdfs:label    "hc yellow n° 4" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_008.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/101> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/100> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/99> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/98> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/97> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/96> .
+        a              ont:Report ;
+        rdfs:label     "hc yellow n° 4" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/98> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/100> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/99> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/96> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/97> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/101> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_008.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/89>
         a                           ont:Test ;
@@ -2237,7 +2398,8 @@
                 "no" ;
         ont:point_of_departure      "429; 1548" ;
         ont:purity                  "99.9" ;
-        ont:species_strain          "rat/orl:cd.br" .
+        ont:species_strain          "rat/orl:cd.br" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/124>
         a                           ont:Test ;
@@ -2250,7 +2412,8 @@
         ont:histopathology          "Histopathological examination showed broncho-pulmonary injuries which did not permit to affirm the toxicity of the substance." ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain          "rat/sprague-dawley" .
+        ont:species_strain          "rat/sprague-dawley" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/68>
         a                          ont:Test ;
@@ -2262,7 +2425,8 @@
         ont:histopathology         "mouse: microscopic evaluation of the testes revealed no pathological changes." ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "rat /wistar;  mouse /c57bl" .
+        ont:species_strain         "rat /wistar;  mouse /c57bl" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/103>
         a                           ont:Test ;
@@ -2276,6 +2440,7 @@
         ont:guideline               "non OECD" ;
         ont:haematology             "red blood cell count and the amount of haemoglobin were decreased at 2.5%." ;
         ont:species_strain          "rat/f344" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "the number of rats with acidic urinary pH values was increased at 1.25 and 2.5%, urinary protein levels were decreased at 2.5%." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/47>
@@ -2300,6 +2465,7 @@
         ont:purity                  "41.2" ;
         ont:species_strain          "rat / crl:cd-1 (icr) br (vaf plus)" ;
         ont:target_organ            "lung, haematopoietic system, muscles, nerves" ;
+        ont:type                    "in vivo" ;
         ont:urinalysis              "concerning clinical chemistry and urinalysis, there were no toxicologically relevant treatment-related findings." .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/26>
@@ -2312,13 +2478,15 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "yes" ;
         ont:mortality_rate          "death of one patient due to progressive liver failure, cirrhosis" ;
-        ont:species_strain          "human" .
+        ont:species_strain          "human" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/dossier/decamethylcyclopentasiloxane>
-        a             ont:Report ;
-        rdfs:label    "decamethylcyclopentasiloxane" ;
-        rdfs:seeAlso  <https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_174.pdf> ;
-        ont:contains  <http://toxin.vub.be/resource/test/repeated-dose-toxicity/142> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/143> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/138> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/140> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/139> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/141> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/137> .
+        a              ont:Report ;
+        rdfs:label     "decamethylcyclopentasiloxane" ;
+        ont:contains   <http://toxin.vub.be/resource/test/repeated-dose-toxicity/142> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/143> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/138> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/140> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/139> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/141> , <http://toxin.vub.be/resource/test/repeated-dose-toxicity/137> ;
+        ont:guideline  "non OECD" ;
+        ont:seeAlso    <http://toxin.vub.be/resource/pdfLink/https%3A%2F%2Fec.europa.eu%2Fhealth%2Fscientific_committees%2Fconsumer_safety%2Fdocs%2Fsccs_o_174.pdf> .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/97>
         a                          ont:Test ;
@@ -2333,7 +2501,8 @@
         ont:guideline              "non OECD" ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain         "rat/sprague-dawley" .
+        ont:species_strain         "rat/sprague-dawley" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/132>
         a                          ont:Test ;
@@ -2349,7 +2518,8 @@
                 "yes" ;
         ont:mortality_rate         "at the high dose, two males (days 5 and 9) and four females (days 2, 5 12 and 15) were found dead. " ;
         ont:purity                 "94,8" ;
-        ont:species_strain         "rat/Wistar Hanlbm: WIST (SPF)" .
+        ont:species_strain         "rat/Wistar Hanlbm: WIST (SPF)" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/76>
         a                           ont:Test ;
@@ -2360,7 +2530,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:purity                  "97.4" ;
-        ont:species_strain          "rats /albino, fü spf" .
+        ont:species_strain          "rats /albino, fü spf" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/111>
         a                          ont:Test ;
@@ -2370,7 +2541,8 @@
         ont:conclusion             "study demonstrates that  SOPP is a more potent bladder toxicant in rat than OPP." ;
         ont:guideline              "non OECD" ;
         ont:purity                 "98" ;
-        ont:species_strain         "rat/f344" .
+        ont:species_strain         "rat/f344" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/3>
         a                           ont:Test ;
@@ -2384,7 +2556,8 @@
         ont:histopathology          "microscopic examination revealed no histomorphology changes in the skin." ;
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
-        ont:species_strain          "dog/Beagle weanling" .
+        ont:species_strain          "dog/Beagle weanling" ;
+        ont:type                    "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/55>
         a                          ont:Test ;
@@ -2399,7 +2572,8 @@
         ont:moribund_or_dead_animals_prior_to_study_termination
                 "no" ;
         ont:point_of_departure     "92" ;
-        ont:species_strain         "rat/sprague-dawley" .
+        ont:species_strain         "rat/sprague-dawley" ;
+        ont:type                   "in vivo" .
 
 <http://toxin.vub.be/resource/test/repeated-dose-toxicity/34>
         a                          ont:Test ;
@@ -2423,4 +2597,5 @@
         ont:purity                 "96.3" ;
         ont:species_strain         "monkey/ cynomolgus" ;
         ont:target_organ           "haematopoietic system" ;
+        ont:type                   "in vivo" ;
         ont:urinalysis             "urinalysis revealed an increase in ketone bodies in four males and four females of the highest dose group: pH was reduced in two males." .

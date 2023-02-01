@@ -1,38 +1,11 @@
+#TODO: not complete
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix ont: <http://ontologies.vub.be/oecd#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
-<#PDFlinkTriplesFirstMap>
-    rr:logicalTable [ rr:sqlQuery """
-                WITH RECURSIVE PDFLINKFIRST (ID, PDFLINKFIRST, REST) AS
-                            (
-                                    SELECT
-                        ID,
-                        NULL,
-                        PDFLINKFIRST || ','
-                    FROM (  SELECT
-                                ROWNUM() AS ID,
-                                \"pdf link\" AS PDFLINKFIRST
-                            FROM OECD_407 WHERE \"pdf link\" IS NOT NULL
-                    )
-                                    UNION ALL
-                                    SELECT
-                        ID,
-                        TRIM(SUBSTR(REST, 0, INSTR(REST, ',') - 1)),
-                        SUBSTR(REST, INSTR(REST, ',') + 1)
-                    FROM PDFLINKFIRST WHERE REST <> ''
-                            ) SELECT DISTINCT * FROM PDFLINKFIRST
-        """ ] ;
-
-            rr:subjectMap [
-        rr:template "http://toxin.vub.be/resource/pdfLink/{PDFLINKFIRST}" ;
-    ] ;
-.
-
 <#DossierTriplesMap>
-    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM oecd_407" ] ;
+    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM oecd_410" ] ;
 
     rr:subjectMap [
         rr:template "http://toxin.vub.be/resource/dossier/{DOSSIER}" ;
@@ -54,21 +27,18 @@
 
      rr:predicateObjectMap [
         rr:predicate ont:guideline ;
-        rr:objectMap [ rr:column "\"GUIDELINE\"" ; ] ;
+        rr:objectMap [ rr:column "GUIDELINE" ; ] ;
     ] ; 
 
 
     rr:predicateObjectMap [
-            rr:predicate ont:seeAlso;
-            rr:objectMap [
-                rr:parentTriplesMap <#PDFlinkTriplesFirstMap> ;
-                rr:joinCondition [ rr:child "ID" ; rr:parent "ID" ; ] ;
-            ] ;
+        rr:predicate rdfs:seeAlso ;
+        rr:objectMap [ rr:column "\"pdf link\"" ; rr:termType rr:IRI ; ] ;
     ] ;
 .
 
 <#CompoundTriplesMap>
-    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM oecd_407" ] ;
+    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM oecd_410" ] ;
 
     rr:subjectMap [
         rr:template "http://toxin.vub.be/resource/compound/{DOSSIER}" ;
@@ -92,7 +62,7 @@
 
 <#TestTriplesMap>
 
-    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM oecd_407" ] ;
+    rr:logicalTable [ rr:sqlQuery "SELECT ROWNUM() AS ID, * FROM oecd_410" ] ;
   
      rr:predicateObjectMap [
         rr:predicate ont:guideline ;
@@ -105,9 +75,10 @@
     ] ;
 
      rr:predicateObjectMap [
-        rr:predicate ont:guideline ;
+        rr:predicate ont:type ;
         rr:objectMap [ rr:column "\"TYPE\"" ; ] ;
     ] ; 
+
     ### BEGIN LINK WITH COMPOUND
     rr:predicateObjectMap [
         rr:predicate ont:compound ;
@@ -124,47 +95,47 @@
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:secretions_and_excretions ;
-        rr:objectMap [ rr:column "secretions and excretions \"Fluids and Secretions\"[Mesh]" ; ] ;
+        rr:predicate ont:total_differential_leucocyte ;
+        rr:objectMap [ rr:column "total and differential leucocyte \"Leukocytes\"[Mesh] count" ; ] ;
     ] ; 
     
    rr:predicateObjectMap [
-        rr:predicate ont:autonomic_activity ;
-        rr:objectMap [ rr:column "autonomic activity ( lacrimination, piloerection \"Piloerection\"[Mesh], pupil size, unusual respiratory pattern)" ; ] ;
+        rr:predicate ont:haematocrit;
+        rr:objectMap [ rr:column "haematocrit \"Hematocrit\"[Mesh]" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:movement ;
-        rr:objectMap [ rr:column "clonic or tonic movement" ; ] ;
+        rr:predicate ont:observation_autonomic_central_nervous_system;
+        rr:objectMap [ rr:column "autonomic and central nervous system" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:stereotypes ;
-        rr:objectMap [ rr:column "stereotypies \"Stereotypic Movement Disorder\"[Mesh]" ; ] ;
+        rr:predicate ont:observation_behaviour_pattern;
+        rr:objectMap [ rr:column "behaviour pattern" ; ] ;
     ] ; 
    rr:predicateObjectMap [
-        rr:predicate ont:bizzare_behaviors ;
-        rr:objectMap [ rr:column "bizzare behaviours" ; ] ;
+        rr:predicate ont:prothrombine_time ;
+        rr:objectMap [ rr:column "prothrombine time" ; ] ;
     ] ; 
    rr:predicateObjectMap [
-        rr:predicate ont:sensor_activity ;
-        rr:objectMap [ rr:column "sensor activity, grip strength; assessment of motor activity" ; ] ;
+        rr:predicate ont:observation_organ_weight_organ_body_weight ;
+        rr:objectMap [ rr:column "organ weight and organ/body weight" ; ] ;
     ] ; 
    rr:predicateObjectMap [
-        rr:predicate ont:body_weight_and_food_water_consumption ;
-        rr:objectMap [ rr:column "body weight and food/water consumption" ; ] ;
+        rr:predicate ont:observation_respiratory ;
+        rr:objectMap [ rr:column "RESPIRATORY" ; ] ;
     ] ; 
    rr:predicateObjectMap [
-        rr:predicate ont:body_weight_and_food_water_consumption ;
-        rr:objectMap [ rr:column "satellite (recovery) group" ; ] ;
+        rr:predicate ont:changes_skin_fur_eyes_mucous_membranes ;
+        rr:objectMap [ rr:column "changes in skin, fur, eyes, mucous membranes" ; ] ;
     ] ; 
    rr:predicateObjectMap [
         rr:predicate ont:haematocrit ;
         rr:objectMap [ rr:column "haematocrit \"Hematocrit\"[Mesh]" ; ] ;
     ] ; 
    rr:predicateObjectMap [
-        rr:predicate ont:haematocrit ;
-        rr:objectMap [ rr:column "haemaglobin \"Hemoglobins\"[Mesh] concentration" ; ] ;
+        rr:predicate ont:erythrocyte_count ;
+        rr:objectMap [ rr:column "erythrocyte count \"Erythrocyte Count\"[Mesh]" ; ] ;
     ] ; 
     
    rr:predicateObjectMap [
@@ -173,8 +144,8 @@
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:leucocyte ;
-        rr:objectMap [ rr:column "total and differential leucocyte \"Leukocytes\"[Mesh] count" ; ] ;
+        rr:predicate ont:observation_circulatory ;
+        rr:objectMap [ rr:column "CIRCULATORY" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
@@ -183,13 +154,13 @@
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:blood_clotting ;
-        rr:objectMap [ rr:column "measure of blood clotting time/potential" ; ] ;
+        rr:predicate ont:thromboplastin_time ;
+        rr:objectMap [ rr:column "thromboplastin time" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:blood_origin ;
-        rr:objectMap [ rr:column "blood samples origin" ; ] ;
+        rr:predicate ont:haemoglobin_concentration ;
+        rr:objectMap [ rr:column "haemoglobin concentration" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
@@ -203,18 +174,18 @@
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:glucose ;
-        rr:objectMap [ rr:column "glucose \"Glucose\"[Mesh]" ; ] ;
+        rr:predicate ont:observation_somatomotor_activity;
+        rr:objectMap [ rr:column "somatomotor activity" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:cholesterol ;
-        rr:objectMap [ rr:column "total cholesterol \"Cholesterol\"[Mesh]" ; ] ;
+        rr:predicate ont:observation_ophtalmological_examination ;
+        rr:objectMap [ rr:column "ophtalmological examination" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:urea ;
-        rr:objectMap [ rr:column " urea \"Urea\"[Mesh]" ; ] ;
+        rr:predicate ont:food_water_consumption ;
+        rr:objectMap [ rr:column "food/water consumption" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
@@ -243,13 +214,13 @@
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:alkaline_phosphatase ;
-        rr:objectMap [ rr:column "alkaline phosphatase \"Alkaline Phosphatase\"[Mesh]" ; ] ;
+        rr:predicate ont:observation_somatomotor_activity;
+        rr:objectMap [ rr:column "somatomotor activity" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
-        rr:predicate ont:alkaline_phosphatase ;
-        rr:objectMap [ rr:column "alkaline phosphatase \"Alkaline Phosphatase\"[Mesh]" ; ] ;
+        rr:predicate ont:clotting_time ;
+        rr:objectMap [ rr:column "clotting time" ; ] ;
     ] ; 
 
    rr:predicateObjectMap [
@@ -264,8 +235,8 @@
 
     # AH
    rr:predicateObjectMap [
-        rr:predicate ont:sorbitol_dehydrogenase ;
-        rr:objectMap [ rr:column "sorbitol dehydrogenase \"L-Iditol 2-Dehydrogenase\"[Mesh]" ; ] ;
+        rr:predicate ont:observation_other_signs_of_toxicity ;
+        rr:objectMap [ rr:column "other signs of toxicity" ; ] ;
     ] ; 
 
 # <#SPECIESTriplesMap>
