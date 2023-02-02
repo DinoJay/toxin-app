@@ -64,6 +64,12 @@
 						{/each}
 					</datalist>
 				</div>
+				<div class="">
+					<div><label for="toxi-outcome">Liver:</label></div>
+					<!-- repeated dose toxicity Liver, ( it exists under Gross necropsy and Histopathology), alanine aminotransferase, aspartate aminotransferase, alkaline phosphatase, gamma glutamyl transpeptidase, sorbitol dehydrogenase, other enzymes and biomarker, bile acids, total bilirubin, total cholesterol, fasting triglycerides, high -density lipoprotein (hdl), low-density lipoprotein (ldl), total protein, and albumin. -->
+					<input class="ml-1 p-1 border" placeholder="alanine aminotransferase" bind:value={val} />
+					<input class="ml-1 p-1 border" placeholder="alanine aminotransferase" bind:value={val} />
+				</div>
 			</div>
 			<div class="mb-3">
 				<p>Chose the type(s) of study:</p>
