@@ -268,6 +268,186 @@
         rr:objectMap [ rr:column "sorbitol dehydrogenase \"L-Iditol 2-Dehydrogenase\"[Mesh]" ; ] ;
     ] ; 
 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:other_enzymes_and_bile_acids ;
+        rr:objectMap [ rr:column "other enzymes and bile acids \"Bile Acids and Salts\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:appearance ;
+        rr:objectMap [ rr:column "APPEARANCE" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:volume ;
+        rr:objectMap [ rr:column "VOLUME" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:osmolarity_specific_gravity ;
+        rr:objectMap [ rr:column "osmolarity or specific gravity" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:ph ;
+        rr:objectMap [ rr:column "PH" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:protein ;
+        rr:objectMap [ rr:column "protein \"Proteinuria\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:glucose ;
+        rr:objectMap [ rr:column "glucose \"Glycosuria\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:blood_blood_cells ;
+        rr:objectMap [ rr:column "blood/blood cells \"Hematuria\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:calcium  ;
+        rr:objectMap [ rr:column "calcium \"Calcium\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:phosphate  ;
+        rr:objectMap [ rr:column "phosphate \"Phosphates\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:fasting  ;
+        rr:objectMap [ rr:column "fasting \"Fasting\"[Mesh] triglycerides \"Triglycerides\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:hormones  ;
+        rr:objectMap [ rr:column "hormones \"Hormones\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:methaemoglobin  ;
+        rr:objectMap [ rr:column "methaemoglobin \"Methemoglobin\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:cholinesterase  ;
+        rr:objectMap [ rr:column "cholinesterase \"Cholinesterases\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:serum_other  ;
+        rr:objectMap [ rr:column "serum: other" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_all_gross_lesions  ;
+        rr:objectMap [ rr:column "gross necropsy: all gross lesions" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_brain;
+        rr:objectMap [ rr:column "gross necropsy: brain \"Brain\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_spinal_cord;
+        rr:objectMap [ rr:column "gross necropsy: spinal cord \"Spinal Cord\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_stomach;
+        rr:objectMap [ rr:column "gross necropsy: stomach \"Stomach\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_intestines;
+        rr:objectMap [ rr:column "gross necropsy: small and large intestines \"Intestines\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_liver;
+        rr:objectMap [ rr:column "gross necropsy: liver \"Liver\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_kidneys;
+        rr:objectMap [ rr:column "gross necropsy: kidneys \"Kidney\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_adrenals;
+        rr:objectMap [ rr:column "gross necropsy: adrenals \"Adrenal Glands\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_spleen;
+        rr:objectMap [ rr:column "gross necropsy: spleen \"Spleen\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_heart;
+        rr:objectMap [ rr:column "gross necropsy: heart \"Heart\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_thymus;
+        rr:objectMap [ rr:column "gross necropsy: thymus \"Thymus Gland\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_thyroid;
+        rr:objectMap [ rr:column "gross necropsy: thyroid \"Thyroid Gland\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_trachea;
+        rr:objectMap [ rr:column "gross necropsy: trachea \"Trachea\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_lungs;
+        rr:objectMap [ rr:column "gross necropsy: lungs \"Lung\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_gonads;
+        rr:objectMap [ rr:column "gross necropsy: gonads \"Gonads\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_sex_organs;
+        rr:objectMap [ rr:column "gross necropsy: accessory sex organs \"Genitalia\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_urinary_bladder;
+        rr:objectMap [ rr:column "gross necropsy: urinary bladder \"Urinary Bladder\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_lymph_nodes;
+        rr:objectMap [ rr:column "gross necropsy: lymph nodes \"Lymph Nodes\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_peripheral_nerve;
+        rr:objectMap [ rr:column "gross necropsy: peripheral nerve \"Peripheral Nerves\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_bone_marrow;
+        rr:objectMap [ rr:column "gross necropsy: bone marrow \"Bone Marrow\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_necropsy_bone_other_organs;
+        rr:objectMap [ rr:column "gross necropsy: other organs http://purl.obolibrary.org/obo/UBERON_0000062" ; ] ;
+    ] ; 
 # <#SPECIESTriplesMap>
 #     # todo: \"type of study ( in vivo, in vitro, in silico, in chemico\" -> camelcase
 #     rr:logicalTable [ rr:sqlQuery """

@@ -37,6 +37,8 @@
         ont:compound                <http://toxin.vub.be/resource/compound/hydroxyethyl-p-phenylenediamine%20sulfate> ;
         ont:food_water_consumption  "no significant effect on feed consumption was observed." ;
         ont:guideline               "OECD 410" ;
+        ont:histopathology_all_gross_lesions
+                "in one of the animals showing acanthosis also an ulcer was observed. no other histopathological alterations were found." ;
         ont:observation_ophtalmological_examination
                 "no dose-related abnormalities with respect to ophthalmoscopy were observed." ;
         ont:observation_organ_weight_organ_body_weight

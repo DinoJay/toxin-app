@@ -233,10 +233,213 @@
     ] ; 
 
     # AH
+
+
 #    rr:predicateObjectMap [
-#         rr:predicate ont:observation_other_signs_of_toxicity ;
-#         rr:objectMap [ rr:column "other signs of toxicity" ; ] ;
+#         rr:predicate ont:gross_necropsy_external_surface_body  ;
+#         rr:objectMap [ rr:column "gross necropsy: external surface of body" ; ] ;
 #     ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:gross_necropsy_external_surface_body  ;
+#         rr:objectMap [ rr:column "gross necropsy: orifices" ; ] ;
+#     ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:gross_necropsy_cranial_cavity  ;
+#         rr:objectMap [ rr:column "gross necropsy: cranial cavity" ; ] ;
+#     ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:gross_necropsy_thoracic_cavity  ;
+#         rr:objectMap [ rr:column "gross necropsy: thoracic cavity" ; ] ;
+#     ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:gross_necropsy_abdominal_cavity  ;
+#         rr:objectMap [ rr:column "gross necropsy: abdominal cavity" ; ] ;
+#     ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:gross_pathology_liver  ;
+        rr:objectMap [ rr:column "gross pathology: liver \"Liver\"[Mesh]" ; ] ;
+    ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:gross_necropsy_kidneys  ;
+#         rr:objectMap [ rr:column "gross necropsy: kidneys \"Kidney\"[Mesh]" ; ] ;
+#     ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:gross_necropsy_adrenals  ;
+#         rr:objectMap [ rr:column "gross necropsy: adrenals \"Adrenal Glands\"[Mesh]" ; ] ;
+#     ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_testes  ;
+        rr:objectMap [ rr:column "histopathology: testes" ; ] ;
+    ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:gross_necropsy_thyroid_parathyroid  ;
+#         rr:objectMap [ rr:column "gross necropsy: thyroid with parathyroid" ; ] ;
+#     ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_all_gross_lesions_and_masses  ;
+        rr:objectMap [ rr:column "histopathology: all gross lesion and masses" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_brain  ;
+        rr:objectMap [ rr:column "histopathology: brain \"Brain\"[Mesh](including sections of cerebrum, cerebellum, and medulla/pons)" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_pituitary  ;
+        rr:objectMap [ rr:column "histopathology: pituitary" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_thyroid_parathyroid  ;
+        rr:objectMap [ rr:column "gross pathology: thyroid \"Thyroid Gland\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_thymus  ;
+        rr:objectMap [ rr:column "histopathology: thymus \"Thymus Gland\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_thymus  ;
+        rr:objectMap [ rr:column "histopathology: thymus \"Thymus Gland\"[Mesh]" ; ] ;
+    ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:histopathology_lungs;
+#         rr:objectMap [ rr:column "histopathology: lungs \"Lung\"[Mesh]" ; ] ;
+#     ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_salivary_glands;
+        rr:objectMap [ rr:column "histopathology: salivary glands" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_heart;
+        rr:objectMap [ rr:column "histopathology: heart \"Heart\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_aorta;
+        rr:objectMap [ rr:column "histopathology: aorta" ; ] ;
+    ] ; 
+    
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_liver;
+        rr:objectMap [ rr:column "histopathology: liver \"Liver\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_spleen;
+        rr:objectMap [ rr:column "histopathology: spleen \"Spleen\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_kidneys;
+        rr:objectMap [ rr:column "histopathology: kidneys \"Kidney\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_adrenals;
+        rr:objectMap [ rr:column "histopathology: adrenals \"Adrenal Glands\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_pancreas;
+        rr:objectMap [ rr:column "histopathology: pancreas" ; ] ;
+    ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:histopathology_gonads;
+#         rr:objectMap [ rr:column "histopathology: gonads \"Gonads\"[Mesh]" ; ] ;
+#     ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_uterus;
+        rr:objectMap [ rr:column "histopathology: uterus" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_gallbladder;
+        rr:objectMap [ rr:column "histopathology: gallbladder" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_oesophagus;
+        rr:objectMap [ rr:column "histopathology: oesophagus" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_stomach;
+        rr:objectMap [ rr:column "histopathology: stomach \"Stomach\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_duodenum;
+        rr:objectMap [ rr:column "histopathology: duodenum" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_jejunum;
+        rr:objectMap [ rr:column "histopathology: jejunum" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_caecum;
+        rr:objectMap [ rr:column "histopathology: caecum" ; ] ;
+    ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:histopathology_ileum;
+#         rr:objectMap [ rr:column "histopathology: ileum" ; ] ;
+#     ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_colon;
+        rr:objectMap [ rr:column "histopathology: colon" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_rectum;
+        rr:objectMap [ rr:column "histopathology: rectum" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_urinary_bladder;
+        rr:objectMap [ rr:column "histopathology: urinary bladder \"Urinary Bladder\"[Mesh]" ; ] ;
+    ] ; 
+
+   rr:predicateObjectMap [
+        rr:predicate ont:histopathology_lymph_nodes;
+        rr:objectMap [ rr:column "histopathology: lymph nodes \"Lymph Nodes\"[Mesh] from the hilar region of the lung ( especially for poorly soluble particulate test chemical), more in depth examination and/or studies with immunological focus ( additional draining lymph nodes my be considered, e.g; those from the posterior mediastinal, internal jugular, parathymicn posterior cervical, auricular, and/or cervical/submandibular regions, lymph nodes (distal from the portal-of-entry)," ; ] ;
+    ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:histopathology_peripheral_nerve;
+#         rr:objectMap [ rr:column "histopathology: peripheral nerve \"Peripheral Nerves\"[Mesh]" ; ] ;
+#     ] ; 
+
+#    rr:predicateObjectMap [
+#         rr:predicate ont:histopathology_bone_marrow;
+#         rr:objectMap [ rr:column "histopathology: bone marrow \"Bone Marrow\"[Mesh]" ; ] ;
+#     ] ; 
+    
+#    rr:predicateObjectMap [
+#         rr:predicate ont:histopathology_skin;
+#         rr:objectMap [ rr:column "histopathology: skin" ; ] ;
+#     ] ; 
+
 
 # <#SPECIESTriplesMap>
 #     # todo: \"type of study ( in vivo, in vitro, in silico, in chemico\" -> camelcase
